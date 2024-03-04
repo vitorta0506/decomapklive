@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_people_nearby" android:background="@drawable/list_item_background" android:paddingTop="@dimen/dp_14" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_14">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_50" app:showStyle="showUgc" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/tv_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textAlignment="viewStart" />
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="end|center" android:orientation="horizontal" android:id="@id/ll_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_10" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                <include android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_user_center_sex_level" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/icon_focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_dynamic_focuson" />
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:ellipsize="end" android:id="@id/tv_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:singleLine="true" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" layout="@layout/user_saw_photos" />
+    <View android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_14" />
+    <View android:layout_gravity="bottom" android:id="@id/divider_line" android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="@dimen/dp_15" />
+</LinearLayout>

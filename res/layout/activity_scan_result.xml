@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_scan_result" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

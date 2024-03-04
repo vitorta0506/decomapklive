@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/fl_bg" android:background="@drawable/bg_account_jidi" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1125:735" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <include layout="@layout/base_title_no_fit" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_title_bg" android:background="@drawable/zhanghuanquan_jidi" android:visibility="gone" android:layout_width="184.0dip" android:layout_height="159.0dip" android:layout_below="@id/ll_title" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/white" android:gravity="start|center" android:id="@id/tv_safety_level" android:layout_width="195.0dip" android:layout_height="fill_parent" android:text="@string/the_safety_level_is_extremely_low" android:layout_below="@id/iv_title_bg" android:layout_marginStart="@dimen/dp_28" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_phone" android:background="@drawable/list_item_background" android:padding="@dimen/dp_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_68">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_mobile_more_lay" android:layout_alignParentStart="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/setting_bind_phone" android:layout_marginEnd="@dimen/dp_10" style="@style/FindYou_tv_four" />
+                    <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_mobile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:textDirection="ltr" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/iv_mobile_more_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/iv_mobile_waring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_grzxjingshi" android:layout_marginEnd="@dimen/dp_10" />
+                        <ImageView android:id="@id/iv_mobile_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_account_more" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:id="@id/tv_mobile_change" android:padding="@dimen/dp_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change" android:layout_marginEnd="@dimen/dp_6" />
+                </FrameLayout>
+            </RelativeLayout>
+            <View android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="@dimen/dp_8" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_email" android:background="@drawable/list_item_background" android:padding="@dimen/dp_14" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:text="@string/setting_bind_email" style="@style/FindYou_tv_four" />
+                    <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_email" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_account_more" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:id="@id/tv_change" android:padding="@dimen/dp_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_6" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_real_name_authentication" android:background="@drawable/list_item_background" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_56">
+                <TextView android:id="@id/tv_real_name_authentication" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_14" style="@style/FindYou_tv_four" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_3" android:id="@id/tv_authorized_result" android:layout_marginEnd="@dimen/dp_10" style="@style/FindYou_tv_four" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_account_more" android:layout_marginEnd="@dimen/dp_14" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:background="@color/bg_gray" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/personal_bind_email_hint" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_change_login_password" android:background="@drawable/list_item_background" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_login_pwd" android:text="@string/change_login_password" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_14" style="@style/FindYou_tv_four" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_account_more" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_change_payment_password" android:background="@drawable/list_item_background" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_play_pwd" android:text="@string/change_payment_password" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_14" style="@style/FindYou_tv_four" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_account_more" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_unreg_account" android:background="@drawable/list_item_background" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/cancel_account" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_14" style="@style/FindYou_tv_four" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_account_more" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

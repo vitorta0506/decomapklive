@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/float_title_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:visibility="gone" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStartWithNavigation="0.0dip" style="@style/FaceCastToolbar.FitSystemWindows" />
+            <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:id="@id/status_bar_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/backIV" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@mipmap/icon_ugc_back_white" android:layout_marginStart="@dimen/dp_14" />
+                <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:layout_height="48.0dip" android:layout_marginEnd="24.0dip" app:indicatorColor="@color/white" style="@style/TabLayout" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_rg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/tv_day" android:text="@string/day_rank" style="@style/RadioButton.White_circle" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/tv_week" android:text="@string/week_rank" style="@style/RadioButton.White_circle" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/tv_sub" android:text="@string/sub_rank" style="@style/RadioButton.White_circle" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

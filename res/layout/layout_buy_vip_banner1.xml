@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/bottom_tip" style="@style/LinearLayout_Vip_BottomTip">
+        <TextView android:id="@id/tips1" android:text="@string/vip_mall_vip_privilege" style="@style/TextView.VipTip1" />
+        <TextView android:id="@id/tips2" android:text="@string/vip_mall_vip_privilege_slogan" style="@style/TextView.VipTip2" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tip">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/head_img" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitSize="65.0dip" app:showStyle="showVIP" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:id="@id/nickname_1" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

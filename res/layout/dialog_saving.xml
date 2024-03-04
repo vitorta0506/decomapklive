@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="150.0dip" android:minHeight="100.0dip" app:cardBackgroundColor="#99000000" app:cardCornerRadius="10.0dip" style="@style/CardView.Base"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/Saving" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

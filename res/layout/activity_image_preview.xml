@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <include layout="@layout/base_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttonPanel" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <CheckBox android:textSize="18.0sp" android:id="@id/isOri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_image_preview_ori" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

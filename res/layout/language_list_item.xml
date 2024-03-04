@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_language_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start|center" android:id="@id/tvLanguage" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="14.0dip" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/ivRight" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="14.0dip" />
+</FrameLayout>

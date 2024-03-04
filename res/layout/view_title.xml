@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/allLL" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:id="@id/status_bar_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+        <ImageView android:id="@id/backIV" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@mipmap/icon_ugc_back_white" android:scaleType="centerInside" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/titleTV" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_50" android:layout_marginEnd="@dimen/dp_50" />
+        <ImageView android:id="@id/moreIV" android:visibility="gone" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@mipmap/ic_mvp_tips" android:scaleType="center" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

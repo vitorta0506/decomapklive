@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_61" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_62" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_63" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_64" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_65" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_66" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_67" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_68" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_69" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_70" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_71" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_72" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_73" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_74" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_75" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_76" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_77" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_78" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_79" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_80" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_81" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_82" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_83" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_84" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_85" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_86" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_86" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_87" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_88" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_89" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_90" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_91" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_92" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_93" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_94" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_95" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_96" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_97" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_98" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_99" />
+    <item android:duration="@integer/music_anim" android:drawable="@mipmap/music_100" />
+</animation-list>

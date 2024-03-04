@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/content_area" android:background="@drawable/bg_shape_share_my_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:paddingStart="12.0dip" android:paddingEnd="9.0dip">
+        <ImageView android:id="@id/icon_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/follow_im_dui" android:layout_marginEnd="4.0dip" />
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_hello_gift_un_thank" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.guochao.component.voiceliveroom.view.VoiceWaveView android:id="@id/voiceWaveView" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_90" />
+        <ImageView android:layout_gravity="center" android:id="@id/room_status" android:background="@drawable/voice_room_seate_circle" android:layout_width="@dimen/voice_room_avatar_large" android:layout_height="@dimen/voice_room_avatar_large" android:scaleType="center" app:srcCompat="@drawable/ic_voice_room_mic" />
+        <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center" android:id="@id/avatar_view" android:visibility="invisible" android:layout_width="@dimen/voice_room_avatar_large" android:layout_height="@dimen/voice_room_avatar_large" />
+        <ImageView android:layout_gravity="center" android:id="@id/pendant_view" android:visibility="invisible" android:layout_width="@dimen/voice_room_pendent_large" android:layout_height="@dimen/voice_room_pendent_large" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/closeMicroIV" android:visibility="gone" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" app:srcCompat="@drawable/ic_voice_room_seat_status_close_micro" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_smallest_nine" android:textColor="@color/white" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:singleLine="true" android:maxLength="8" android:fontFamily="@string/font_family_medium" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/coin_area" android:background="@drawable/bg_bcoin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:minHeight="14.0dip" android:paddingStart="2.0dip" android:paddingEnd="2.0dip">
+        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/pk_record_fb" />
+        <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:gravity="center" android:id="@id/coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="28.0dip" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

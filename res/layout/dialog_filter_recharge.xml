@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_filter_recharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_52" android:layout_marginEnd="@dimen/dp_52">
+        <ImageView android:layout_gravity="end" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/onevone_filter_close" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:src="@mipmap/f2f_gender_tips" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_text_level_1" android:gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="21.5dip" android:maxHeight="264.0dip" android:layout_marginStart="33.5dip" android:layout_marginEnd="33.5dip" />
+        <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_app_primary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/go_to_recharge" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/go_recharge" />
+    </LinearLayout>
+</FrameLayout>

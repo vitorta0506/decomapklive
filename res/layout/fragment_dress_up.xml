@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_ugc_divider" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/fragment_base_recycler_view" />
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/confirmUse" android:background="@drawable/bg_dress_up_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginBottom="@dimen/dp_20" android:text="@string/my_prize_use" android:layout_marginStart="@dimen/dp_42" android:layout_marginEnd="@dimen/dp_42" style="@style/sys_click_style" />
+</FrameLayout>

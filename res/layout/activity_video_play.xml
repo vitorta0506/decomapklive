@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mAcivityView" android:background="@color/dark_blak" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:background="@mipmap/top_cover_black_alpha_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/base_title" />
+</FrameLayout>

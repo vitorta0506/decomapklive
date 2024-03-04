@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="#fffafafa" android:paddingBottom="89.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_area" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_110" android:alpha="0.0">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:id="@id/user_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_16">
+            <com.guochao.faceshow.aaspring.modulars.live.game.luckynumber.pollnumber.DisTouchRecyclerView android:id="@id/character_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale" android:layout_marginStart="@dimen/dp_6" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_user_info_content" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/muser_center_name" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/Birthday" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/user_birthday" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/Gender" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:id="@id/user_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/place_of_residence" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/tv_place_now" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/occupation" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/user_occupation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/emotional_state" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/tv_emotional" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/friendship_intention" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/tv_friendship" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ff9497a2" android:layout_width="@dimen/dp_68" android:layout_height="wrap_content" android:text="@string/mastery_of_language" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/tv_language" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_fans_lay" android:background="@drawable/bg_top_fans_home" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="@dimen/dp_16" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+            <TextView android:textSize="@dimen/text_small" android:textColor="#ff020202" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Top_Fans" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/first_avatar" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" app:border_color="@color/white" app:border_width="@dimen/dp_1" />
+            <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/second_avatar" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginStart="@dimen/dp_8" app:border_color="@color/white" app:border_width="@dimen/dp_1" />
+            <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/third_avatar" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginStart="@dimen/dp_8" app:border_color="@color/white" app:border_width="@dimen/dp_1" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_activity_task_next" android:layout_marginStart="@dimen/dp_5" app:tint="@color/black_222222" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

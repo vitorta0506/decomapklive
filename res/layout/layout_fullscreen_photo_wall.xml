@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/full_screen_view" android:background="@color/dark_blak" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.aaspring.views.FullScreenScrollToExitViewV2 android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+        <ImageView android:id="@id/iv_close" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_close_live" />
+        <TextView android:textSize="@dimen/text_large_seventeen" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <HorizontalScrollView android:layout_gravity="bottom" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20">
+        <com.guochao.faceshow.userhomepage.PhotoWallIndicator android:id="@id/photo_wall_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</FrameLayout>

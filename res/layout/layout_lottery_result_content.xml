@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_3" android:layout_marginEnd="@dimen/dp_3">
+            <ImageView android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@mipmap/icon_signin_first" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/dark_blak" android:ellipsize="end" android:id="@id/rewardDiamond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_free_diamonds" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/dark_blak" android:id="@id/reward_diamond_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_3" android:layout_marginEnd="@dimen/dp_3">
+            <ImageView android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@mipmap/icon_signin_second" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/dark_blak" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lottery_new_avatar" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="#ff8624f4" android:id="@id/avatar_days" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_3" android:layout_marginEnd="@dimen/dp_3">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_signin_third" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/dark_blak" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_new_sign" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="#ff8624f4" android:id="@id/new_days" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8">
+            <ImageView android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@mipmap/icon_signin_forth" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/dark_blak" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_sign_speed" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="#ff8624f4" android:id="@id/speed_days" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_8">
+            <ImageView android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@mipmap/icon_signin_fifth" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/dark_blak" android:ellipsize="end" android:id="@id/exploreDays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_perday_result_fifth" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

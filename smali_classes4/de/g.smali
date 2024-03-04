@@ -1,0 +1,165 @@
+.class public final Lde/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Leg/c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Leg/c<",
+        "Lde/d<",
+        "Lcom/snapchat/kit/sdk/core/metrics/model/ServerEvent;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lfi/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lfi/a<",
+            "Lge/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final b:Lfi/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lfi/a<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final c:Lfi/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lfi/a<",
+            "Lde/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Lfi/a;Lfi/a;Lfi/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lfi/a<",
+            "Lge/b;",
+            ">;",
+            "Lfi/a<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lfi/a<",
+            "Lde/e;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lde/g;->a:Lfi/a;
+
+    .line 3
+    iput-object p2, p0, Lde/g;->b:Lfi/a;
+
+    .line 4
+    iput-object p3, p0, Lde/g;->c:Lfi/a;
+
+    return-void
+.end method
+
+.method public static a(Lfi/a;Lfi/a;Lfi/a;)Leg/c;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lfi/a<",
+            "Lge/b;",
+            ">;",
+            "Lfi/a<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lfi/a<",
+            "Lde/e;",
+            ">;)",
+            "Leg/c<",
+            "Lde/d<",
+            "Lcom/snapchat/kit/sdk/core/metrics/model/ServerEvent;",
+            ">;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lde/g;
+
+    invoke-direct {v0, p0, p1, p2}, Lde/g;-><init>(Lfi/a;Lfi/a;Lfi/a;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lde/g;->a:Lfi/a;
+
+    .line 2
+    invoke-interface {v0}, Lfi/a;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lge/b;
+
+    iget-object v1, p0, Lde/g;->b:Lfi/a;
+
+    invoke-interface {v1}, Lfi/a;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
+
+    iget-object v2, p0, Lde/g;->c:Lfi/a;
+
+    invoke-interface {v2}, Lfi/a;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lde/e;
+
+    .line 3
+    new-instance v3, Lde/d;
+
+    const/16 v4, 0xa
+
+    invoke-direct {v3, v0, v1, v2, v4}, Lde/d;-><init>(Lde/a;Ljava/util/concurrent/ScheduledExecutorService;Lde/e;I)V
+
+    .line 4
+    invoke-virtual {v3}, Lde/d;->c()V
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 5
+    invoke-static {v3, v0}, Leg/d;->b(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lde/d;
+
+    return-object v0
+.end method

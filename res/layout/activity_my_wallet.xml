@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:orientation="horizontal" android:id="@id/float_title_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStartWithNavigation="0.0dip" style="@style/FaceCastToolbar.FitSystemWindows">
+            <com.guochao.faceshow.aaspring.views.TabLayout android:gravity="bottom" android:id="@id/tablayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45" android:layout_marginStart="5.0dip" android:layout_marginEnd="15.0dip" app:indicatorDrawable="@color/transparent" app:mode="auto" app:selectedTextColor="@color/white" app:selectedTextSize="@dimen/text_size_17sp" app:textColor="@color/white" app:textSize="@dimen/text_size_15sp" app:textStyle="bold" app:textUnSelectStyle="normal" style="@style/TabLayout" />
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+</FrameLayout>

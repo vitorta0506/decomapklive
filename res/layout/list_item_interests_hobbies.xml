@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_normal_fifteen" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_title_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hobby_selected_label" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    <com.guochao.faceshow.aaspring.views.FlowLayout.NestedRecyclerView android:id="@id/des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginStart="@dimen/dp_11" android:layout_marginEnd="@dimen/dp_11" />
+    <View android:id="@id/view_line" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    <ImageView android:id="@id/ivAddTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_40" android:src="@mipmap/ugc_publish_add" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+</LinearLayout>

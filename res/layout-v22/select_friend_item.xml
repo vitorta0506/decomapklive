@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="74.0dip" android:paddingStart="16.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.NewCircleImageView android:id="@id/avatar_view" android:layout_width="@dimen/conversation_avatar_size" android:layout_height="@dimen/conversation_avatar_size" android:src="@mipmap/default_head" app:showStyle="showUgc" />
+            <com.guochao.faceshow.aaspring.views.NewCircleImageView android:layout_gravity="end|bottom|center" android:id="@id/flag" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@mipmap/ic_earth" android:forceHasOverlappingRendering="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/avatar_view" app:stroke_color="@color/white" app:stroke_width="1.0dip" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/online_state" android:visibility="gone" style="@style/OnlineStatus" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_small" android:ellipsize="end" android:gravity="start" android:id="@id/user_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_200" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@string/font_fontFamily_medium" android:textDirection="locale" android:layout_marginStart="12.0dip" style="@style/TextView.UserName" />
+        <ImageView android:id="@id/check_status" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:scaleType="centerInside" app:srcCompat="@mipmap/select_friend_normal_gray" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#ffebf0f5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="72.25dip" />
+</FrameLayout>

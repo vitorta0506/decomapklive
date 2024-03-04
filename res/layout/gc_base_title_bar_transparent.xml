@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:id="@id/status_bar_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/gc_tool_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="?BackButtonResId" app:titleCentered="true" app:titleTextAppearance="@style/GCTitle" style="@style/FaceCastToolbar" />
+</LinearLayout>

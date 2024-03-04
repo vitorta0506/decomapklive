@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">mp5.facecast.xyz </domain>
+        <domain includeSubdomains="true">gchao.com </domain>
+        <domain includeSubdomains="false">107.167.38.51 </domain>
+        <domain includeSubdomains="false">one.facecast.xyz </domain>
+        <domain includeSubdomains="false">mp4.facecast.xyz </domain>
+        <domain includeSubdomains="false">live.facecast.xyz </domain>
+        <domain includeSubdomains="false">live.facecast.live </domain>
+        <domain includeSubdomains="false">testlive.gchao.com</domain>
+    </domain-config>
+</network-security-config>

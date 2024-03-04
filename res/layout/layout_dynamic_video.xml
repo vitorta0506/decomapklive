@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bgFL" android:background="@color/color_text_level_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bgIV" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/video_content" android:layout_width="@dimen/ugc_dynamic_video_width" android:layout_height="@dimen/ugc_dynamic_video_height" android:transitionName="video" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+        <ImageView android:id="@id/place_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/icon_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_video" />
+    </FrameLayout>
+</FrameLayout>

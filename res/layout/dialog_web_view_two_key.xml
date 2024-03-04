@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/web_dialog_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/web_dialog_content" android:layout_width="fill_parent" android:layout_height="500.0dip" android:layout_centerInParent="true">
+        <View android:id="@id/web_dialog_top_bg" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <FrameLayout android:orientation="vertical" android:id="@id/web_dialog_web_view_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/web_dialog_btn_ly" android:layout_below="@id/web_dialog_top_bg" />
+        <View android:id="@id/web_dialog_bottom_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center" android:id="@id/web_dialog_btn_ly" android:background="@color/colorTextWhite" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/web_dialog_bottom_bg">
+            <TextView android:textSize="13.0sp" android:textColor="@color/colorTextWhite" android:gravity="center" android:id="@id/web_dialog_cancel_btn" android:background="@drawable/zz_shape_rect_radius_gray_small" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:src="@mipmap/small_cancel_icon" android:text="@string/str_no" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/colorTextWhite" android:gravity="center" android:id="@id/web_dialog_confirm_btn" android:background="@drawable/zz_shape_rect_radius_blue_small" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:src="@mipmap/small_cancel_icon" android:text="@string/ok" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

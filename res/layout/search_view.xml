@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_view_id" android:background="@drawable/bg_search_view" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:layout_margin="@dimen/dp_15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_grabble" android:layout_marginStart="8.0dip" />
+    <EditText android:textSize="@dimen/sub_content" android:textColor="@color/color_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="center" android:id="@id/et_search" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/Search_for" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <requestFocus />
+    </EditText>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/delete_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_im_delete_eidt" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+</LinearLayout>

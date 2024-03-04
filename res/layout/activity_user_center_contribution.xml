@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@mipmap/icon_fanrank_bg" android:layout_width="fill_parent" android:layout_height="127.0dip" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:navigationIcon="@drawable/icon_back_white">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textSize="@dimen/text_large" android:textColor="@color/white" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@id/refreshLayout" android:background="@drawable/top_round_white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_20" android:layout_below="@id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyclerView" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</RelativeLayout>

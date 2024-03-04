@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/line_parent" android:background="@drawable/zz_shape_rect_small_radius_pop_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_popwindow_title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+        <com.guochao.faceshow.views.JudgeEditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="#ffd4d5d8" android:gravity="start|center" android:id="@id/edit_tv" android:background="@drawable/bg_edit_text_set_info" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/dp_45" android:hint="@string/input_stature" android:maxLength="3" android:layout_weight="1.0" android:inputType="numberDecimal" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rgSexGroup" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="5.0dip" android:paddingEnd="@dimen/dp_5">
+            <RadioButton android:textSize="@dimen/text_normal" android:textColor="@color/selector_sex_radion_text" android:id="@id/rbMan" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="CM" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+            <RadioButton android:textSize="@dimen/text_normal" android:textColor="@color/selector_sex_radion_text" android:id="@id/rbWoman" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="FT" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" android:layout_marginStart="@dimen/dp_15" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_normal_fifteen" android:gravity="center" android:id="@id/save" android:layout_width="fill_parent" android:text="@string/save" style="@style/Button.Common.Pop" />
+</LinearLayout>

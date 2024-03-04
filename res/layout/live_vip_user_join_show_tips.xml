@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/ll_user" android:background="@drawable/bitmap_live_vvip_rc_bj" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center_vertical" android:id="@id/head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginStart="@dimen/dp_4" app:headPortraitBorderColor="@color/white" app:headPortraitBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_56" app:showStyle="showLiveWatcher" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_6">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_join_user" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_10">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rcv_join_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/mvpIV" android:visibility="gone" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_18" android:src="@mipmap/icon_mvp_level1" />
+                <com.guochao.faceshow.aaspring.views.VipIndicatorView android:layout_gravity="center_vertical" android:id="@id/vip_indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/live_vip_join" android:id="@id/tv_join" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/vip_mall_coming" android:singleLine="true" android:layout_marginEnd="@dimen/dp_10" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="bottom|center" android:id="@id/entrance_car" android:layout_width="wrap_content" android:layout_height="wrap_content" app:clearsAfterStop="true" app:loopCount="1" />
+</FrameLayout>

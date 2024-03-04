@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@mipmap/bg_poll_num_out" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/bg_poll_num_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dp_5">
+        <LinearLayout android:orientation="horizontal" android:background="@mipmap/bg_poll_num_in" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+            <com.guochao.faceshow.aaspring.modulars.live.game.luckynumber.pollnumber.DisTouchRecyclerView android:id="@id/first_item_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.guochao.faceshow.aaspring.modulars.live.game.luckynumber.pollnumber.DisTouchRecyclerView android:id="@id/second_item_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.guochao.faceshow.aaspring.modulars.live.game.luckynumber.pollnumber.DisTouchRecyclerView android:id="@id/third_item_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

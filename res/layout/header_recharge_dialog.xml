@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_recharge_header" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/first_recharge_gift_tip_bottom" android:drawablePadding="@dimen/dp_7" app:drawableStartCompat="@mipmap/icon_header_recharge_dialog" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" />
+</LinearLayout>

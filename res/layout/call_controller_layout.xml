@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/call_controller_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/trtc_appointment_share" />
+    <ImageView android:id="@id/trtc_mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:src="@drawable/trtc_appointment_mic_selector" />
+    <ImageView android:id="@id/trtc_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:src="@drawable/trtc_appointment_voice_selector" />
+    <ImageView android:id="@id/trtc_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:src="@mipmap/trtc_appointment_switch_camera" />
+    <ImageView android:id="@id/trtc_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:src="@mipmap/trtc_appointment_report" />
+</LinearLayout>

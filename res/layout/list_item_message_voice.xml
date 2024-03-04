@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="94.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/voice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="end|center" android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60''" android:singleLine="true" android:includeFontPadding="false" android:paddingEnd="8.0dip" />
+        <ImageView android:id="@id/message_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_im_yuyin_send" />
+    </LinearLayout>
+</FrameLayout>

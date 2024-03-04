@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:background="@color/lightStatusBarColor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+        <ImageView android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_little_back" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_area" android:layout_width="0.0dip" android:layout_height="@dimen/dp_32" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_search" android:layout_marginStart="12.0dip" />
+            <EditText android:textSize="@dimen/sub_content" android:textColor="@color/color_text_level_1" android:gravity="start|center" android:layout_gravity="center" android:id="@id/et_search" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/Search_for" android:singleLine="true" android:maxLength="30" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/dp_10" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/delete_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_im_delete_eidt" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+        </LinearLayout>
+        <ImageView android:id="@id/scan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_scan" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_10" />
+    </LinearLayout>
+    <View android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" app:indicatorBottomGap="0.0dip" app:indicatorColor="@color/transparent" app:indicatorDrawable="@drawable/indicator" app:mode="wrap_content" app:selectedTextSize="@dimen/text_large" app:tabSelectedTextColor="@color/color_ugc_text_level_1" app:tabTextColor="@color/color_ugc_text_level_2" app:textColor="@color/color_ugc_text_level_2" app:textSize="@dimen/text_small" app:textStyle="bold" />
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

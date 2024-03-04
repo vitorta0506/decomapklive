@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_layout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/gc_base_title_bar" />
+    <TextView android:textSize="@dimen/text_size_17sp" android:textStyle="bold" android:textColor="@color/color_ugc_app_primary_tint" android:gravity="center_vertical" android:id="@id/add_group" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/friend_group_new_group" app:layout_constraintBottom_toBottomOf="@id/add_img" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/add_img" app:layout_constraintTop_toTopOf="@id/add_img" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/add_img" />
+    <ImageView android:id="@id/add_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginStart="@dimen/dp_10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_layout" app:srcCompat="@drawable/ic_group_button_tj" />
+</androidx.constraintlayout.widget.ConstraintLayout>

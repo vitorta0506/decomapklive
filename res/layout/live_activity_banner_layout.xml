@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_activity" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/zxmr_a_icon" android:scaleType="fitCenter" />
+    <com.guochao.faceshow.views.ObservableHorizontalScrollView android:layout_gravity="bottom" android:id="@id/live_scroll_layout" android:visibility="gone" android:scrollbars="none" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_14" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5">
+        <TextView android:textSize="8.0sp" android:textColor="@color/colorTextWhite" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/live_top_rank_tips" android:layout_width="wrap_content" android:layout_height="@dimen/dp_14" android:text="No.100+" android:scrollHorizontally="true" android:singleLine="true" android:drawablePadding="1.5dip" android:textDirection="locale" android:layoutDirection="locale" />
+    </com.guochao.faceshow.views.ObservableHorizontalScrollView>
+</FrameLayout>

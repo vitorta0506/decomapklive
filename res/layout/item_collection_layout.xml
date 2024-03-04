@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_10" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/conversation_avatar_size" app:showStyle="showUgc" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/user_name_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/avatar_view" android:layout_marginEnd="@dimen/dp_16" android:layout_toStartOf="@id/icon_video_lay" android:layout_toEndOf="@id/avatar_view">
+        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:id="@id/user_name" style="@style/TextView.UserName" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_text_level_1" android:ellipsize="end" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/user_name_lay" android:lineSpacingExtra="@dimen/dp_2" android:layout_marginEnd="@dimen/dp_16" android:layout_toStartOf="@id/icon_video_lay" android:layout_toEndOf="@id/avatar_view" />
+    <FrameLayout android:id="@id/icon_video_lay" android:layout_width="@dimen/dp_51" android:layout_height="@dimen/dp_51" android:layout_marginTop="@dimen/dp_4" android:layout_alignTop="@id/avatar_view" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/icon_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:textSize="@dimen/text_smaller" android:layout_gravity="center" android:id="@id/bg_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_im_video" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_text_level_2" android:id="@id/time_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:layout_below="@id/content" android:layout_toEndOf="@id/avatar_view" />
+    <View android:id="@id/user_divider" android:background="@color/color_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/dp_15" android:layout_below="@id/time_history" />
+</RelativeLayout>

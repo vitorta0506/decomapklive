@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:layout_gravity="center" android:background="@drawable/shape_live_dialog_bg_common_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dialog_horizontal_margin" app:ratio="1.1">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_link_mic_apply_list_title" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_zb_report_close" android:layout_marginEnd="@dimen/dp_10" />
+            </FrameLayout>
+            <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <include android:layout_gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_empty_view" />
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </FrameLayout>
+            <View android:id="@id/bottom_line" android:background="#fff3f3f3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/live_btn" android:background="@drawable/btn_login_blue_light_20" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="21.0dip" android:minHeight="44.0dip" android:layout_marginStart="45.0dip" android:layout_marginEnd="45.0dip">
+                <TextView android:textSize="@dimen/text_size_15sp" android:textColor="@drawable/selector_btn_white" android:gravity="center" android:layout_gravity="center" android:id="@id/live_get_mic_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_apply_linkmic" />
+                <ImageView android:layout_gravity="center" android:id="@id/anim_live_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_loading_apply" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.guochao.faceshow.aaspring.views.RatioFrameLayout>
+</FrameLayout>

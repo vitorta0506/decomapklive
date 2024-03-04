@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_info_card_homeowner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_200"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black_222222" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip" android:text="@string/more" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recentRV" android:background="@drawable/bg_info_card_homeowner_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="4" />
+</LinearLayout>

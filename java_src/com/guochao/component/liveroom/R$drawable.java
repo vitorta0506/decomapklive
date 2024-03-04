@@ -1,0 +1,73 @@
+package com.guochao.component.liveroom;
+/* loaded from: classes3.dex */
+public final class R$drawable {
+    public static final int bg_bcoin = 2131230833;
+    public static final int bg_dialog = 2131230862;
+    public static final int bg_dialog_center_white = 2131230863;
+    public static final int bg_info_card_homeowner = 2131230916;
+    public static final int bg_info_card_homeowner_white = 2131230917;
+    public static final int bg_live_room_people_info_card_fans = 2131230956;
+    public static final int bg_live_room_people_info_card_id = 2131230957;
+    public static final int bg_live_room_people_info_card_id_voice = 2131230958;
+    public static final int bg_live_room_people_info_id = 2131230959;
+    public static final int bg_member_fee_edittext = 2131230972;
+    public static final int bg_shape_mine = 2131231020;
+    public static final int bg_shape_theme = 2131231022;
+    public static final int bg_shape_theme_or_white = 2131231023;
+    public static final int bg_shape_voice_room_lock = 2131231024;
+    public static final int bg_shape_white = 2131231025;
+    public static final int bg_tag_voice_setting = 2131231033;
+    public static final int bg_text_invitation = 2131231036;
+    public static final int ic_live_room_people_info_at = 2131231405;
+    public static final int ic_live_room_people_info_card_host = 2131231406;
+    public static final int ic_live_room_people_info_report = 2131231407;
+    public static final int ic_voice_room_audio_effect = 2131231437;
+    public static final int ic_voice_room_bg_expand = 2131231438;
+    public static final int ic_voice_room_big_info_card_right_arrow = 2131231439;
+    public static final int ic_voice_room_big_info_card_tips = 2131231440;
+    public static final int ic_voice_room_checked = 2131231443;
+    public static final int ic_voice_room_checked_selector = 2131231444;
+    public static final int ic_voice_room_cover_camera = 2131231446;
+    public static final int ic_voice_room_do_admin = 2131231447;
+    public static final int ic_voice_room_enter_fee = 2131231449;
+    public static final int ic_voice_room_invite_item_bg = 2131231453;
+    public static final int ic_voice_room_invite_lock = 2131231454;
+    public static final int ic_voice_room_list_default_cover = 2131231456;
+    public static final int ic_voice_room_manager = 2131231457;
+    public static final int ic_voice_room_member_count = 2131231458;
+    public static final int ic_voice_room_member_fee_close = 2131231459;
+    public static final int ic_voice_room_member_location = 2131231460;
+    public static final int ic_voice_room_member_menu = 2131231461;
+    public static final int ic_voice_room_mic = 2131231463;
+    public static final int ic_voice_room_mic_mode = 2131231464;
+    public static final int ic_voice_room_minisize_close = 2131231465;
+    public static final int ic_voice_room_more_locked = 2131231467;
+    public static final int ic_voice_room_more_select_private_mode = 2131231468;
+    public static final int ic_voice_room_my_room_close = 2131231472;
+    public static final int ic_voice_room_operation_confirm = 2131231473;
+    public static final int ic_voice_room_private_mode = 2131231476;
+    public static final int ic_voice_room_remove_member = 2131231477;
+    public static final int ic_voice_room_save_failed = 2131231478;
+    public static final int ic_voice_room_seat_status_close_micro = 2131231479;
+    public static final int ic_voice_room_selected = 2131231480;
+    public static final int ic_voice_room_setting_close = 2131231481;
+    public static final int ic_voice_room_settings = 2131231482;
+    public static final int ic_voice_room_shape_more_extra = 2131231483;
+    public static final int ic_voice_room_un_admin = 2131231487;
+    public static final int ic_voice_room_unchecked = 2131231488;
+    public static final int ic_voice_room_visitor_mic = 2131231489;
+    public static final int ic_voice_room_visitor_role_admin = 2131231490;
+    public static final int ic_voice_room_visitor_role_member = 2131231491;
+    public static final int ic_voice_room_visitor_role_owner = 2131231492;
+    public static final int shape_voice_info_bg = 2131231876;
+    public static final int shape_voice_member_bottom_menu_bg = 2131231877;
+    public static final int voice_room_bg_my_rooms = 2131232051;
+    public static final int voice_room_mini_mask = 2131232054;
+    public static final int voice_room_seate_circle = 2131232055;
+    public static final int voice_room_setting_half_white = 2131232056;
+    public static final int voice_room_shape_tag_bg = 2131232057;
+    public static final int voice_room_tag_bg_in_list = 2131232058;
+
+    private R$drawable() {
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_title" />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.scwang.smartrefresh.header.MaterialHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:paddingBottom="105.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+    <TextView android:layout_gravity="bottom" android:id="@id/comment" android:visibility="gone" android:layout_marginBottom="30.0dip" android:text="@string/feedback_comment" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" style="@style/Button.Common.FullWidth" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="bottom" android:id="@id/reply" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/reply" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" app:backgroundTint="@color/white" app:cornerRadius="22.5dip" app:icon="@mipmap/icon_btn_pattern_part" app:iconGravity="textStart" app:iconTint="@null" />
+</merge>

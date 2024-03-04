@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:background="@drawable/bg_signin_white_shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/icon_grow_reward_top" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="1.0dip" android:src="@mipmap/icon_grow_reward_top" />
+                <TextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:id="@id/iv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_22" android:text="@string/signin_grow_gift_bag" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/reward_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_60" />
+                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/start_signin" android:background="@drawable/bg_signin_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minHeight="@dimen/dp_50" android:text="@string/signin_goto_do_task" android:layout_marginStart="@dimen/dp_42" android:layout_marginEnd="@dimen/dp_42" />
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:src="@mipmap/icon_close_signin_dialog" />
+    </LinearLayout>
+</FrameLayout>

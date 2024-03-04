@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/large_video" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:background="@drawable/mask_live_bottom" android:layout_width="fill_parent" android:layout_height="320.0dip" />
+</FrameLayout>

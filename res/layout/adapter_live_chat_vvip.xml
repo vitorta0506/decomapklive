@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.ChatBgView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/chat_content" style="@style/TextView.LiveChatContent" />
+        <View android:id="@id/line" android:background="@drawable/shape_line_dotte" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_3" android:layout_below="@id/chat_content" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5" android:layout_alignStart="@id/chat_content" android:layout_alignEnd="@id/chat_content" />
+        <TextView android:id="@id/translate_content" android:visibility="gone" android:layout_marginTop="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_3" android:text="" android:layout_below="@id/line" android:paddingStart="5.0dip" android:paddingEnd="10.0dip" android:layout_alignParentStart="true" style="@style/TextView.LiveChatContent" />
+    </RelativeLayout>
+</com.guochao.faceshow.aaspring.views.ChatBgView>

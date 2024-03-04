@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ic_mvp_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_17" android:layout_marginStart="@dimen/dp_12">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/nextMVPTipsTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mvp_next_month_tips" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/nextMVPTV" android:background="@drawable/bg_text_mvp_half_circle" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/mvp_progress_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_mvp_info_view_bottom" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_14">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/rechargeMoneyTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/rechargeTV" android:background="@drawable/bg_mvp_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charge" android:layout_marginStart="@dimen/dp_10" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

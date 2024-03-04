@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp_6" android:paddingBottom="@dimen/dp_6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center_vertical" android:id="@id/user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_44" app:showStyle="showUgc" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_4">
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/user_name" android:paddingTop="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_user_center_sex_level" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/user_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check_box_live_invite" android:layout_marginEnd="@dimen/dp_16" />
+</LinearLayout>

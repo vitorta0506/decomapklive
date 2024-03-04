@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@mipmap/ic_b_rank_top_bg" android:scaleType="fitXY" app:layout_constraintDimensionRatio="1124:406" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/float_title_back" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/backIV" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@mipmap/icon_ugc_back_white" android:layout_marginStart="@dimen/dp_14" />
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/transparent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/FaceCastToolbar.FitSystemWindows">
+            <TextView android:id="@android:id/title" android:visibility="gone" style="@style/TextView.ActivityTitle" />
+        </androidx.appcompat.widget.Toolbar>
+        <com.guochao.faceshow.aaspring.views.TabLayout android:layout_gravity="center_vertical" android:id="@id/tablayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="15.0dip" app:indicatorColor="@color/transparent" app:indicatorDrawable="@drawable/indicator_white" app:mode="auto" app:selectedTextColor="@color/white" app:selectedTextSize="@dimen/text_large" app:textColor="@color/gray" app:textSize="@dimen/text_small" style="@style/TabLayout" />
+        <ImageView android:id="@id/title_help" android:layout_width="@dimen/dp_51" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+    </LinearLayout>
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/float_title_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

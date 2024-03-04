@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_16">
+        <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/first_item" android:background="@drawable/bg_bottom_dialog_white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+        <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/second_item" android:background="@drawable/bg_bottom_dialog_white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_4" />
+        <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_app_primary" android:gravity="center" android:layout_gravity="center" android:id="@id/cancel" android:background="@drawable/bg_bottom_dialog_white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_8" android:text="@string/str_no" />
+    </LinearLayout>
+</FrameLayout>

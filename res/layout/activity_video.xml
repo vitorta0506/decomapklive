@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tablayout" android:layout_width="fill_parent" android:layout_height="@dimen/tab_hight" android:layout_marginStart="@dimen/dp_8" app:indicatorColor="@color/transparent" app:indicatorHeight="0.0dip" app:mode="wrap_content" app:selectedTextColor="@color/colorPrimary" app:selectedTextSize="@dimen/text_small" app:tabMargin="@dimen/dp_8" app:tabPaddingBottomGravity="@dimen/dp_9" app:tabPaddingEndGravity="@dimen/dp_14" app:tabPaddingStartGravity="@dimen/dp_14" app:tabPaddingTopGravity="@dimen/dp_9" app:tabSelectDrawable="@drawable/selecter_tab_select" app:tabunSelectDrawable="@drawable/selecter_tab_unselect" app:textColor="@color/color_ugc_text_level_1" app:textSize="@dimen/text_small" style="@style/TabLayout" />
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

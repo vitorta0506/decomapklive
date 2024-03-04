@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/line_parent" android:background="@drawable/zz_shape_rect_small_radius_pop_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_popwindow_title" />
+    <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/text_normal" android:gravity="start" android:id="@id/edit_tv" android:background="@drawable/bg_edit_text_set_info" android:padding="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:maxHeight="@dimen/dp_305" android:hint="@string/input_introduce" android:maxLines="6" android:minLines="5" android:maxLength="200" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="end" android:id="@id/numberChange" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="0/200" android:layout_marginEnd="@dimen/dp_16" />
+    <TextView android:textSize="@dimen/text_normal_fifteen" android:gravity="center" android:id="@id/save" android:text="@string/save" style="@style/Button.Common.Pop" />
+</LinearLayout>

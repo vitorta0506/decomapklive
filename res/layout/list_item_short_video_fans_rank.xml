@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+            <ImageView android:id="@id/iv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/head_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="32.0dip" app:headPortraitSize="@dimen/dp_48" app:showStyle="showUgc" />
+        <TextView android:textSize="@dimen/text_small" android:id="@id/user_name" android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" style="@style/TextView.UserName" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fans_rank_zuanshi" />
+        <TextView android:textStyle="bold" android:textColor="@color/color_text_special_1" android:gravity="start" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <include layout="@layout/divider_origental" />
+</FrameLayout>

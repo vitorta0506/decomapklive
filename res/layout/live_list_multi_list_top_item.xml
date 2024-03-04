@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="0.3064">
+        <com.guochao.faceshow.aaspring.views.ParallaxImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:background="@mipmap/index_live_cover_top" android:layout_width="fill_parent" android:layout_height="72.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_small" android:textColor="#fffafcff" android:id="@id/tvInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:maxLines="2" android:lineSpacingExtra="2.0dip" />
+            <LinearLayout android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6">
+                <com.guochao.faceshow.aaspring.views.AvatarGroupView android:id="@id/avatar_group_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:avatarMargin="6.0dip" app:avatarSize="20.0dip" app:defaultAvatarBorderWidth="1.0dip" app:femaleAvatarBorderColor="@color/white" app:iconMode="liveList" app:maleAvatarBorderColor="@color/white" app:sexIconSize="icon01" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/jiahao" android:layout_marginStart="6.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_live_place_page" />
+                <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:ellipsize="end" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom" android:id="@id/img_gif" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="center" android:id="@id/tvOnlineCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.guochao.faceshow.aaspring.views.RatioFrameLayout>
+</androidx.cardview.widget.CardView>

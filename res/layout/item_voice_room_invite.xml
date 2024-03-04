@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dp_18"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_voice_room_invite_item_bg" />
+        <ImageView android:id="@id/headerIV" android:layout_width="@dimen/dp_52" android:layout_height="@dimen/dp_52" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/lockIV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_voice_room_invite_lock" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/black_222222" android:ellipsize="end" android:gravity="center" android:id="@id/nameTV" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:lines="1" />
+</LinearLayout>

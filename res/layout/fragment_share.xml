@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_pendant_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/share" android:layout_centerInParent="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_zb_report_close" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/login_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_30">
+            <LinearLayout android:id="@id/copy_link" style="@style/ShareContentLayout">
+                <ImageView android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/icon_share_copy_bg" />
+                <TextView android:text="@string/copy_link" style="@style/TextView.Share" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/save_btn" style="@style/ShareContentLayout">
+                <ImageView android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/icon_share_download_bg" />
+                <TextView android:text="@string/Download" style="@style/TextView.Share" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/report" style="@style/ShareContentLayout">
+                <ImageView android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/icon_share_report_bg" />
+                <TextView android:text="@string/report" style="@style/TextView.Share" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/no_interest" android:visibility="gone" style="@style/ShareContentLayout">
+                <ImageView android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/icon_no_interest" />
+                <TextView android:text="@string/no_interest" style="@style/TextView.Share" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/delete_video" android:visibility="gone" style="@style/ShareContentLayout">
+                <ImageView android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/icon_share_delete_bg" />
+                <TextView android:text="@string/delete" style="@style/TextView.Share" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/color_text_level_1" android:gravity="center" android:id="@id/cancel" android:background="@drawable/list_item_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="40.0dip" android:text="@string/str_no" />
+    </LinearLayout>
+</LinearLayout>

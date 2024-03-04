@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:id="@id/im_title_bar" android:background="?TitleBarBackground" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:visibility="invisible" style="@style/FaceCastToolbar.FitSystemWindows">
+        <TextView android:id="@android:id/title" style="@style/TextView.ActivityTitle" />
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView android:layout_gravity="start|center" android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_left_back" android:layout_marginStart="@dimen/dp_6" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textSize="@dimen/text_normal" android:textColor="?ActivityTitleColor" android:ellipsize="end" android:gravity="center" android:id="@id/float_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_marginStart="@dimen/dp_60" android:layout_marginEnd="@dimen/dp_60" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/iv_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_im_video_icon" android:layout_marginEnd="@dimen/dp_54" />
+    <FrameLayout android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end|center" android:id="@id/iv_focus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_chat_focus" android:layout_marginEnd="@dimen/dp_54" />
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:layout_gravity="end|center" android:id="@id/focusSVGA" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/dp_54" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="end|center" android:id="@id/iv_more" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_im_more_new" />
+</FrameLayout>

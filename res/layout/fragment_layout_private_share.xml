@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_pendant_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/login_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+        <LinearLayout android:id="@id/save_btn" style="@style/ShareContentLayout">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share_download_bg" />
+            <TextView android:text="@string/Download" style="@style/TextView.Share" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/delete_video" style="@style/ShareContentLayout">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share_delete_bg" />
+            <TextView android:text="@string/delete" style="@style/TextView.Share" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/up_to_public" style="@style/ShareContentLayout">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share_privacy_bg" />
+            <TextView android:text="@string/is_public" style="@style/TextView.Share" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/color_text_level_1" android:gravity="center" android:id="@id/cancel" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:text="@string/str_no" />
+</LinearLayout>

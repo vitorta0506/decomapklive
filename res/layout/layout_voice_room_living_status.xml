@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/voiceLiving" android:background="@drawable/voice_room_live_status_bg" android:padding="@dimen/dp_3" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/voice_room_living_status" android:layout_width="@dimen/dp_10" android:layout_height="8.0dip" android:src="@drawable/living_status" />
+    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/color_living" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="In room" android:layout_marginStart="4.0dip" />
+</LinearLayout>

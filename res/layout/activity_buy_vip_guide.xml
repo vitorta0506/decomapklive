@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:id="@id/bg_title_lay" android:background="@mipmap/vip_bj" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="1.3787" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/base_title" />
+        <com.guochao.faceshow.aaspring.views.VipSwitcherView android:layout_gravity="center_horizontal" android:id="@id/vip_swicher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" app:containerMode="activity" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/buy_vip_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

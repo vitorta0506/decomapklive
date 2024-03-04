@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <ScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+            <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/colorTextG3" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/method_1" android:layout_marginStart="@dimen/dp_5" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/live_advert" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90" android:src="@mipmap/invilate_ads" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ads_ll" android:background="@drawable/zz_shape_rect_radius_ads_yellow" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_centerVertical="true" android:layoutDirection="ltr" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true">
+                    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@mipmap/ads_play" android:layout_marginStart="@dimen/dp_8" />
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:id="@id/ads_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_marginStart="4.0dip" android:layout_marginEnd="8.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/colorTextG3" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/method_2" android:layout_marginStart="@dimen/dp_5" />
+            <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

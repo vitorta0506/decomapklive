@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="#ffeeeeee" android:paddingBottom="0.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="8.0dip" android:paddingStart="@dimen/dp_7" android:paddingEnd="@dimen/dp_14">
+                <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:flagSize="16.0dip" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/avatar_size_dynamic_list" app:showStyle="showUgc" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/text_color_title" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextView.UserName.Bold" />
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/is_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip">
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shape_dot_ugc_friends" android:layout_marginEnd="4.0dip" />
+                                    <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friends_text" />
+                                </LinearLayout>
+                                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7.0dip" layout="@layout/layout_ugc_live_status" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <include android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" layout="@layout/layout_user_center_sex_level" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/icon_focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_dynamic_focuson" />
+                        <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/focusSVGA" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="24.0dip" android:src="@mipmap/ugc_hi" android:scaleType="fitCenter" />
+                    </FrameLayout>
+                    <ImageView android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_more_gray" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.guochao.faceshow.aaspring.views.ExpandableTextView android:id="@id/expand_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <com.guochao.faceshow.aaspring.views.TopicAndAtTextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_4" android:textAlignment="viewStart" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_app_primary" android:id="@id/expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/ugc_expand" />
+            </com.guochao.faceshow.aaspring.views.ExpandableTextView>
+            <include layout="@layout/layout_translate_dynamic" />
+            <FrameLayout android:id="@id/media_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/address_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <ImageView android:id="@id/address_icon" android:layout_width="@dimen/dp_12" android:layout_height="12.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ic_dy_addr" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="#ff9497a2" android:gravity="start" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/time_addr_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/icon_publish_fail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_failure" android:layout_marginEnd="7.0dip" />
+                <TextView android:textSize="@dimen/text_size_13sp" android:textColor="@color/color_ugc_text_level_2" android:ellipsize="middle" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:singleLine="true" />
+                <ImageView android:id="@id/icon_private_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_private" android:layout_marginStart="6.0dip" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/like_user_list_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="@dimen/dp_12" />
+            <LinearLayout android:id="@id/btn_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/like_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="@dimen/dp_1">
+                        <ImageView android:id="@id/like_image_view_bg" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@mipmap/icon_ugc_like_gray" android:scaleType="centerInside" />
+                        <com.opensource.svgaplayer.SVGAImageView android:id="@id/like_image_view" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@mipmap/icon_ugc_like_red" android:scaleType="fitCenter" />
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_3" android:id="@id/like_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_22" android:layout_marginStart="@dimen/dp_4" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/comment_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_12">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_comments" android:scaleType="centerInside" android:translationX="@dimen/dp_1" />
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/ugc_text_selector" android:id="@id/comment_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_22" android:layout_marginStart="@dimen/dp_4" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/like_tips" android:background="@drawable/ugc_list_qipao" android:paddingTop="14.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:text="@string/user_guide_ugc_like" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:backgroundTint="@color/color_ugc_app_primary" />
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/mask" android:background="@mipmap/lucky_number_item_pink" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="center|top" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/lucky_number_seat_width" android:layout_height="@dimen/lucky_number_seat_height" android:layout_marginTop="4.0dip">
+        <com.guochao.faceshow.aaspring.views.LuckyNumberItemProgressView android:orientation="vertical" android:id="@id/info_area" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.guochao.faceshow.aaspring.views.SquareFrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0dip">
+                <com.guochao.faceshow.aaspring.views.BorderImageView android:id="@id/avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:orientation="horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-4.0dip" android:elevation="1.0dip">
+                    <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/flag" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@mipmap/ic_earth" android:layout_marginEnd="1.0dip" app:border_color="@color/white" app:border_width="1.0dip" />
+                    <ImageView android:id="@id/gender" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginStart="1.0dip" />
+                </LinearLayout>
+            </com.guochao.faceshow.aaspring.views.SquareFrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </com.guochao.faceshow.aaspring.views.LuckyNumberItemProgressView>
+        <ImageView android:id="@id/card_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/lucky_number_card_bg" />
+    </FrameLayout>
+</FrameLayout>

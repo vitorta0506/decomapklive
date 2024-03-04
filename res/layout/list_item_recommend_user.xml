@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_30" app:showStyle="showUgc" />
+        <ImageView android:layout_gravity="end|center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@mipmap/online_yd" android:layout_marginEnd="6.0dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_small_eleven" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="60.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <ImageView android:id="@id/gender" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/online_woman" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:button="@null" android:src="@drawable/bg_online_select_state" />
+</LinearLayout>

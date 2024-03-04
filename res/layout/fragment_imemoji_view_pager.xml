@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+            <com.rd.PageIndicatorView android:layout_gravity="center" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:piv_count="0" app:piv_padding="6.0dip" app:piv_radius="4.0dip" app:piv_selectedColor="@color/color_app_primary" app:piv_unselectedColor="@color/color_text_level_3" />
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="center_vertical" android:id="@id/view_stub" android:layout="@layout/layout_swipe_to_see_more" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

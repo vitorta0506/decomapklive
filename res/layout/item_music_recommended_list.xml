@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_recommended_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_bg" android:background="@color/color_ugc_divider_dialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_8" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bgRL" android:layout_width="fill_parent" android:layout_height="@dimen/dp_52" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_16">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_remen" android:layout_marginStart="@dimen/dp_10" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/tv_item__name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:textAlignment="viewStart" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_10" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/tv_item_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:id="@id/view_line" android:background="@color/color_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dp_16" />
+</LinearLayout>

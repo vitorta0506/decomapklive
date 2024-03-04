@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.views.PercentHeightFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.youth.banner.Banner android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:banner_default_image="@mipmap/default_banner" />
+        <com.rd.PageIndicatorView android:layout_gravity="bottom" android:id="@id/pageIndicatorView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:piv_animationType="worm" app:piv_dynamicCount="true" app:piv_interactiveAnimation="true" app:piv_padding="3.0dip" app:piv_radius="2.0dip" app:piv_selectedColor="@color/white" app:piv_unselectedColor="@color/white" />
+    </com.guochao.faceshow.views.PercentHeightFrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rank_area" android:background="@drawable/bitmap_live_banner_head_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_banner_rink" android:layout_marginStart="6.5dip" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ranking_List" android:layout_weight="1.0" android:layout_marginStart="4.5dip" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.guochao.faceshow.aaspring.views.AvatarGroupView android:layout_gravity="center_vertical" android:id="@id/avatar_group_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" app:avatarSize="27.0dip" app:defaultAvatarBorderColor="@color/white" app:defaultAvatarBorderWidth="1.5dip" app:femaleAvatarBorderColor="@color/white" app:iconMode="richList" app:ltr="false" app:maleAvatarBorderColor="@color/white" />
+                <ImageView android:layout_gravity="top" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="4.5dip" android:src="@mipmap/icon_banner_rank_head" />
+            </FrameLayout>
+            <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/icon_live_header_enter" android:layout_marginEnd="@dimen/dp_16" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/activity_area" android:background="@drawable/bitmap_live_banner_head_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-11.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_header_activity" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_rank_activity" android:layout_weight="1.0" android:layout_marginStart="4.5dip" android:layout_marginEnd="2.5dip" />
+            <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/icon_live_header_enter" android:layout_marginEnd="@dimen/dp_6" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

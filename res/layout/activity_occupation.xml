@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/main_layout" android:background="@drawable/bg_bottom_dialog_white16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_popwindow_title" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="350.0dip">
+        <ListView android:id="@id/oc_type" android:background="@color/white" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:divider="@color/white" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+        <ListView android:id="@id/acc_list" android:background="#fff4f6f9" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:divider="#fff4f6f9" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="@dimen/text_normal_fifteen" android:gravity="center" android:id="@id/save" android:layout_width="fill_parent" android:text="@string/save" style="@style/Button.Common.Pop" />
+</LinearLayout>

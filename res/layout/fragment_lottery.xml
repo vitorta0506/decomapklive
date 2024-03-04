@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="center" android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_lotter_grid" />
+    <include android:layout_gravity="center" android:id="@id/result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_lottery_result" />
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center" android:id="@id/svga" android:layout_width="fill_parent" android:layout_height="fill_parent" app:clearsAfterStop="true" app:loopCount="1" />
+</FrameLayout>

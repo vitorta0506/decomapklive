@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/my_empty_page" android:background="@color/app_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_top" android:layout_width="wrap_content" android:layout_height="@dimen/dp_120" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_jfdh" />
+        <ImageView android:id="@id/iv_shopping_cart" android:background="@mipmap/ic_launcher" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginStart="40.0dip" />
+    </FrameLayout>
+    <TextView android:textColor="@color/text_normal" android:gravity="center" android:id="@id/tv_alert" android:layout_marginTop="20.0dip" android:text="" style="@style/tv_16" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/btn_action" android:background="@drawable/zz_shape_rect_radius_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="30.0dip" android:text="添加电子券" android:paddingStart="@dimen/dp_30" android:paddingEnd="@dimen/dp_30" />
+</LinearLayout>

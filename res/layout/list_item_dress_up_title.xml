@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@drawable/selector_white_sideprimary" android:layout_width="fill_parent" android:layout_height="169.0dip" android:layout_margin="@dimen/dp_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_nouse" android:layout_width="63.0dip" android:layout_height="63.0dip" android:layout_marginTop="@dimen/dp_20" android:src="@mipmap/ic_noheader" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:id="@id/tv_title_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_35" android:text="不使用头像框" android:layout_weight="1.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/img_nouse" />
+    <ImageView android:id="@id/iv_is_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_package_used" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

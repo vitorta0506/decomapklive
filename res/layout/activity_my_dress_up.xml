@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/lay_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/float_title_back" layout="@layout/base_title" />
+    <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_below="@id/float_title_back" app:indicatorColor="@color/transparent" app:indicatorHeight="0.0dip" app:mode="wrap_content" app:selectedTextColor="@color/black_222222" app:selectedTextSize="@dimen/text_large" app:textColor="@color/black_222222" app:textSize="@dimen/text_small" app:textStyle="bold" app:textUnSelectStyle="normal" style="@style/TabLayout" />
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tabs" />
+</RelativeLayout>

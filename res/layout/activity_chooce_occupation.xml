@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="@dimen/dp_25" android:paddingEnd="@dimen/dp_25">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company_industry" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="#ffd4d5d8" android:gravity="center_vertical" android:id="@id/choose_occupation" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60" android:hint="@string/choose_occupation" android:layout_centerHorizontal="true" android:drawableEnd="@drawable/icon_right_occupation" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:paddingStart="@dimen/dp_25" android:paddingEnd="@dimen/dp_25">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company" />
+        <EditText android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="#ffd4d5d8" android:id="@id/company" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="1.0dip" android:layout_height="wrap_content" android:hint="@string/input_company_name" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:paddingStart="@dimen/dp_25" android:paddingEnd="@dimen/dp_25">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/occupation" />
+        <EditText android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="#ffd4d5d8" android:id="@id/occupation" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="1.0dip" android:layout_height="wrap_content" android:hint="@string/input_your_job" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/save" android:background="@drawable/btn_login_blue_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_55" android:minHeight="@dimen/dp_49" android:text="@string/save" android:layout_marginStart="@dimen/dp_42" android:layout_marginEnd="@dimen/dp_42" />
+</LinearLayout>

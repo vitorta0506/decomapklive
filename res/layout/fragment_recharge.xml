@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.header.MaterialHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.guochao.faceshow.views.ObservableScrollView android:id="@id/scroll_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/recharge_header" layout="@layout/header_recharge" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_26" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:id="@id/tv_normal_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_want_to_charge_diamonds" />
+                        <View android:id="@id/normal_icon_indicator" android:background="@drawable/bg_recharge_coin_indicator" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_2" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_24">
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:id="@id/tv_game_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_game_coin" />
+                        <View android:id="@id/game_coin_indicator" android:background="@drawable/bg_recharge_coin_indicator" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_2" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-5.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_9" android:layout_marginEnd="@dimen/dp_9" />
+            </LinearLayout>
+        </com.guochao.faceshow.views.ObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <ImageView android:id="@id/iv_title_bar" android:layout_width="fill_parent" android:layout_height="80.0dip" android:src="@mipmap/cz_top_bj" android:scaleType="fitXY" android:adjustViewBounds="true" android:alpha="0.0" app:tint="@color/white" />
+</FrameLayout>

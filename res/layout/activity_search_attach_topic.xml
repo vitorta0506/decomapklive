@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/gc_base_title_bar" />
+    <include layout="@layout/search_view" />
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="-5.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/fragment_base_recycler_view" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/hot_topic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_10" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/password_layout" android:layout="@layout/layout_password_cancel_account" android:layout_width="fill_parent" android:layout_height="216.0dip" />
+        <ViewStub android:id="@id/phone_code_lay" android:layout="@layout/layout_phone_code_cancel_account" android:layout_width="fill_parent" android:layout_height="250.0dip" />
+        <ViewStub android:id="@id/email_code_lay" android:layout="@layout/layout_email_code_cancel_account" android:layout_width="fill_parent" android:layout_height="250.0dip" />
+        <ViewStub android:id="@id/third_layout" android:layout="@layout/layout_third_cancel_account" android:layout_width="fill_parent" android:layout_height="216.0dip" />
+    </FrameLayout>
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/next_step" android:text="@string/Next_step" style="@style/Button.NextStep" />
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_3" android:layout_gravity="center_horizontal" android:id="@id/other_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/More_ways" android:drawablePadding="@dimen/dp_6" app:drawableEndCompat="@mipmap/icon_othre_type" />
+</LinearLayout>

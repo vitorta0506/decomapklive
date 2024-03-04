@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/space" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_comment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/push_notification_setting_comments" android:layout_marginStart="16.0dip" />
+            <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:id="@id/comment_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="3.0dip" />
+            <ImageView android:id="@id/cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_xiala_normal" android:layout_marginEnd="12.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="600.0dip" android:layout_weight="1.0">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_base_recycler_view" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bottom" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_edit_video_comment" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.guochao.faceshow.aaspring.views.AtFriendEditText android:textSize="@dimen/text_smaller" android:textColor="@color/color_text_level_1" android:textColorHint="@color/color_text_level_4" android:id="@id/input" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/say_something" android:maxLines="5" android:layout_weight="1.0" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginStart="@dimen/dp_5" />
+                <TextView android:textSize="@dimen/text_larger" android:textColor="@color/color_text_level_3" android:gravity="center" android:id="@id/btn_at_people" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="\@" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            </LinearLayout>
+            <ImageView android:enabled="false" android:id="@id/btn_send" android:background="@drawable/btn_send_comment" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_send_chat" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

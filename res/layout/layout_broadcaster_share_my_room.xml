@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="horizontal" android:id="@id/content_area" android:background="@drawable/bg_shape_share_my_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:paddingStart="12.0dip" android:paddingEnd="9.0dip">
+        <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/avatar" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginEnd="4.0dip" />
+        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/white" android:ellipsize="end" android:id="@id/text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/user_guide_share_my_room" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/icon_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/follow_im_jia" android:layout_marginStart="4.0dip" />
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_follow_angel" android:layout_marginStart="7.5dip" />
+    </LinearLayout>
+</FrameLayout>

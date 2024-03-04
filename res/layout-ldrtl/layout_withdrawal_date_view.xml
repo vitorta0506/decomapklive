@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_200"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.guochao.faceshow.aaspring.views.loopView.LoopView android:id="@id/wv_birth_year" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:awv_isLoop="false" />
+    <com.guochao.faceshow.aaspring.views.loopView.LoopView android:id="@id/wv_birth_month" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:awv_isLoop="false" />
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

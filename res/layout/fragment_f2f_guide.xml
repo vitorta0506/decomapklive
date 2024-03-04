@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="52.0dip" android:layout_marginEnd="52.0dip" android:elevation="0.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="16.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false" app:contentPadding="20.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/record_time_zone_tip_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/match_tips_title" android:fontFamily="@string/font_family_medium" />
+            <FrameLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@mipmap/icon_f2f_tips_warning" />
+                            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:id="@id/tips1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/match_tips1" android:lineSpacingMultiplier="1.2" android:fontFamily="@string/font_family_medium" android:layout_marginStart="9.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@mipmap/icon_f2f_tips_warning" />
+                            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/match_tips2" android:lineSpacingMultiplier="1.2" android:fontFamily="@string/font_family_medium" android:layout_marginStart="9.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@mipmap/icon_f2f_tips_warning" />
+                            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/match_tips3" android:lineSpacingMultiplier="1.2" android:fontFamily="@string/font_family_medium" android:layout_marginStart="9.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+            <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/ok" android:background="@drawable/btn_common_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/ok" android:insetLeft="0.0dip" android:insetRight="0.0dip" android:insetTop="0.0dip" android:insetBottom="0.0dip" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

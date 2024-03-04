@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/gc_base_title_bar" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/explore" android:background="@drawable/bg_connections_tip" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12">
+        <ImageView android:id="@id/img_lab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_zb_explore" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_explore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_9" android:text="@string/live_explore_people" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/img_lab" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_end" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/red_point" android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/red_dot" android:layout_marginStart="@dimen/dp_5" app:layout_constraintStart_toEndOf="@id/tv_explore" app:layout_constraintTop_toTopOf="@id/tv_explore" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.guochao.faceshow.aaspring.views.Divider android:layout_width="fill_parent" android:layout_height="wrap_content" app:match_direction="horizontal" />
+    <include layout="@layout/fragment_base_recycler_view" />
+</LinearLayout>

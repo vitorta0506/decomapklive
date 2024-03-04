@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_dialog_white16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="#ff2e2e2e" android:gravity="center_horizontal" android:layout_gravity="start|center" android:id="@id/common_dialog_cancel" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_48" android:text="@string/str_no" />
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_app_primary" android:gravity="center_horizontal" android:layout_gravity="end|center" android:id="@id/common_dialog_submit" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dp_48" android:text="@string/ok" />
+        </FrameLayout>
+        <com.guochao.faceshow.aaspring.views.loopView.LoopView android:id="@id/wv_record_type" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_200" app:awv_centerTextColor="@color/color_ugc_app_primary" app:awv_dividerTextColor="@color/bg_gray" app:awv_isLoop="false" app:awv_itemsVisibleCount="7" app:awv_outerTextColor="@color/color_ugc_text_level_2" app:awv_show_bg="true" />
+    </LinearLayout>
+</LinearLayout>

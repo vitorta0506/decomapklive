@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="external_storage_root" path="." />
+    <external-path name="images" path="." />
+    <external-path name="images" path="/faceshow/" />
+    <external-cache-path name="/FaceShow/APK" path="Apk" />
+</paths>

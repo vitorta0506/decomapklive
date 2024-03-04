@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/line_parent" android:background="@drawable/zz_shape_rect_small_radius_pop_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zhy="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_popwindow_title" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="@string/emotional_state" android:paddingStart="@dimen/margin_left_right" android:paddingEnd="@dimen/margin_left_right" />
+    <com.guochao.faceshow.views.flowlayout.TagFlowLayout android:id="@id/tagFlowLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_below="@id/tv1" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" zhy:max_select="1" />
+    <TextView android:gravity="center" android:id="@id/save" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_21" android:text="@string/save" style="@style/Button.Common.Pop" />
+</LinearLayout>

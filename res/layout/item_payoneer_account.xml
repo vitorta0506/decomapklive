@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:layout_gravity="center" android:id="@id/tv_payoneer_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 123132132" android:singleLine="true" />
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_info" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_info_click" android:background="@drawable/voice_room_live_info_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_34" android:paddingStart="0.0dip" android:paddingEnd="4.0dip">
+            <ImageView android:id="@id/voice_room_host_head" android:layout_width="@dimen/dp_28" android:layout_height="28.0dip" android:layout_margin="2.5dip" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="4.0dip">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/master_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_120" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@string/font_family_medium" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:ellipsize="end" android:id="@id/room_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxWidth="@dimen/dp_120" android:singleLine="true" android:fontFamily="@string/font_family_medium" />
+            </LinearLayout>
+            <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/focus_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_zb_follow" android:layout_marginStart="27.0dip" />
+            <com.guochao.faceshow.views.SvgaImageViewV2 android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/focusSVGA" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@mipmap/icon_zb_follow" />
+        </LinearLayout>
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_voice_room_count_bg_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <ImageView android:id="@id/share_room" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_share" />
+            <View android:id="@id/dividerView" android:background="#4dffffff" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="8.5dip" android:layout_marginBottom="8.5dip" android:layout_marginStart="8.5dip" android:layout_marginEnd="8.5dip" />
+            <ImageView android:id="@id/close_room" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_close" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/user_info_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="12.0dip">
+        <com.guochao.faceshow.aaspring.views.InnerRecyclerView android:orientation="horizontal" android:id="@id/user_info_recycler_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:layoutManager="LinearLayoutManager" app:stackFromEnd="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/members" android:background="@drawable/shape_voice_room_count_bg_circle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dip" android:minHeight="30.0dip" android:paddingStart="6.0dip" android:paddingEnd="6.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_people_count" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:id="@id/in_room_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_back_to_last" />
+        <include layout="@layout/layout_live_loaction_and_name" />
+    </FrameLayout>
+</LinearLayout>

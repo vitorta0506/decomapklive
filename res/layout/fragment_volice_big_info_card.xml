@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_dialog" android:paddingTop="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/headerIV" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" />
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black_222222" android:gravity="start" android:id="@id/titleTV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/gray_ffa1a1a1" android:gravity="start" android:id="@id/roomIdTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:layout_marginBottom="@dimen/dp_5" />
+            <ImageView android:layout_gravity="end" android:id="@id/reportIV" android:layout_width="22.0dip" android:layout_height="22.0dip" app:srcCompat="@drawable/ic_voice_room_big_info_card_tips" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/memberRL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_13">
+        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/black_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_room_members" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/countTV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_big_info_card_right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recentRV" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_50" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <LinearLayout android:gravity="center" android:id="@id/joinLL" android:background="@drawable/bg_shape_theme_or_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:layout_marginBottom="@dimen/dp_24" android:minHeight="50.0dip" android:layout_marginStart="@dimen/dp_22" android:layout_marginEnd="@dimen/dp_22">
+        <ImageView android:id="@id/iconIV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_voice_room_big_info_card_add" />
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:id="@id/joinTV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:id="@id/moneyLL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/orange_ffffd64b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="( " />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_voice_room_diamond" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/orange_ffffd64b" android:id="@id/moneyTV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/orange_ffffd64b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" )" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_white_bottom_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:id="@id/tv_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:text="@string/pk_invite" />
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center_horizontal" android:id="@id/avatar_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_27" android:layout_marginBottom="@dimen/dp_25" app:headPortraitSize="@dimen/dp_65" app:showStyle="showUgc" />
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center_horizontal" android:id="@id/pk_random_gif" android:visibility="gone" android:layout_width="@dimen/dp_115" android:layout_height="@dimen/dp_115" android:layout_marginTop="@dimen/dp_17" android:layout_marginBottom="@dimen/dp_17" />
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/btn_hangup" android:background="@drawable/btn_shape_hangup_pk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_30" />
+</LinearLayout>

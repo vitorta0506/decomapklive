@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/big_avatar_mask" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/live_loading_bj02" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/avatar_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center" android:id="@id/avatar_view" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@mipmap/default_head" />
+        <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center" android:id="@id/audio_indicator" android:layout_width="87.0dip" android:layout_height="87.0dip" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/icon_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@mipmap/icon_zb_shengyin" />
+</FrameLayout>

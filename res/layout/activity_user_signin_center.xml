@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="234.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/icon_signin_center_top" android:scaleType="fitXY" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:id="@id/status_bar_space" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_left_back" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56" android:src="@drawable/icon_left_back_sign_center" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_user_center" />
+            <ImageView android:layout_gravity="end" android:id="@id/signin_rules" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56" android:src="@mipmap/icon_signin_rules" android:scaleType="centerInside" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_signin_center" android:paddingTop="@dimen/dp_14" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_12">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/dark_blak" android:id="@id/tv_signed_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" />
+            <LinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:layout_marginEnd="@dimen/dp_12">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="#ff9595bb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_user_center_showdialog" />
+                <ImageView android:id="@id/show_dialog_toggle" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_20" android:src="@drawable/signin_toggle" android:layout_marginStart="@dimen/dp_10" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="40.0dip" app:indicatorBottomGap="1.5dip" app:indicatorColor="#ff556eff" app:indicatorDrawable="@drawable/tab_indicator" app:indicatorWidth="8.0dip" app:mode="wrap_content" app:selectedTextColor="@color/dark_blak" app:selectedTextSize="@dimen/text_large" app:showBadge="true" app:tabGravity="center" app:tabPadding="@dimen/dp_45" app:textColor="@color/dark_blak" app:textSize="@dimen/text_small" app:textStyle="bold" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+            <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewpager_single" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

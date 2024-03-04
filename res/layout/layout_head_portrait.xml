@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/avatar_bg" android:visibility="gone" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:src="@drawable/bg_hollow_circle" />
+    <com.guochao.faceshow.aaspring.views.NewCircleImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="@dimen/dp_88" android:layout_height="@dimen/dp_88" android:src="@mipmap/default_head_space" />
+    <ImageView android:layout_gravity="center" android:id="@id/avatar_vip_pedant" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_110" />
+    <ImageView android:layout_gravity="center" android:id="@id/avatar_pedant" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_110" />
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/online_state" android:visibility="gone" style="@style/OnlineStatus" />
+    <com.guochao.faceshow.aaspring.views.NewCircleImageView android:layout_gravity="end|bottom|center" android:id="@id/flag" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@mipmap/ic_earth" app:stroke_color="@color/white" app:stroke_width="1.0dip" />
+    <FrameLayout android:layout_gravity="start|bottom|center" android:id="@id/fl_anim" android:background="@drawable/bg_living_status" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_anim" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@drawable/living_status" />
+    </FrameLayout>
+</merge>

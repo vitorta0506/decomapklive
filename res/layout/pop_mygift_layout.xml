@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_black_round20" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="260.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2">
+        <RadioButton android:textSize="@dimen/text_small" android:textColor="@color/gift_radio_color" android:id="@id/my_gift" android:background="@color/transparent" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/my_gifts" android:drawablePadding="@dimen/dp_5" android:layout_marginStart="@dimen/dp_10" />
+        <RadioButton android:textSize="@dimen/text_small" android:textColor="@color/gift_radio_color" android:id="@id/pay_top" android:background="@color/transparent" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/ranking_List" android:drawablePadding="@dimen/dp_5" android:layout_marginStart="@dimen/dp_15" />
+        <RadioButton android:textSize="@dimen/text_small" android:textColor="@color/gift_radio_color" android:id="@id/free_diamonds" android:background="@color/transparent" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/free_diamonds" android:layout_marginStart="@dimen/dp_10" />
+    </RadioGroup>
+    <View android:background="@color/colorTextG3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rlOwnerSelectGift" android:layout_width="fill_parent" android:layout_height="@dimen/dp_252" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_252">
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView android:id="@id/myRecyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/dp_252" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@id/ads_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_252" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12">
+        <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="@dimen/dp_10" android:layoutDirection="ltr">
+            <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:layout_gravity="center_vertical" android:id="@id/live_advert" android:background="@mipmap/invilate_ads" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="0.1766" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/ads_ll" android:background="@drawable/zz_shape_rect_radius_ads_yellow" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_12">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:id="@id/ads_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <include android:id="@id/empty_ads_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_50" layout="@layout/layout_empty_view_no_text" />
+    </RelativeLayout>
+</LinearLayout>

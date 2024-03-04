@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.9" android:scaleY="0.9" android:layoutDirection="ltr">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale">
+            <ImageView android:layout_gravity="end" android:id="@id/mini_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:src="@mipmap/lucky_number_minisize" android:layout_marginEnd="20.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-40.0dip" android:src="@mipmap/lucky_number_top" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bg" android:background="@mipmap/lucky_number_bg_unstart" android:paddingTop="25.0dip" android:paddingBottom="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top" android:layout_centerHorizontal="true" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" android:elevation="1.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lucky_number_person" android:elevation="1.0dip" />
+                        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="#ffff5e95" android:gravity="center" android:id="@id/people_count" android:background="@drawable/lucky_number_diamonds_bg_mirror" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-12.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip">
+                        <ImageView android:id="@id/iv_number_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lucky_number_diamonds" android:elevation="1.0dip" />
+                        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="#ffffcc3f" android:gravity="center" android:id="@id/diamond_count" android:background="@drawable/lucky_number_diamonds_bg_mirror" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-12.0dip" />
+                    </LinearLayout>
+                    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/rule" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lucky_number_rules_icon" />
+                    <ImageView android:id="@id/record" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lucky_number_record_icon" />
+                    <ImageView android:gravity="center" android:id="@id/invite" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lucky_number_invite" />
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@mipmap/lucky_number_game_bg" android:padding="14.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.guochao.faceshow.aaspring.modulars.live.game.luckynumber.LuckyNumberGameView android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <include android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_lucky_number_input_number" />
+                    <include android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_lucky_number_inputed" />
+                </FrameLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/start_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/bg_lucky_number_start" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-35.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:translationZ="1.0dip">
+                <RelativeLayout android:layout_width="262.0dip" android:layout_height="102.0dip">
+                    <ImageView android:id="@id/normal_poll_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/lucky_number_top_number_container" android:adjustViewBounds="true" />
+                    <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_poll_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/normal_poll_number" android:layout_alignBottom="@id/normal_poll_number" android:layout_alignStart="@id/normal_poll_number" android:layout_alignEnd="@id/normal_poll_number" />
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                    <FrameLayout android:padding="@dimen/dp_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_18" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_9">
+                        <include android:id="@id/first_number" android:layout_width="fill_parent" android:layout_height="@dimen/dp_62" layout="@layout/layout_poll_number" />
+                    </FrameLayout>
+                    <FrameLayout android:padding="@dimen/dp_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_18" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10">
+                        <include android:id="@id/second_number" android:layout_width="fill_parent" android:layout_height="@dimen/dp_62" layout="@layout/layout_poll_number" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_lucky_number_input" />
+</FrameLayout>

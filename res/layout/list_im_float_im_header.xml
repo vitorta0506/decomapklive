@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/shape_im_broadcaster_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:paddingStart="12.0dip" android:paddingEnd="16.0dip">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/conversation_avatar_size" app:showStyle="showUgc" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+            <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextView.UserName" />
+            <com.guochao.faceshow.aaspring.views.SingleLineTextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/float_im_in_live_broadcaster_tip" android:includeFontPadding="false" android:layout_marginEnd="27.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="center" android:background="@drawable/btn_common_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="27.0dip" android:text="@string/chat" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#ffebf0f5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="72.25dip" />
+</FrameLayout>

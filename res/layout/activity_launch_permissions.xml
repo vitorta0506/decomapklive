@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <FrameLayout android:id="@id/fl_anyone" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_59">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_anyone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trtc_anybody" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/trtc_anyone_can_initiate_it" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/iv_anyone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="@dimen/dp_16" />
+    </FrameLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+    <FrameLayout android:id="@id/fl_fans" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_59">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trtc_just_fan" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/trtc_only_fans_can_initiate" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/iv_fans" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="@dimen/dp_16" />
+    </FrameLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+    <FrameLayout android:id="@id/fl_friends" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_59">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trtc_only_friends_date" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/trtc_friend_can_initiate_it" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/iv_friends" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="@dimen/dp_16" />
+    </FrameLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+    <FrameLayout android:id="@id/fl_close" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_59">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trtc_date_close" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/trtc_no_one_can_initiate" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/iv_close" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="@dimen/dp_16" />
+    </FrameLayout>
+</LinearLayout>

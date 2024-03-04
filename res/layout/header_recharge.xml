@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cz_bj" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layoutDirection="locale">
+                <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_22">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_intro" />
+                    <ImageView android:layout_gravity="center" android:id="@id/cz_help" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@mipmap/icon_help" android:scaleType="centerInside" android:scaleX="0.8" android:scaleY="0.8" android:layout_marginStart="-12.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_marginStart="@dimen/dp_22">
+                    <ImageView android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@mipmap/icon_game_diamond" android:layout_marginEnd="@dimen/dp_10" />
+                    <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_diamond_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </LinearLayout>
+                <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="0.1158">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale">
+                        <TextView android:textSize="@dimen/text_size_13sp" android:textColor="@color/white" android:id="@id/game_coin_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_game_coin_money" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_22" />
+                        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/icon_game_shuijing" android:layout_marginStart="@dimen/dp_10" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/game_coin_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_2" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_8" />
+                    </LinearLayout>
+                </com.guochao.faceshow.aaspring.views.RatioFrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

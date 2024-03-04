@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/shape_float_activity_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/shape_float_activity_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:minHeight="44.0dip">
+        <ImageView android:id="@id/back" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textAppearance="@style/ActivityTitle" android:textSize="@dimen/text_large_seventeen" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_greetings" android:layout_centerInParent="true" />
+        <View android:layout_gravity="bottom" android:background="#ffebf0f5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <include android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/sl_list_nodata" />
+</LinearLayout>

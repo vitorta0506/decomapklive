@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_88" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_my_user" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_35" app:showStyle="showUgc" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pk_record_fb" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/live_pk_record_fb" android:id="@id/tv_my_fb_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_marginStart="@dimen/dp_2" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:src="@mipmap/pk_jl_vs" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_88" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_side_user" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_35" app:showStyle="showUgc" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pk_record_fb" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/live_pk_record_fb" android:id="@id/tv_side_fb_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:layout_marginStart="@dimen/dp_2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="end|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_3" android:id="@id/tv_pk_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/iv_pk_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:src="@mipmap/pk_jl_win" />
+    </LinearLayout>
+</LinearLayout>

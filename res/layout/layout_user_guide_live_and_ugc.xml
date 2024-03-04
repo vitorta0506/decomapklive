@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/user_guide_ugc_mask" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/user_guide_click_to_send_dynamic" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" />
+</FrameLayout>

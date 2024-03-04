@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_float_marquee" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/user_avatar" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_margin="@dimen/dp_3" />
+    <com.guochao.faceshow.aaspring.modulars.dressmarket.marquee.DispatchTouchHorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tip_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_10" />
+        </LinearLayout>
+    </com.guochao.faceshow.aaspring.modulars.dressmarket.marquee.DispatchTouchHorizontalScrollView>
+</LinearLayout>

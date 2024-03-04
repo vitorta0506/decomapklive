@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/video_content" android:background="@drawable/bg_small_video" android:padding="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/little_video_width" android:layout_height="@dimen/little_video_height">
+        <TextView android:id="@id/debug_info" android:visibility="gone" style="@style/TextView.Debug" />
+        <ImageView android:id="@id/avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:id="@id/user_name" style="@style/TextView.LinkMicUserName" />
+        <TextView android:textSize="50.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/count_down_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.LargeCountDown" />
+    </FrameLayout>
+</FrameLayout>

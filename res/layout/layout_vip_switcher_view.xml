@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/shape_vip_switcher_bg" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_40" android:minWidth="200.0dip" android:minHeight="@dimen/dp_40" />
+    <ImageView android:layout_gravity="start|center" android:id="@id/indicator" android:background="@drawable/shape_vip_switcher_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:minHeight="@dimen/dp_40">
+        <LinearLayout android:gravity="center" android:id="@id/text1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/textVIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VIP" android:drawablePadding="@dimen/dp_6" android:drawableStart="@mipmap/ic_tobe_vip_vip" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/text2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black_222222" android:layout_gravity="center" android:id="@id/textSVIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SVIP" android:drawablePadding="@dimen/dp_6" android:drawableStart="@mipmap/ic_tobe_vip_svip" />
+                <ImageView android:id="@id/red_point" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/red_dot" android:layout_marginStart="2.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

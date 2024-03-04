@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/live_gift_giving_user" android:gravity="center" android:layout_gravity="center" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="35.0dip" android:singleLine="true" android:layoutDirection="locale" android:layout_marginStart="@dimen/dp_10" />
+</LinearLayout>

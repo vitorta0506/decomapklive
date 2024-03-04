@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cmd_area" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/mic_area" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/mic" app:srcCompat="@drawable/ic_voice_room_icon_mic_off" style="@style/PeopleInfoCardImageButton" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/admin_area" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/admin" app:srcCompat="@drawable/ic_voice_room_admin" style="@style/PeopleInfoCardImageButton" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/mute_area" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/mute" app:srcCompat="@drawable/ic_voice_room_mute_icon" style="@style/PeopleInfoCardImageButton" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/kick_area" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/kick" app:srcCompat="@drawable/ic_voice_room_kick" style="@style/PeopleInfoCardImageButton" />
+    </FrameLayout>
+</LinearLayout>

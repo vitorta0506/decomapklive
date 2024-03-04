@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:layout_marginEnd="@dimen/dp_9" app:cardCornerRadius="6.0dip" style="@style/CardView.Base">
+        <com.guochao.faceshow.aaspring.views.SquareImageView android:id="@id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_btn_viedio" />
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/btnRemove" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/ic_set_info_header_x" />
+</FrameLayout>

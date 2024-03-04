@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:toos="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5" android:text="@string/chat_limit_vip_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/first_push_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/first_push" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/color_ugc_text_level_3" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_limit_first_push" android:maxLines="1" android:paddingStart="@dimen/dp_7" android:paddingEnd="@dimen/dp_7" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/second_push_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_12">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/second_push" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/color_ugc_text_level_3" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_limit_second_push" android:maxLines="1" android:paddingStart="@dimen/dp_7" android:paddingEnd="@dimen/dp_7" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/third_push_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_12">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/third_push" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/color_ugc_text_level_3" android:ellipsize="end" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_limit_third_push" android:maxLines="1" android:paddingStart="@dimen/dp_7" android:paddingEnd="@dimen/dp_7" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="112.0dip" android:layout_marginBottom="@dimen/dp_16" />
+</LinearLayout>

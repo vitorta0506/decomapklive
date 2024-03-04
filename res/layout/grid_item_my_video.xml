@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.5dip" app:cardCornerRadius="10.0dip" style="@style/CardView.Base"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="1.418">
+        <ImageView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@mipmap/icon_ugc_video" />
+    </com.guochao.faceshow.aaspring.views.RatioFrameLayout>
+</androidx.cardview.widget.CardView>

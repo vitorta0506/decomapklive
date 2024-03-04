@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_gray_round10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_3" android:gravity="start|center|top" android:id="@id/content" android:background="@null" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/feedback_input_hint" android:lines="7" android:maxLength="1000" android:paddingStart="14.0dip" android:paddingEnd="14.0dip" />
+    <TextView android:textSize="@dimen/text_smaller" android:layout_gravity="end|bottom|center" android:id="@id/word_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_marginEnd="12.0dip" />
+</FrameLayout>

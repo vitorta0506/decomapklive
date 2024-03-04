@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ads_area" android:background="@drawable/shape_gifdialog_adsbg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ads_ll" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="40.0dip" android:paddingStart="@dimen/dp_4" android:paddingEnd="@dimen/dp_6">
+        <ImageView android:id="@id/ads_img" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/selector_adsicon" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_7" />
+        <TextView android:textSize="@dimen/text_smallest_nine" android:textColor="@color/white" android:id="@id/ads_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_marginStart="3.0dip" android:layout_marginEnd="@dimen/dp_3" />
+        <ImageView android:id="@id/rank_list" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@mipmap/gift_rank_list" android:layout_marginStart="@dimen/dp_7" android:layout_marginEnd="@dimen/dp_10" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/content" android:background="@color/color_text_level_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.RatioHeightImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:ratio="1.0" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/gif_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:src="@mipmap/icon_ugc_gif" />
+    <FrameLayout android:id="@id/bgFL" android:background="@color/record_progress_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/numTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp_4" android:drawableStart="@mipmap/ic_ugc_image_more" />
+    </FrameLayout>
+</FrameLayout>

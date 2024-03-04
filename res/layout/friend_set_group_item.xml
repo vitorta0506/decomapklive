@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_text_level_1" android:id="@id/group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textDirection="locale" android:layout_marginEnd="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/status" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@mipmap/icon_ugc_selected" />
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/group_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

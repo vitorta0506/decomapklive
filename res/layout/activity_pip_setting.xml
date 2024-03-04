@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/gc_base_title_bar_no_line" />
+    <androidx.core.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/rlDistancePrivacyLayout" android:layout_marginTop="15.0dip" style="@style/LinearLayout_SetInfo">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tvDistancePrivacy" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/setting_pip_setting_watcher" android:singleLine="false" style="@style/TextView.SetInfo" />
+                </LinearLayout>
+                <CheckBox android:id="@id/watcher_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:drawableEnd="@drawable/push_toggle" android:layout_marginEnd="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

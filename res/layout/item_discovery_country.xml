@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_view" android:background="@drawable/bg_item_discovery_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:minHeight="@dimen/dp_50" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_4">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/country_flag" android:layout_width="29.0dip" android:layout_height="18.0dip" android:layout_marginTop="@dimen/dp_7" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_6">
+            <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/hot_tag" android:visibility="gone" android:layout_width="9.0dip" android:layout_height="11.0dip" android:src="@mipmap/icon_country_hot" android:layout_marginEnd="@dimen/dp_4" />
+            <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

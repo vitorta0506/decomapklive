@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="end|center" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check_box_recommend" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="14.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:layout_marginBottom="@dimen/dp_9" android:layout_marginEnd="@dimen/dp_4" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_44" app:showStyle="showUgc" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_14">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" style="@style/TextView.UserName" />
+                        <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" app:iconScale="0.8" />
+                    </LinearLayout>
+                    <TextView android:textColor="@color/color_text_level_3" android:id="@id/signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:singleLine="true" android:includeFontPadding="false" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</LinearLayout>

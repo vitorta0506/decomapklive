@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="42.0dip" android:paddingStart="14.0dip" android:paddingEnd="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_text_level_1" android:id="@id/group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" />
+        <Button android:textSize="@dimen/text_size_11sp" android:textColor="@color/white" android:id="@id/delete_bt" android:background="@color/red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_35" android:text="@string/delete" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/menu" android:visibility="gone" android:layout_width="@dimen/dp_35" android:layout_height="@dimen/dp_35" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/delete_bt" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@mipmap/friend_group_menu" />
+        <ImageView android:id="@id/delete_img" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@mipmap/icon_close_friend_group" android:scaleType="center" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <View android:layout_gravity="top" android:background="#ffebf0f5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</FrameLayout>

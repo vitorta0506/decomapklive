@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.SquareFrameLayout android:orientation="vertical" android:background="@drawable/selector_lightprimary_non8" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/motion_pannel_item_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/image_down" android:background="@mipmap/face_download" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" />
+    <com.guochao.faceshow.views.ItemDownloadProgressView android:layout_gravity="end|bottom|center" android:id="@id/progress_download" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" />
+</com.guochao.faceshow.aaspring.views.SquareFrameLayout>

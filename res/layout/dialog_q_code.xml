@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <androidx.cardview.widget.CardView android:layout_gravity="center_vertical" android:id="@id/card_view" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0" app:cardCornerRadius="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:enabled="false" android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:maxWidth="134.0dip" android:text="@string/ugc_my_qr_code" />
+                <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/bg_qcode_image" android:padding="@dimen/dp_8" android:layout_width="187.0dip" android:layout_height="187.0dip" android:layout_marginTop="@dimen/dp_20">
+                    <ImageView android:layout_gravity="center" android:id="@id/q_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_qcode_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:minHeight="@dimen/dp_56">
+                    <ImageView android:gravity="center" android:id="@id/q_code_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_user_center_download" android:scaleType="centerInside" android:minHeight="@dimen/dp_56" android:layout_weight="1.0" />
+                    <View android:background="#ffd4d5db" android:layout_width="1.0dip" android:layout_height="@dimen/dp_24" />
+                    <ImageView android:id="@id/iv_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_user_center_scan" android:scaleType="centerInside" android:minHeight="@dimen/dp_56" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

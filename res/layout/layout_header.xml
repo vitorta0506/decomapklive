@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/zz_shape_rect_rect_stroke_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:minHeight="@dimen/dp_32" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <ImageView android:id="@id/search" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@mipmap/sousuo" android:layout_marginEnd="@dimen/margin_left_right" />
+        <EditText android:textSize="12.0sp" android:textColor="@color/colorTextG3" android:textColorHint="@color/colorTextG3" android:gravity="center_vertical" android:id="@id/search_et" android:background="@color/transparent" android:scrollbars="horizontal" android:layout_width="1.0dip" android:layout_height="fill_parent" android:hint="@string/search_default" android:lines="1" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_lay" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="16.0dip" app:layout_scrollFlags="enterAlways|snap">
+            <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:layout_width="0.0dip" android:layout_height="96.0dip" android:layout_weight="1.0" app:mode="wrap_content" app:selectedTextColor="@color/colorPrimary" app:selectedTextSize="@dimen/text_small" app:tabMargin="@dimen/dp_5" app:tabSelectDrawable="@drawable/selecter_tab_select" app:tabunSelectDrawable="@drawable/selecter_tab_unselect_empty" app:textColor="@color/color_ugc_text_level_3" app:textSize="@dimen/text_small" style="@style/TabLayout" />
+        </LinearLayout>
+        <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

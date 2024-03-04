@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/tabs" android:background="@drawable/tab_ba" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout style="@style/BottomTab">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/tab_icon1" android:tag="tab_icon" android:visibility="invisible" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/lotti_image_1" android:tag="lottie" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" app:lottie_autoPlay="false" app:lottie_loop="false" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout style="@style/BottomTab">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/tab_icon2" android:tag="tab_icon" android:visibility="invisible" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/lotti_image_2" android:tag="lottie" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" app:lottie_autoPlay="false" app:lottie_loop="false" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/main_tabs" android:clipChildren="false" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" style="@style/BottomTab">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/tab_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_home_button" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:clipChildren="false" style="@style/BottomTab">
+            <FrameLayout android:layout_gravity="center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/tab_icon3" android:tag="tab_icon" android:visibility="invisible" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" />
+                    <com.airbnb.lottie.LottieAnimationView android:id="@id/lotti_image_3" android:tag="lottie" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" app:lottie_autoPlay="false" app:lottie_loop="false" />
+                </FrameLayout>
+                <TextView android:layout_gravity="end|center|top" android:id="@id/activity_unread_num" android:visibility="gone" android:layout_marginTop="-3.0dip" android:layout_marginEnd="-4.0dip" style="@style/TextView_RedDot" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout style="@style/BottomTab">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/tab_icon4" android:tag="tab_icon" android:visibility="invisible" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/lotti_image_4" android:tag="lottie" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" app:lottie_autoPlay="false" app:lottie_loop="false" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/user_guide" android:layout="@layout/layout_user_guide_live_and_ugc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="64.0dip" />
+</merge>

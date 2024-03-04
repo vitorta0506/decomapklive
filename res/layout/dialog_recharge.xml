@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content_area" android:background="@drawable/bg_recharge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recharge_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/less_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/first_recharge_less_diamond" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_balance" />
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@mipmap/dress_up_diamond" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_2" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="#ffff7600" android:id="@id/tv_diamond" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ViewStub android:id="@id/recharge_header" android:layout="@layout/header_recharge_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <ViewStub android:id="@id/recharge_header_page" android:layout="@layout/header_recharge_page" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_30" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/start_buy" android:background="@drawable/btn_common_bg" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginBottom="@dimen/dp_30" android:text="@string/charge" android:layout_marginStart="@dimen/dp_42" android:layout_marginEnd="@dimen/dp_42" />
+    </LinearLayout>
+</FrameLayout>

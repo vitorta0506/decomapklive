@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/zz_shape_rect_small_radius_ads" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+        <ImageView android:background="@mipmap/zuanshi" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/yellow1000" android:id="@id/dimands_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1" android:layout_marginStart="@dimen/dp_5" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/colorTextG3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/you_have_acquired_diamonds" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@id/got_it" android:background="@drawable/shape_red_edit_text_round_10" android:layout_width="fill_parent" android:layout_height="@dimen/dp_35" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" android:text="@string/got_it" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+</LinearLayout>

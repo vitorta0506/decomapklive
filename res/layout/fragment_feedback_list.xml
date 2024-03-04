@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/bg_bottom_dialog_white16" android:layout_width="fill_parent" android:layout_height="350.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+                <ImageView android:layout_gravity="end|center" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_zb_report_close" android:layout_marginEnd="@dimen/dp_14" />
+                <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_feedback_types" />
+            </FrameLayout>
+            <include layout="@layout/fragment_base_recycler_view" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

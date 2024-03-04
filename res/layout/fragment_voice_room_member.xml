@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff3f7fb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/titleLay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageView android:id="@id/ivLeftBack" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:src="@drawable/icon_left_back" android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/black_222222" android:gravity="center" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="@dimen/dp_44" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ivEndIcon" android:visibility="invisible" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:src="@drawable/ic_voice_room_member_menu" android:scaleType="centerInside" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.guochao.faceshow.aaspring.views.GCSwipeRefreshView android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </com.guochao.faceshow.aaspring.views.GCSwipeRefreshView>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_menu" android:background="@mipmap/ic_voice_room_member_bottom_menu_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64">
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttonLL" android:paddingTop="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+                <ImageView android:id="@id/deleteIV" app:srcCompat="@mipmap/ic_voice_room_remove_member" style="@style/VoiceMemberBottomMenu" />
+                <ImageView android:id="@id/tobeAdminIV" android:visibility="gone" android:backgroundTint="#ffecf6ff" app:srcCompat="@mipmap/ic_voice_room_do_admin" style="@style/VoiceMemberBottomMenu" />
+                <ImageView android:id="@id/removeAdminIV" android:visibility="gone" android:backgroundTint="#ffecf6ff" app:srcCompat="@mipmap/ic_voice_room_un_admin" style="@style/VoiceMemberBottomMenu" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

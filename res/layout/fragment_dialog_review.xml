@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/content" android:background="@mipmap/review_dialog_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CardView.Base">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-50.0dip" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/review_top_img" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@mipmap/review_stars" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxWidth="240.0dip" android:text="@string/review_tips1" />
+            <TextView android:id="@id/go" android:background="@drawable/shape_review_button" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/review_five_stars" style="@style/Button.Common.FullWidth" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:id="@id/feedback" android:background="?selectableItemBackground" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/review_feedback" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

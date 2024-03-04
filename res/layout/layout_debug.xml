@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/mini_icon" android:layout_width="fill_parent" android:layout_height="48.0dip" android:src="@mipmap/ic_launcher" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="bottom|center" android:id="@id/mini" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最小化" />
+        <Button android:id="@id/clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清空" />
+    </LinearLayout>
+</LinearLayout>

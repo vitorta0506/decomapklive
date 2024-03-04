@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_52"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_ugc_divider_dialog" android:layout_width="fill_parent" android:layout_height="@dimen/dp_8" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_lishisousuo" android:layout_marginStart="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/hostSearchTitle" android:id="@id/tv_head_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

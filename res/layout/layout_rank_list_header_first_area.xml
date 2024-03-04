@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/first_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/empty_area" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:text="@string/empty_rank" style="@style/TextView.RankList.Empty" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/click_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="20.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+                        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center_horizontal" android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_72" app:showStyle="showLive" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="6.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextView.UserName.Short" />
+                        <com.guochao.faceshow.aaspring.views.LevelView android:gravity="center" android:id="@id/level_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:id="@id/value" style="@style/TextView.RankList.Value" />
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" h" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/focus" android:src="@drawable/btn_rank_list_focused" style="@style/ImageView.Rank.Focus" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

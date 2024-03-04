@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.ControlClickSpanTextView android:textColor="@color/color_text_level_1" android:id="@id/tv_msg_content" android:layout_marginStart="@dimen/dp_2" style="@style/chat_tv_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

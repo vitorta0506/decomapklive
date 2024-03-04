@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/back_to_last" android:background="@drawable/shape_back_to_last" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:minHeight="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_back_to_last" />
+    <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/little_avatar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+</LinearLayout>

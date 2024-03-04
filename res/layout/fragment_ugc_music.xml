@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/srl_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.header.MaterialHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rcv_recommended" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <include android:id="@id/rcv_music_list" android:visibility="gone" layout="@layout/fragment_base_search_recycler_view" />
+    <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/layout_search_empty_view" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/user_saw_photos" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.aaspring.views.SquareImageView android:id="@id/first_photo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    <View android:id="@id/view2" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_10" />
+    <com.guochao.faceshow.aaspring.views.SquareImageView android:id="@id/second_photo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    <View android:id="@id/view3" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_10" />
+    <com.guochao.faceshow.aaspring.views.SquareImageView android:id="@id/third_photo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+</LinearLayout>

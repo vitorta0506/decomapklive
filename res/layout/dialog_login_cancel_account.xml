@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_cancel_warn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="37.5dip" android:layout_marginEnd="37.5dip">
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/common_dialog_title_tip" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:text="@string/login_cancel_account_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/give_up_cancel" android:background="@drawable/btn_common_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_24" android:text="@string/give_up_cancel_account" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:layout_gravity="center_horizontal" android:id="@id/let_me_look_look" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_16" android:text="@string/let_me_look_look" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </LinearLayout>
+</FrameLayout>

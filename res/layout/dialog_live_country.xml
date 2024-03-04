@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/dialog_live_country" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bg_view" android:background="@color/transparent_80" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_live_country_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommended_area" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/country_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_live_area_up_arrow" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/country_content" android:padding="@dimen/dp_4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

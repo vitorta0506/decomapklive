@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.aaspring.views.RatioHeightImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="center" android:id="@id/play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_btn_viedio" />
+    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:layout_gravity="end|bottom|center" android:id="@id/duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" />
+</FrameLayout>

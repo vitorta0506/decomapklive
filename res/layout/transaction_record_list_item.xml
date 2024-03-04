@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_new_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_3" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_5">
+        <ImageView android:id="@id/ivTypeImg" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_toEndOf="@id/ivTypeImg">
+            <TextView android:enabled="true" android:textSize="@dimen/text_small" android:textColor="@color/hostSearchTitle" android:id="@id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/hostSearchTitle" android:id="@id/tvCreatedTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/text_normal" android:id="@id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@mipmap/online_bj" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_title" />
+        <com.guochao.faceshow.aaspring.modulars.login.cloud.view.SoulPlanetsView android:id="@id/planet" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="16.0dip" android:layout_weight="1.0" app:autoScrollMode="uniform" />
+        <TextView android:enabled="true" android:textSize="@dimen/text_small_thirteen" android:textColor="@color/whitealpha8" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_sex_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="47.0dip" android:text="@string/planet_tip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:enabled="true" android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/random_chat" android:background="@drawable/btn_login_blue_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_50" android:minHeight="@dimen/dp_45" android:text="@string/planet_give_surprise" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:autoPlay="true" />
+    </FrameLayout>
+</FrameLayout>

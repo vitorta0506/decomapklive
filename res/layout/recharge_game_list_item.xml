@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_item_recharge_selector_page" android:layout_width="fill_parent" android:layout_height="74.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/rechage_list_item_ly" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@mipmap/icon_gamecoin" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_11" android:src="@mipmap/icon_buzzcoin" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_gravity="center" android:id="@id/btnRecharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/dp_2" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

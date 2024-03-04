@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fast_emoji" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/chat_input_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="36.0dip" android:layout_weight="1.0">
+            <EditText android:textSize="@dimen/text_small" android:textColor="@color/black_222222" android:textColorHint="#ffd4d5d8" android:layout_gravity="center_vertical" android:id="@id/input" android:background="@null" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:minHeight="36.0dip" android:hint="@string/Im_say_a_word" android:maxLines="5" android:includeFontPadding="false" android:maxLength="2000" android:layout_weight="1.0" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/face" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_im_emoji" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        </LinearLayout>
+        <ImageView android:enabled="false" android:gravity="center" android:id="@id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_send_chat" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayout_im" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/yuyin_im" android:src="@drawable/yuyin_iv" style="@style/im_bottom_iv" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/photo_im" android:src="@drawable/photo_iv" style="@style/im_bottom_iv" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/camera_im" android:src="@drawable/camera_iv" style="@style/im_bottom_iv" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/video_im" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:src="@mipmap/im_video_icon" style="@style/im_bottom_iv" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/gift_im" android:visibility="visible" android:src="@mipmap/icon_im_gift_chat" style="@style/im_bottom_iv" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/color_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/extra_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

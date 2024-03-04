@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <TextView android:textSize="@dimen/text_larger" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/delete_account_applied" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/delete_account_tips" android:lineSpacingExtra="1.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/exit" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:text="@string/delete_account_exit" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Button.Common.FullWidth" />
+</LinearLayout>

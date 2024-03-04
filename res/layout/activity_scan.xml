@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <com.guochao.faceshow.aaspring.modulars.ugc.zxing.view.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_60" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cz_photo" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/live_half_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/Album_selection" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:navigationIcon="@drawable/icon_back_white">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textSize="@dimen/text_large" android:textColor="@color/white" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" app:indicatorBottomGap="0.0dip" app:indicatorColor="@color/transparent" app:indicatorHeight="0.0dip" app:mode="wrap_content" app:selectedTextColor="@color/black_222222" app:selectedTextSize="@dimen/text_large" app:textColor="@color/black_222222" app:textSize="@dimen/text_small" app:textStyle="bold" app:textUnSelectStyle="normal" style="@style/TabLayout" />
+            <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.fragment.app.FragmentContainerView android:layout_gravity="center_horizontal" android:id="@id/marquee_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_80" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.TouchDownsView android:orientation="vertical" android:id="@id/tochdow" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.header.MaterialHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="vertical" android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.guochao.faceshow.aaspring.views.UgcFooter android:id="@id/ugc_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/first_use" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/swipe_to_see_more" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Swipe_to_view_more" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</com.guochao.faceshow.aaspring.views.TouchDownsView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/transparent" android:paddingTop="@dimen/dp_60" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_16" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+        <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:id="@id/bg_title_lay" android:background="@mipmap/vip_bj" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="1.3787" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/dialog_vip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:paddingStart="12.5dip" android:paddingEnd="12.5dip">
+                        <ImageView android:layout_gravity="start|center" android:id="@id/close" android:padding="8.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@mipmap/icon_little_back" />
+                        <ImageView android:layout_gravity="end|center" android:id="@id/to_1v1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/vip_service" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_be_vip" />
+                    </FrameLayout>
+                    <com.guochao.faceshow.aaspring.views.VipSwitcherView android:layout_gravity="center_horizontal" android:id="@id/vip_swicher" android:layout_width="wrap_content" android:layout_height="wrap_content" app:containerMode="dialog" />
+                </LinearLayout>
+                <androidx.fragment.app.FragmentContainerView android:id="@id/buy_vip_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

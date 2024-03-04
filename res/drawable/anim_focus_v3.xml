@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_0" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_1" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_2" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_3" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_4" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_5" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_6" />
+    <item android:duration="@integer/ugc_focus_anim" android:drawable="@mipmap/guanzhu_7" />
+</animation-list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/item" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textSize="@dimen/text_normal" android:textColor="@color/tv_select" android:gravity="center" android:id="@id/item_category_menu_tv" android:background="@drawable/bg_text_item" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="text1" android:textAlignment="center" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" />
+</LinearLayout>

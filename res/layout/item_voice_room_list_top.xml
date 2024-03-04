@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/gray_f3f7fb" android:paddingBottom="@dimen/dp_11" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_11"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/blue_FF008AFF" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="@string/voice_room_invite_enter_room" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycleView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/rlItemLayout" android:background="@color/white" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/ivImg" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginStart="@dimen/dp_10" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff020102" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+    <ImageView android:id="@id/checkbox" android:visibility="gone" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" android:src="@mipmap/ic_set_info_country_selected_right" />
+</LinearLayout>

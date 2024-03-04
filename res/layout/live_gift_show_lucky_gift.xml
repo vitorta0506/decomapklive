@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/gift_tips_height" android:layout_marginTop="12.0dip" android:measureAllChildren="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:layout_marginEnd="60.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-6.0dip">
+            <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center" android:id="@id/live_gift_tips_headimage" android:layout_width="@dimen/gift_tips_height" android:layout_height="@dimen/gift_tips_height" android:src="@mipmap/default_head" />
+            <ImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="@dimen/gift_pendent_height" android:layout_height="@dimen/gift_pendent_height" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/live_gift_tips_name_ly" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="4.0dip">
+            <TextView android:textSize="@dimen/text_normal_fifteen" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/live_gift_tips_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/live_gift_tips_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sent" android:singleLine="true" />
+                <ImageView android:id="@id/live_gift_tips_gift_img" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="@android:color/white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lucky_gift_reward" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="bottom" android:id="@id/win_type" android:layout_width="132.0dip" android:layout_height="86.0dip" android:layout_marginBottom="-5.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/lucky_gift_times_button_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="7.0dip" android:paddingEnd="7.0dip">
+                <com.guochao.faceshow.gift.view.NumberIconTextView android:textSize="@dimen/text_smallest" android:textStyle="bold|italic" android:textColor="#fffeed7e" android:layout_gravity="center" android:id="@id/reward_times" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

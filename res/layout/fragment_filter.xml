@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/filter_seekbar_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" android:layout_marginEnd="16.0dip">
+            <SeekBar android:enabled="false" android:id="@id/filter_seekbar" android:max="100" android:thumb="@mipmap/seekbar_disable" style="@style/SeekBar" />
+            <TextView android:textSize="@dimen/text_larger" android:textColor="@color/color_text_level_3" android:layout_gravity="center_vertical" android:id="@id/tv_filter_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

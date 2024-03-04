@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bitmap_withdraw_bg" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/space_weight" android:layout_width="0.0dip" android:layout_height="56.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/dp_16" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_25">
+                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_f_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f_balance" />
+                <TextView android:textSize="45.0sp" android:textColor="@color/white" android:id="@id/tv_f_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="0" android:includeFontPadding="false" android:shadowColor="#ff1281c0" android:shadowDy="4.0" android:shadowRadius="3.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@drawable/bg_recharge" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16" />
+</FrameLayout>

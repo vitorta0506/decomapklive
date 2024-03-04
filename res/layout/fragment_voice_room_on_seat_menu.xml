@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="36.0dip" android:paddingEnd="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:id="@id/mute" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voice_room_mute_self" style="@style/VoiceMenuButtonStyle" />
+    <com.google.android.material.button.MaterialButton android:id="@id/leave_seat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/voice_room_leave_seat" style="@style/VoiceMenuButtonStyle" />
+    <com.google.android.material.button.MaterialButton android:id="@id/my_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/voice_room_my_card" style="@style/VoiceMenuButtonStyle" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/color_ugc_text_level_3" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip" android:text="@string/str_no" style="@style/VoiceMenuButtonStyle" />
+</LinearLayout>

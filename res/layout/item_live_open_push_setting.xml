@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_84"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/head_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_44" app:showStyle="showPush" />
+        <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/layout_user_center_sex_level" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_toggle" android:layout_marginEnd="@dimen/dp_16" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</FrameLayout>

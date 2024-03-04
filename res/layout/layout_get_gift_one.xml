@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:background="@mipmap/ic_mvp_bg_get_gift_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="22.5dip" android:layout_marginEnd="22.5dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_90" />
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/real_black" android:gravity="center" android:id="@id/nameTV" android:layout_width="@dimen/dp_90" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" />
+    </LinearLayout>
+</FrameLayout>

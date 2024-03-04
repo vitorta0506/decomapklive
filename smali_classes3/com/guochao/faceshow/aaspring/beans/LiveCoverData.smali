@@ -1,0 +1,89 @@
+.class public Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private infoName:Ljava/lang/String;
+
+.field private liveImg:Ljava/lang/String;
+
+.field private morePeopleInfoName:Ljava/lang/String;
+
+.field private privateOnlineNum:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getInfoName()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->infoName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getLiveImg()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->liveImg:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getMorePeopleInfoName()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->morePeopleInfoName:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getPrivateOnlineNum()I
+    .locals 1
+
+    iget v0, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->privateOnlineNum:I
+
+    return v0
+.end method
+
+.method public setInfoName(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->infoName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setLiveImg(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->liveImg:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setMorePeopleInfoName(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->morePeopleInfoName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setPrivateOnlineNum(I)V
+    .locals 0
+
+    iput p1, p0, Lcom/guochao/faceshow/aaspring/beans/LiveCoverData;->privateOnlineNum:I
+
+    return-void
+.end method

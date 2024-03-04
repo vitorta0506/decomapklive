@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_64"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_44" app:showStyle="showUgc" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_dark" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_12" />
+    <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_invite" android:background="@drawable/bg_hello_start_btn" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="92.0dip" android:text="@string/live_invite" android:singleLine="true" android:paddingStart="@dimen/dp_23" android:paddingEnd="@dimen/dp_23" android:layout_marginStart="@dimen/dp_25" android:layout_marginEnd="@dimen/dp_20" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_bg_gray2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <RelativeLayout android:id="@id/set_group" android:background="@drawable/list_item_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="@dimen/dp_55" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/set_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_group" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="end" android:gravity="end|center" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/icon_chat_detail_arrow" android:layout_marginStart="20.0dip" android:layout_toEndOf="@id/set_group_title" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlDoNotLookLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvDoNotLook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/muser_center_setting_not_look" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/swDoNotLook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" android:drawableEnd="@drawable/selector_checkbox_to_switch" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlDoNotLiveNoticeLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvDoNotLiveNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/muser_center_setting_not_notice" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/swDoNotLiveNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" android:drawableEnd="@drawable/selector_checkbox_to_switch" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlStealthLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvStealth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/muser_center_setting_not_stealth" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/swStealth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" android:drawableEnd="@drawable/selector_checkbox_to_switch" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlShieldingLayout" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvShielding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to_block_list" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlToReportLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvToReport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlMeetLayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tvMeet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/swMeet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" android:drawableEnd="@drawable/selector_checkbox_to_switch" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_un_follow" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_5" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_normal" android:id="@id/tv_un_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Cancel_the_attention" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

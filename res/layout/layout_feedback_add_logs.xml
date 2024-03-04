@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:id="@id/log_check" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/feedback_upload_logs" android:drawablePadding="6.0dip" android:drawableStart="@drawable/selector_log_check" />
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_upload_logs_tips" />
+</LinearLayout>

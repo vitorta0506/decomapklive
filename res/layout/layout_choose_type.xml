@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:ratio="0.64"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:cardBackgroundColor="@color/color_window_background_light" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false">
+        <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="bottom" android:background="@drawable/wantto_image_bj" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/check_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.5dip" android:src="@mipmap/selector_selected" />
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:layout_gravity="start|bottom|center" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:singleLine="true" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

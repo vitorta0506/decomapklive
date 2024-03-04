@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@mipmap/shape_live_header_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="8.0dip" android:minHeight="40.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_zb_kspp" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+        <TextView android:textSize="@dimen/text_small" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fast_match" android:singleLine="true" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="true" android:textAlignment="gravity" android:layout_marginStart="10.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mirror_ic_header_arrow" android:layout_marginStart="10.0dip" />
+</LinearLayout>

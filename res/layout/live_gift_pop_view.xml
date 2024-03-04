@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_black_round20" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gift_lock_recycle_view" android:layout_width="fill_parent" android:layout_height="@dimen/dp_170" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gift_pop_empty_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_170">
+        <ImageView android:id="@id/empty_icon" android:layout_width="130.0dip" android:layout_height="80.0dip" android:src="@drawable/empty_jfdh" />
+        <TextView android:textColor="@color/text_normal" android:gravity="center" android:id="@id/empty_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+</FrameLayout>

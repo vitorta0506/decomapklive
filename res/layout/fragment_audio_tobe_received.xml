@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/blur_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/bg_blur_image" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center_horizontal" android:id="@id/user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="124.0dip" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitBorderColor="@color/white" app:headPortraitBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_80" app:showStyle="showUgc" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:layout_marginStart="@dimen/dp_25" android:layout_marginEnd="@dimen/dp_25" />
+        <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" layout="@layout/layout_user_center_sex_level" />
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/connection_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.5dip" android:text="@string/trtc_is_connectioning" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/hang_up_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_50">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/trtc_appointment_hang_up" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/trtc_60_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_23" android:text="@string/str_no" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

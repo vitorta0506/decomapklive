@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_content" android:background="@color/white" android:paddingBottom="@dimen/tab_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:id="@id/stbp_view" android:background="@color/lightStatusBarColor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" app:showBadge="true" style="@style/tabs_main_page" />
+        </FrameLayout>
+        <com.guochao.faceshow.aaspring.views.NoScrollViewPager android:id="@id/view_pager" android:tag="view_pager" android:background="@drawable/live_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/user_guide_my_room" android:background="@drawable/icon_chat_icon_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="136.0dip" android:maxWidth="250.0dip" android:text="@string/voice_roome_my_room_frist_tips" android:layout_alignParentBottom="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" android:backgroundTint="@color/color_ugc_app_primary" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/my_rooms" android:background="@drawable/voice_room_bg_my_rooms" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:minHeight="30.0dip" android:layout_alignParentBottom="true" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true">
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/svga" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Rooms" android:fontFamily="@string/font_family_medium" android:layout_marginStart="3.0dip" />
+    </LinearLayout>
+    <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/first_recharge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="112.0dip" android:src="@mipmap/icon_first_recharge_livepage" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/user_guide" android:layout="@layout/layout_user_guide_live_and_ugc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

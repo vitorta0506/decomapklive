@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_live_dialog_bg_common_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_32" android:layout_marginEnd="@dimen/dp_32"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_57">
+        <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdrawal_success" />
+        <ImageView android:layout_gravity="end" android:id="@id/ivclose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:src="@mipmap/withdrawal_popup_close" />
+    </FrameLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/text_normal_fifteen" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:gravity="center_horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:text="@string/packshenqing" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" />
+    <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/btn_login_blue_light" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_22" android:text="@string/ok" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" />
+</LinearLayout>

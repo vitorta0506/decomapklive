@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/push_status" android:background="@drawable/bg_connections_tip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/im_push_close" android:background="?selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_close_notification_tip" android:layout_marginStart="2.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_notification_tip" android:layout_marginStart="@dimen/dp_4" />
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_im_push" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/im_push_message" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8" />
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_notification_open" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_20" android:text="@string/Turn_on" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+</LinearLayout>

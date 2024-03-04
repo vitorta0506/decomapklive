@@ -1,0 +1,345 @@
+.class public final Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;
+.super Lcom/guochao/faceshow/aaspring/base/mvvm/fragment/GCCoreFragment;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u001a\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011H\u0014J\u0008\u0010\u0012\u001a\u00020\rH\u0002J\u0008\u0010\u0013\u001a\u00020\rH\u0016R\u0014\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000b\u00a8\u0006\u0014"
+    }
+    d2 = {
+        "Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;",
+        "Lcom/guochao/faceshow/aaspring/base/mvvm/fragment/GCCoreFragment;",
+        "()V",
+        "list",
+        "",
+        "Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;",
+        "viewBinding",
+        "Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;",
+        "getViewBinding",
+        "()Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;",
+        "setViewBinding",
+        "(Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;)V",
+        "initView",
+        "",
+        "root",
+        "Landroid/view/View;",
+        "savedInstanceState",
+        "Landroid/os/Bundle;",
+        "loadData",
+        "onDestroy",
+        "app_GooglePlayRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final list:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public viewBinding:Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/guochao/faceshow/aaspring/base/mvvm/fragment/GCCoreFragment;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 3
+    new-instance v1, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;
+
+    invoke-direct {v1}, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;-><init>()V
+
+    const-string v2, "1"
+
+    .line 4
+    invoke-virtual {v1, v2}, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;->setMessageType(Ljava/lang/String;)V
+
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 6
+    new-instance v1, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;
+
+    invoke-direct {v1}, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;-><init>()V
+
+    const-string v2, "2"
+
+    .line 7
+    invoke-virtual {v1, v2}, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;->setMessageType(Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 9
+    new-instance v1, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;
+
+    invoke-direct {v1}, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;-><init>()V
+
+    const-string v2, "3"
+
+    .line 10
+    invoke-virtual {v1, v2}, Lcom/guochao/faceshow/aaspring/beans/AuthorityNotifyBean;->setMessageType(Ljava/lang/String;)V
+
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 12
+    iput-object v0, p0, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->list:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public static synthetic P1(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->initView$lambda-4(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic Q1(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->initView$lambda-6(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static final synthetic access$getList$p(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;)Ljava/util/List;
+    .locals 0
+
+    iget-object p0, p0, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->list:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method private static final initView$lambda-4(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;Landroid/view/View;)V
+    .locals 0
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+
+    :cond_0
+    return-void
+.end method
+
+.method private static final initView$lambda-6(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;Landroid/view/View;)V
+    .locals 2
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    new-instance p1, Lcom/guochao/faceshow/views/e;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment$initView$2$1;
+
+    invoke-direct {v1, p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment$initView$2$1;-><init>(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;)V
+
+    invoke-direct {p1, v0, v1}, Lcom/guochao/faceshow/views/e;-><init>(Landroid/content/Context;Lcom/guochao/faceshow/views/e$a;)V
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p1, v0}, Lcom/guochao/faceshow/views/e;->b(Ljava/lang/CharSequence;)Lcom/guochao/faceshow/views/e;
+
+    const v0, 0x7f12042e
+
+    .line 3
+    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Lcom/guochao/faceshow/views/e;->f(Ljava/lang/CharSequence;)Lcom/guochao/faceshow/views/e;
+
+    .line 4
+    invoke-virtual {p1}, Lcom/guochao/faceshow/views/e;->show()V
+
+    return-void
+.end method
+
+.method private final loadData()V
+    .locals 2
+
+    const-string v0, "tokens/user/message/findSocialMessage"
+
+    invoke-virtual {p0, v0}, Lcom/guochao/faceshow/aaspring/base/mvvm/fragment/GCCoreFragment;->get(Ljava/lang/String;)Lcom/guochao/faceshow/aaspring/base/http/request/GetRequest;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment$loadData$1;
+
+    invoke-direct {v1, p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment$loadData$1;-><init>(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;)V
+
+    invoke-virtual {v0, v1}, Lcom/guochao/faceshow/aaspring/base/http/request/BaseFaceCastRequest;->M(Lcom/guochao/faceshow/aaspring/base/http/callback/c;)Lcom/guochao/faceshow/aaspring/base/http/request/BaseFaceCastRequest;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getViewBinding()Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    iget-object v0, p0, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->viewBinding:Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "viewBinding"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method protected initView(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 1
+    .param p1    # Landroid/view/View;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/Bundle;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    const-string v0, "root"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lcom/guochao/faceshow/aaspring/base/mvvm/fragment/GCCoreFragment;->initView(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
+    invoke-virtual {p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->getViewBinding()Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+    move-result-object p2
+
+    iget-object p2, p2, Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;->back:Landroid/widget/ImageView;
+
+    new-instance v0, Lcom/guochao/faceshow/component/live/fragment/e;
+
+    invoke-direct {v0, p0}, Lcom/guochao/faceshow/component/live/fragment/e;-><init>(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;)V
+
+    invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->getViewBinding()Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+    move-result-object p2
+
+    iget-object p2, p2, Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;->clear:Landroid/widget/ImageView;
+
+    new-instance v0, Lcom/guochao/faceshow/component/live/fragment/f;
+
+    invoke-direct {v0, p0}, Lcom/guochao/faceshow/component/live/fragment/f;-><init>(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;)V
+
+    invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 4
+    invoke-static {p1}, Lcom/guochao/faceshow/component/live/utils/FloatFragmentUtils;->setDefaultFragmentViewHeight(Landroid/view/View;)V
+
+    .line 5
+    invoke-virtual {p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->getViewBinding()Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;->title:Landroid/widget/TextView;
+
+    const p2, 0x7f1208af
+
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
+
+    .line 6
+    invoke-virtual {p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->getViewBinding()Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    new-instance p2, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment$initView$3;
+
+    invoke-direct {p2, p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment$initView$3;-><init>(Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;)V
+
+    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+
+    .line 7
+    invoke-direct {p0}, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->loadData()V
+
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 0
+
+    .line 1
+    invoke-static {}, Lcom/guochao/faceshow/aaspring/modulars/chat/utils/SystemConversationManager;->loadMessageFromServer()V
+
+    .line 2
+    invoke-super {p0}, Landroidx/fragment/app/Fragment;->onDestroy()V
+
+    return-void
+.end method
+
+.method public final setViewBinding(Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;)V
+    .locals 1
+    .param p1    # Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "<set-?>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object p1, p0, Lcom/guochao/faceshow/component/live/fragment/LiveFloatInteractionFragment;->viewBinding:Lcom/guochao/faceshow/databinding/FragmentLiveFloatInteractionBinding;
+
+    return-void
+.end method

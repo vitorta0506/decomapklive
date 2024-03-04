@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hobby_selected_label" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start" android:id="@id/tv_tag_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/bg_edit_text_set_info" android:padding="@dimen/dp_6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/user_tag_selected" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.guochao.faceshow.aaspring.views.TabLayout android:layout_gravity="start" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" app:indicatorBottomGap="0.0dip" app:indicatorColor="@color/transparent" app:indicatorDrawable="@drawable/bg_user_page_indicator" app:indicatorWidth="@dimen/dp_7" app:selectedTextColor="@color/color_text_level_1" app:selectedTextSize="@dimen/text_normal" app:showBadge="true" app:tabMargin="@dimen/dp_24" app:textColor="@color/color_ugc_text_level_2" app:textSize="@dimen/text_small" app:textStyle="bold" />
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/dp_6" android:layout_marginBottom="@dimen/dp_16" android:layout_weight="2.0" />
+    <TextView android:gravity="center" android:id="@id/save" android:layout_marginTop="@dimen/dp_21" android:layout_marginBottom="@dimen/dp_21" android:text="@string/save" style="@style/Button.Common.Pop" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_toparenttop"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/login_divider" android:adjustViewBounds="true" />
+    <TextView android:textColor="#ffd4d5db" android:layout_gravity="center" android:id="@id/tips_or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or" />
+</FrameLayout>

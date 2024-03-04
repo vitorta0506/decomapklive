@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/hot_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <View android:background="@color/FindYouLineBg" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <View android:background="@drawable/bg_circle_middle_divider" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_6" />
+        <View android:background="@color/FindYouLineBg" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="11.0dip">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitSize="@dimen/dp_28" app:showStyle="showLiveWatcher" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="5.5dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginStart="2.5dip">
+                    <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_2" android:id="@id/author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextView.UserName" />
+                    <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" app:iconScale="0.8" />
+                    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/color_ugc_app_primary" android:gravity="center_vertical" android:id="@id/author" android:background="@drawable/shape_ugc_uthor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Author" android:paddingStart="4.5dip" android:paddingEnd="4.5dip" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_text_level_1" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:includeFontPadding="false" android:layout_marginStart="2.5dip" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:includeFontPadding="false" android:layout_marginStart="2.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/like_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_14">
+            <ImageView android:id="@id/icon_like" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_video_dianzan_little" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_text_selectable" android:id="@id/like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/reply_item" android:background="@drawable/bg_circle_f4f6f9" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:paddingStart="16.0dip" android:layout_marginStart="51.0dip" android:layout_marginEnd="@dimen/dp_14">
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/reply_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitSize="@dimen/dp_28" app:showStyle="showLiveWatcher" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_2" android:id="@id/reply_author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextView.UserName" />
+                    <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/reply_vip_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" app:iconScale="0.8" />
+                    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/color_ugc_app_primary" android:id="@id/reply_author" android:background="@drawable/shape_ugc_uthor" android:paddingTop="2.5dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Author" android:paddingStart="5.5dip" android:paddingEnd="5.5dip" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_text_level_1" android:id="@id/reply_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_text_level_3" android:id="@id/reply_send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@mipmap/bg_transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_dianzan_little" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/dp_4" android:layout_marginStart="51.0dip" />
+</LinearLayout>

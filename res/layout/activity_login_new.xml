@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_login_animationview" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lay_content" android:background="@drawable/login_activity_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHeight_percent="0.75">
+        <include android:id="@id/include_title" app:layout_constraintTop_toTopOf="parent" layout="@layout/gc_base_title_bar_no_line" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_totitle" android:layout_marginStart="@dimen/dp_40" android:layout_marginEnd="@dimen/dp_40" app:layout_constraintTop_toTopOf="parent">
+                    <ImageView android:id="@id/rv_country" android:background="@null" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@mipmap/ic_earth" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:id="@id/tv_country" android:text="+00" android:layout_marginEnd="@dimen/dp_12" style="@style/tv_country_code" />
+                    <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:id="@id/et_phone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_pwd" android:layout_marginTop="@dimen/login_totitle" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_phone" style="@style/ll_login_et_group">
+                    <EditText android:id="@id/et_pwd" android:hint="@string/Input_password" android:imeOptions="actionDone" android:paddingStart="0.0dip" android:paddingEnd="@dimen/dp_8" style="@style/et_pwd" />
+                    <ImageView android:id="@id/iv_pwd" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_pwd_hide" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_enter_facecast" android:layout_marginTop="@dimen/login_btn_totop" android:text="@string/Enter_FaceCast" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_pwd" style="@style/Button.LoginNext" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/tv_alertred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_btn_totop" android:text="@string/Forget_password" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_enter_facecast" />
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/other_area" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/layout_login_divider" />
+                <FrameLayout android:layout_gravity="center" android:id="@id/other_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_totitle" android:layout_marginBottom="@dimen/login_toparentbottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

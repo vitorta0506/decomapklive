@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_weight="1.0" app:indicatorBottomGap="0.0dip" app:indicatorDrawable="@drawable/indicator" app:mode="wrap_content" app:selectedTextColor="@color/color_text_level_1" app:selectedTextSize="@dimen/text_normal" app:textColor="@color/color_ugc_text_level_2" app:textSize="@dimen/text_normal" app:textStyle="bold" style="@style/TabLayout" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_more_country" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/icon_live_area_bottom_arrow" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+            </LinearLayout>
+            <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <com.guochao.faceshow.aaspring.views.NoScrollViewPager android:id="@id/view_pager" android:background="@drawable/live_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+        </LinearLayout>
+        <include android:visibility="gone" layout="@layout/dialog_live_country" />
+    </FrameLayout>
+</LinearLayout>

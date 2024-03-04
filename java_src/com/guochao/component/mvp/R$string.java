@@ -1,0 +1,96 @@
+package com.guochao.component.mvp;
+/* loaded from: classes3.dex */
+public final class R$string {
+    public static final int charge = 2131886441;
+    public static final int common_do_success = 2131886524;
+    public static final int error_code = 2131886666;
+    public static final int i_want_to_charge_avatar = 2131887138;
+    public static final int i_want_to_charge_car = 2131887139;
+    public static final int i_want_to_charge_shade = 2131887143;
+    public static final int lottery_i_know = 2131887408;
+    public static final int mvp_can_use_in_bag = 2131887638;
+    public static final int mvp_can_use_in_bag_def = 2131887639;
+    public static final int mvp_customer_service = 2131887640;
+    public static final int mvp_customer_service_contact = 2131887641;
+    public static final int mvp_customer_service_id = 2131887642;
+    public static final int mvp_diff_tips = 2131887643;
+    public static final int mvp_get_small_tips_badge = 2131887644;
+    public static final int mvp_get_small_tips_bullet = 2131887645;
+    public static final int mvp_get_small_tips_car = 2131887646;
+    public static final int mvp_get_small_tips_chat = 2131887647;
+    public static final int mvp_get_small_tips_diamond = 2131887648;
+    public static final int mvp_get_small_tips_gift = 2131887649;
+    public static final int mvp_get_small_tips_head = 2131887650;
+    public static final int mvp_get_small_tips_no_set = 2131887651;
+    public static final int mvp_get_small_tips_set_user_id = 2131887652;
+    public static final int mvp_get_small_tips_time = 2131887653;
+    public static final int mvp_get_title_free_time = 2131887654;
+    public static final int mvp_get_title_set_top = 2131887655;
+    public static final int mvp_get_title_tips_badge = 2131887656;
+    public static final int mvp_get_title_tips_bullet = 2131887657;
+    public static final int mvp_get_title_tips_car = 2131887658;
+    public static final int mvp_get_title_tips_chat = 2131887659;
+    public static final int mvp_get_title_tips_gift = 2131887660;
+    public static final int mvp_get_title_tips_head = 2131887661;
+    public static final int mvp_gift_get = 2131887662;
+    public static final int mvp_gift_get_all = 2131887663;
+    public static final int mvp_gift_geted = 2131887664;
+    public static final int mvp_gift_have = 2131887665;
+    public static final int mvp_gift_select_success_title = 2131887666;
+    public static final int mvp_gift_select_title_car = 2131887667;
+    public static final int mvp_gift_select_title_something = 2131887668;
+    public static final int mvp_gift_un_use = 2131887669;
+    public static final int mvp_gift_useed = 2131887670;
+    public static final int mvp_helper_tips1 = 2131887671;
+    public static final int mvp_helper_tips2 = 2131887672;
+    public static final int mvp_helper_tips3 = 2131887673;
+    public static final int mvp_helper_tips4 = 2131887674;
+    public static final int mvp_helper_tips5 = 2131887675;
+    public static final int mvp_helper_tips6 = 2131887676;
+    public static final int mvp_helper_tips7 = 2131887677;
+    public static final int mvp_helper_tips8 = 2131887678;
+    public static final int mvp_helper_tips9 = 2131887679;
+    public static final int mvp_my_mvp = 2131887682;
+    public static final int mvp_next_month = 2131887683;
+    public static final int mvp_next_month_no_get = 2131887684;
+    public static final int mvp_next_month_tips = 2131887685;
+    public static final int mvp_not_yet_use = 2131887686;
+    public static final int mvp_one_key_get_title = 2131887687;
+    public static final int mvp_only_for_you_badge = 2131887688;
+    public static final int mvp_only_for_you_diamond = 2131887689;
+    public static final int mvp_reward_diamond = 2131887690;
+    public static final int mvp_reward_get_tips = 2131887691;
+    public static final int mvp_set_anchor_free_time = 2131887692;
+    public static final int mvp_set_anchor_free_time_des = 2131887693;
+    public static final int mvp_set_anchor_free_time_hint = 2131887694;
+    public static final int mvp_set_anchor_to_top = 2131887695;
+    public static final int mvp_set_free_time_already = 2131887696;
+    public static final int mvp_set_free_time_success = 2131887697;
+    public static final int mvp_set_time_picker_title = 2131887698;
+    public static final int mvp_set_top_america_time = 2131887699;
+    public static final int mvp_set_top_success = 2131887700;
+    public static final int mvp_set_top_time_conflict = 2131887701;
+    public static final int mvp_set_top_time_input_right = 2131887702;
+    public static final int mvp_set_top_time_message = 2131887703;
+    public static final int mvp_set_top_time_message_des = 2131887704;
+    public static final int mvp_set_top_time_post_success = 2131887705;
+    public static final int mvp_set_top_time_user_freeze = 2131887706;
+    public static final int mvp_set_top_time_user_id = 2131887707;
+    public static final int mvp_set_top_time_user_message = 2131887708;
+    public static final int mvp_set_top_time_user_no_broadcast = 2131887709;
+    public static final int mvp_this_month_is_mvp_no = 2131887712;
+    public static final int mvp_this_month_is_mvp_yes = 2131887713;
+    public static final int mvp_this_month_monty = 2131887714;
+    public static final int mvp_toast_get_diamond = 2131887715;
+    public static final int mvp_toast_get_diamond_status_error = 2131887716;
+    public static final int mvp_toast_get_one_key_success = 2131887717;
+    public static final int mvp_toast_tips_something = 2131887718;
+    public static final int mvp_valid_date = 2131887719;
+
+    /* renamed from: ok  reason: collision with root package name */
+    public static final int f15845ok = 2131887770;
+    public static final int use_right_now = 2131888550;
+
+    private R$string() {
+    }
+}

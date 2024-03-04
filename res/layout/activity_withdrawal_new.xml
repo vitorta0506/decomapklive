@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/base_title" />
+        <FrameLayout android:id="@id/fl_select_withdrawal_way" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_withdrawal_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/withdrawal_payoneer" android:layout_marginEnd="@dimen/dp_8" />
+                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_vertical" android:id="@id/tv_withdrawal_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdrawal_please_select_method" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end|center" android:id="@id/iv_withdrawal_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/withdrawal_more" android:layout_marginEnd="@dimen/dp_16" />
+            <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ali_pay_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/fl_ali_pay_account" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_3" android:layout_gravity="center_vertical" android:id="@id/et_ali_pay_account" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/withdrawal_please_ente_account" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_ali_pay_name" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_3" android:layout_gravity="center_vertical" android:id="@id/et_ali_pay_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/withdrawal_name" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bank_card_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/fl_bank_card" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:layout_gravity="end|center" android:id="@id/et_bank_card_account" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/withdrawal_bank_card_no" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_bank_card_account_holder" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:layout_gravity="end|center" android:id="@id/et_bank_card_account_holder" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/withdrawal_account_holder" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/rlBankNameLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_66">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdrawal_bank_name" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16" />
+                <ImageView android:id="@id/ivArrowRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/withdrawal_more" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tvBankName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/ivArrowRight" />
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/fl_bank_card_address" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:layout_gravity="end|center" android:id="@id/et_bank_card_address" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/withdrawal_bank_address" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_pay_pal_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:layout_gravity="end|center" android:id="@id/et_pay_pal_account" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/paypal_email" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:layout_gravity="end|center" android:id="@id/et_pay_pal_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/withdrawal_name" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fl_region" android:layout_width="fill_parent" android:layout_height="@dimen/dp_66">
+                <TextView android:textSize="16.0sp" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tv_region_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_region" android:layout_marginStart="@dimen/dp_16" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_16">
+                    <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/color_ugc_text_level_1" android:gravity="end" android:id="@id/tv_region" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/withdrawal_more" android:layout_marginStart="@dimen/dp_13" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_payoneer_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/fl_payoneer" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdrawal_payoneer_id" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+                <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/ll_payoneer_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/et_payoneer_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <ImageView android:id="@id/iv_payoneer_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/withdrawal_more" android:layout_marginStart="@dimen/dp_13" />
+                </LinearLayout>
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_payoneerv2_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_55">
+                <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:textColorHint="@color/color_ugc_text_level_2" android:ellipsize="end" android:layout_gravity="end|center" android:id="@id/et_payoneer_account" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/withdrawal_please_ente_payonner_account" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        </LinearLayout>
+        <ViewStub android:id="@id/usdt_area" android:layout="@layout/layout_withdraw_input" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/amount_normal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdrawal_amount" android:layout_marginStart="@dimen/dp_16" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="end|center" android:id="@id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥50" android:layout_marginEnd="@dimen/dp_16" />
+            <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_payoneer_add" android:id="@id/tv_add_payoneer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:text="@string/withdrawal_add_payoneer_acount" android:layout_marginStart="@dimen/dp_16" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btnWithdrawal" android:background="@drawable/btn_login_blue_light" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/dp_20" android:text="@string/ok" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/withdrawal_bottom_tips2" android:layout_marginStart="@dimen/dp_34" android:layout_marginEnd="@dimen/dp_34" />
+        <ViewStub android:id="@id/usdt_tips_area" android:layout="@layout/layout_withdrawal_usdt_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="@dimen/dp_34" android:layout_marginEnd="@dimen/dp_34" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_gravity="bottom|center" android:id="@id/tv_payoneer_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_25" android:text="@string/withdrawal_payoneer_tip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+</merge>

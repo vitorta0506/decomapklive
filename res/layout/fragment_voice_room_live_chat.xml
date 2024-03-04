@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:animateLayoutChanges="true">
+            <com.guochao.faceshow.aaspring.views.NoBottomEdgeRecyclerView android:layout_gravity="top" android:orientation="vertical" android:id="@id/recycler_view" android:visibility="invisible" android:fadingEdgeLength="30.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:requiresFadingEdge="vertical" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:nestedScrollingEnabled="false" app:layoutManager="LinearLayoutManager" app:stackFromEnd="true" />
+            <Space android:id="@id/space" android:layout_width="55.0dip" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/extra_views" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_btns" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="10.0dip">
+            <ImageView android:id="@id/voice_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/voice_room_voice_state" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/live_chat_btn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_zb_notice" android:layout_marginEnd="@dimen/dp_4" />
+                <TextView android:textSize="14.0sp" android:textColor="#99ffffff" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="say…" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_35" />
+            </RelativeLayout>
+            <ImageView android:id="@id/emojis" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_emojis" />
+            <FrameLayout android:id="@id/live_im_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_message" />
+                <ImageView android:layout_gravity="end|center|top" android:id="@id/im_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shape_live_float_im_dot" />
+            </FrameLayout>
+            <ImageView android:id="@id/live_more_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_more_btn" />
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/icon_multi_game" android:tag="do_not_hide" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/icon_mini_game" android:layout_marginEnd="4.0dip" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/live_gift_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <ImageView android:id="@id/live_normal_btn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/popup_new_message" />
+</RelativeLayout>

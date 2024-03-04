@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.RatioFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="1.777778"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:cardBackgroundColor="#ffb9b9b9" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false" app:contentPadding="0.0dip">
+        <ImageView android:id="@id/lift_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <View android:layout_gravity="bottom" android:background="@drawable/shape_bottom_mask" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="24.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_like" android:layout_marginStart="6.0dip" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:id="@id/hint_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="121" android:layout_marginStart="3.5dip" android:layout_marginEnd="8.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_small_eleven" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="start" android:id="@id/sort_tv" android:background="@drawable/bg_video_no1" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8" android:layout_marginStart="6.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorTextWhite" android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/video_official_flag" android:background="@drawable/bg_video_official" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20.0dip" android:text="@string/official" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    </androidx.cardview.widget.CardView>
+</com.guochao.faceshow.aaspring.views.RatioFrameLayout>

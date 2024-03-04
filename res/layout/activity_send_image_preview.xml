@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.aaspring.views.HackyViewPager android:id="@id/view_pager" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transitionName="img" />
+    <include layout="@layout/base_title" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_bottom_navigation" android:background="#66000000" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:layout_gravity="start|center" android:id="@id/tv_compile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:text="@string/compile" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center" android:id="@id/count" android:background="@drawable/btn_login_blue_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="28.0dip" android:text="@string/send" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+    </FrameLayout>
+</FrameLayout>

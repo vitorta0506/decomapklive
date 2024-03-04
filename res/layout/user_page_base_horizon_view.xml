@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/show_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black66" android:layout_gravity="center_vertical" android:id="@id/show_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_toEndOf="@id/show_type_icon" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/more_arrow_btn_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black66" android:id="@id/more_arrow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_toStartOf="@id/more_arrow_image" />
+        <ImageView android:id="@id/more_arrow_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_end" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</RelativeLayout>

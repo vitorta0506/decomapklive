@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/live_gift_top_tips_ly" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="100.0dip" android:animateLayoutChanges="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/live_gift_middle_left_tips_ly" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="330.0dip" android:layout_alignParentBottom="true" android:animateLayoutChanges="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    <com.guochao.faceshow.aaspring.svga.SVGAImageExtend android:id="@id/live_big_anim_view" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignParentBottom="true" app:autoPlay="true" />
+    <FrameLayout android:id="@id/live_big_anim_view_vap" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <View android:id="@id/view_center_none" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerInParent="true" />
+    <com.guochao.faceshow.aaspring.svga.SVGAImageExtend android:id="@id/live_small_anim_view" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginBottom="-100.0dip" android:layout_alignBottom="@id/view_center_none" android:layout_marginStart="10.0dip" app:autoPlay="true" />
+    <FrameLayout android:id="@id/live_small_anim_view_vap" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginBottom="-100.0dip" android:layout_alignBottom="@id/view_center_none" android:layout_marginStart="10.0dip" />
+    <com.guochao.faceshow.aaspring.modulars.gift.view.HandyAnimView android:id="@id/handy_gift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

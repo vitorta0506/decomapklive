@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/real_content" android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <RelativeLayout android:id="@id/content_area" android:layout_width="fill_parent" android:layout_height="168.0dip" app:layout_scrollFlags="scroll">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/top_background" android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#fff4f6f9" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <Space android:id="@id/top_space" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/dp_100" app:layout_scrollFlags="scroll">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_17" android:layout_height="@dimen/dp_17" android:src="@mipmap/ic_ugc_topic_small" android:layout_marginStart="@dimen/dp_12" />
+                                    <TextView android:textSize="@dimen/text_larger" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/topic_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_6" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginStart="@dimen/dp_11">
+                                    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center_vertical" android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitSize="@dimen/dp_20" app:showStyle="showLiveWatcher" />
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8">
+                                        <TextView android:textSize="@dimen/text_smaller" android:textColor="#ff9497a2" android:layout_gravity="start|center" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.UserName.Bold" />
+                                        <TextView android:textColor="@color/white" android:id="@id/count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/TextView.UserName" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <ImageView android:layout_gravity="end|center" android:id="@id/publishIV" android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_36" android:src="@mipmap/ic_ugc_publish" android:layout_marginEnd="@dimen/dp_14" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/bg_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:minHeight="@dimen/dp_54" app:layout_scrollFlags="scroll|snap">
+                    <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" app:indicatorBottomGap="0.0dip" app:indicatorColor="@color/transparent" style="@style/TabLayout.Topic" />
+                </FrameLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/not_exist" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="192.0dip" android:src="@mipmap/empty_no_topic" />
+            <TextView android:textColor="@color/color_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/ugc_topic_not_exist" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/base_title_transparent" />
+            <View android:layout_gravity="bottom" android:id="@id/bottom_divider" android:background="@color/color_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+            <FrameLayout android:id="@id/tabs_sticky_area" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs_sticky" app:indicatorBottomGap="0.0dip" app:indicatorColor="@color/transparent" style="@style/TabLayout.Topic" />
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider_dialog" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/btn_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <ImageView android:id="@id/publish_picture" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_picture" />
+        <ImageView android:id="@id/publish_video" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@mipmap/icon_ugc_video_publish_video" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/publish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_publish" />
+            <ImageView android:layout_gravity="center" android:id="@id/close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_close_big" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:background="@color/transparentStatusBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

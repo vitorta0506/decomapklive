@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/first_charge_content" android:background="@drawable/shape_bg_first_charge_gift_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@mipmap/shape_first_charge_tips_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_first_recharge_header_left" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_2" android:src="@mipmap/first_charge_clock" android:layout_marginStart="@dimen/dp_6" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:id="@id/tv_count_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="#ff3f2734" android:gravity="center" android:id="@id/view_first_charge" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/inspect" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6" />
+                <ImageView android:id="@id/view_first_charge_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_next_recharge" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:paddingTop="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_want_to_charge_tips2" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+        <FrameLayout android:id="@id/container" android:paddingTop="@dimen/dp_6" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/recycler_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

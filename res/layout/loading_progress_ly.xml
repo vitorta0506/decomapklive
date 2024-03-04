@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_progress" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/shape_radius_black" android:layout_width="144.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:id="@id/center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.guochao.faceshow.aaspring.views.DownloadDialogProgressView android:layout_gravity="center_horizontal" android:id="@id/progress_img" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                <TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@id/progress_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/Saving" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_close_progress" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

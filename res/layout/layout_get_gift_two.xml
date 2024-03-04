@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/dp_24" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/item_get_gift_content" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_36" layout="@layout/item_get_gift_content" />
+    </LinearLayout>
+</FrameLayout>

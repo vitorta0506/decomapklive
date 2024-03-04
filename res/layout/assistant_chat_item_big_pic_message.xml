@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/colorTextWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/assistant_pic_show_time" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:includeFontPadding="false" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    <RelativeLayout android:id="@id/assistant_pic_leftPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="64.0dip">
+        <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/assistant_pic_leftAvatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/default_head" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_round_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/assistant_pic_leftAvatar">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_333333" android:id="@id/titleTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12" />
+            <com.guochao.faceshow.views.ShapedImageView android:id="@id/assistant_pic_left_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:round_radius="8.0dip" app:shape_mode="round_rect" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

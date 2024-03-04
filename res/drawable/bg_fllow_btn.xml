@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="#fff5f6fa" />
+                    <corners android:radius="18.5dip" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="1.0dip" android:color="@color/color_ugc_app_primary" />
+                    <corners android:radius="18.5dip" />
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

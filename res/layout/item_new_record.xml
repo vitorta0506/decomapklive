@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_18" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_record_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/bitmap_record_item_recharge" />
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_10">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="#ff2e2e2e" android:ellipsize="middle" android:layout_gravity="start|center" android:id="@id/tv_record_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退款" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="#ff9497a2" android:layout_gravity="start|center" android:id="@id/tv_refund" android:background="@drawable/bg_record_refund" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_refunded" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6" android:layout_marginStart="@dimen/dp_6" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="#ff9497a2" android:layout_gravity="start|center" android:id="@id/tv_record_order_no" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="GPA.3358-4097-9124-58827" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="#ff9497a2" android:layout_gravity="start|center" android:id="@id/tv_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:text="2020-08-04  21:44:55" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_app_primary" android:id="@id/tv_record_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+99" android:layout_marginStart="@dimen/dp_20" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

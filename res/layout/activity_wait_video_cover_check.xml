@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="66.0dip" android:src="@mipmap/appointment_shot_examine" />
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/review" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/trtc_checking_please_wait" android:layout_marginStart="55.0dip" android:layout_marginEnd="55.0dip" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/top_round_white_bg" android:paddingTop="@dimen/dp_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_28" android:paddingEnd="@dimen/dp_28"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bgm_layput" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@mipmap/bgm_icon_mic_new" />
+        <com.guochao.faceshow.views.TCReversalSeekBar android:layout_gravity="center_vertical" android:id="@id/bgm_sb_voice" android:layout_width="0.0dip" android:layout_height="@dimen/dp_24" android:layout_weight="1.0" android:layout_marginStart="12.0dip" app:rs_backgroundColor="@color/text_color3" app:rs_pointerBackground="@drawable/icon_seek_bar_cursor_size15" app:rs_progress="0.2" app:rs_progressColor="@color/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_65" android:layoutDirection="ltr">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@mipmap/bgm_music_icon_new" />
+        <com.guochao.faceshow.views.TCReversalSeekBar android:layout_gravity="center_vertical" android:id="@id/music_voice" android:layout_width="0.0dip" android:layout_height="@dimen/dp_24" android:layout_weight="1.0" android:layout_marginStart="12.0dip" app:rs_backgroundColor="@color/text_color3" app:rs_pointerBackground="@drawable/icon_seek_bar_cursor_size15" app:rs_progress="0.2" app:rs_progressColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

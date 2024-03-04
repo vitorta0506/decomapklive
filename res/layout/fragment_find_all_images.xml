@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/empty_no_data" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="54.0dip" android:paddingStart="8.0dip" android:paddingEnd="16.0dip">
+            <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:id="@id/gallery" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="32.0dip" android:text="@string/Photo_album" android:singleLine="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+                <TextView android:textStyle="bold" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:id="@id/compile" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="32.0dip" android:text="@string/compile" android:singleLine="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center" android:id="@id/count" android:background="@drawable/btn_login_blue_light" android:paddingTop="@dimen/dp_7" android:paddingBottom="@dimen/dp_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

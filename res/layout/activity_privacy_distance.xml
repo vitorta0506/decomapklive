@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_new_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <RelativeLayout android:id="@id/rlDefaultLayout" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="30.0dip" android:paddingEnd="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tvDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_privacy_distance_default" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_normal" android:id="@id/tvDefaultTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/setting_privacy_distance_default_tip" android:layout_below="@id/tvDefault" android:layout_toStartOf="@id/rbDefault" android:layout_alignParentStart="true" />
+        <RadioButton android:id="@id/rbDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_sex_radion_button" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/rlNotNeighborhoodLayout" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="30.0dip" android:paddingEnd="20.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_normal" android:id="@id/tvNotNeighborhood" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:id="@id/tvNotNeighborhoodTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tvNotNeighborhood" android:layout_toStartOf="@id/rbNotNeighborhood" android:layout_alignParentStart="true" />
+        <RadioButton android:id="@id/rbNotNeighborhood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_sex_radion_button" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/rlOnlyToFriendsLayout" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="30.0dip" android:paddingEnd="20.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_normal" android:id="@id/tvOnlyToFriends" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:id="@id/tvOnlyToFriendsTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tvOnlyToFriends" android:layout_toStartOf="@id/rbOnlyToFriends" android:layout_alignParentStart="true" />
+        <RadioButton android:id="@id/rbOnlyToFriends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_sex_radion_button" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/rlCloseLayout" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="30.0dip" android:paddingEnd="20.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/color_ugc_text_level_1" android:id="@id/tvClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_privacy_distance_close" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_normal" android:id="@id/tvCloseTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/setting_privacy_distance_close_tip" android:layout_below="@id/tvClose" android:layout_toStartOf="@id/rbClose" android:layout_alignParentStart="true" />
+        <RadioButton android:id="@id/rbClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_sex_radion_button" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

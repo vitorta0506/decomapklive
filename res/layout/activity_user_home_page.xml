@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/content_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.Light" android:id="@id/appbar_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <View android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_scrollFlags="scroll" />
+            <LinearLayout android:orientation="vertical" android:id="@id/header_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" app:layout_scrollFlags="scroll">
+                <include layout="@layout/header_user_home_page" />
+            </LinearLayout>
+            <FrameLayout android:orientation="vertical" android:id="@id/tab_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|snap">
+                <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="-0.5dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="16.0dip">
+                    <ImageView android:id="@id/back_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bitmap_ugc_back" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <com.guochao.faceshow.aaspring.views.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="40.0dip" app:indicatorBottomGap="0.0dip" app:indicatorDrawable="@drawable/bg_user_page_indicator" app:indicatorHeight="0.5dip" app:indicatorWidth="8.0dip" app:mode="auto" app:selectedTextColor="@color/black_222222" app:selectedTextSize="@dimen/text_normal" app:showBadge="true" app:tabMargin="@dimen/dp_40" app:textColor="@color/black_222222" app:textSize="@dimen/text_small" app:textStyle="bold" app:textUnSelectStyle="normal" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.guochao.faceshow.aaspring.views.SwipeBackViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/freeze_user" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/color_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="4.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_text_level_3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/froze_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/User_frozen" android:drawableTop="@mipmap/black_user" android:drawablePadding="@dimen/dp_14" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="7.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/bg_header_lay" android:background="@drawable/bg_user_page_top_alpha" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:layout_gravity="start|center|top" android:id="@id/left_back" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_6" android:src="@drawable/icon_left_back_sign_center" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/edit_user_info" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="@dimen/dp_6" android:src="@mipmap/icon_home_edit" android:scaleType="centerInside" android:layout_marginEnd="@dimen/dp_44" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/iv_more" android:visibility="visible" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="@dimen/dp_6" android:src="@mipmap/diandiandian" android:scaleType="centerInside" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bottom_lay" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_30" android:layout_width="fill_parent" android:layout_height="89.0dip" android:baselineAligned="false" android:alpha="0.0" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_focus" android:background="@drawable/bg_user_page_focus" android:layout_width="0.0dip" android:layout_height="49.0dip" android:text="@string/focus" android:layout_weight="1.0" />
+        <View android:id="@id/devView" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="0.0dip" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="#ff6365ff" android:gravity="center" android:id="@id/tv_chat" android:background="@drawable/bg_user_page_chat" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="49.0dip" android:text="@string/center_conversation" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="bottom" android:id="@id/svga" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/empty_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

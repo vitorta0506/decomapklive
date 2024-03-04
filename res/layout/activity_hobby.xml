@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hobby_selected_label" />
+            <me.gujun.android.taggroup.TagGroup android:id="@id/tagSelectedLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" app:atg_backgroundColor="@color/color_ugc_divider_dialog" app:atg_borderColor="@color/color_ugc_divider_dialog" app:atg_horizontalPadding="@dimen/dp_14" app:atg_horizontalSpacing="@dimen/dp_10" app:atg_inputTextColor="@color/color_ugc_text_level_1" app:atg_pressedBackgroundColor="@color/color_ugc_divider_dialog" app:atg_textColor="@color/color_ugc_text_level_1" app:atg_textSize="@dimen/text_small" app:atg_verticalPadding="@dimen/dp_7" app:atg_verticalSpacing="@dimen/dp_10" />
+            <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/dp_15" />
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="@string/hobby" />
+            <me.gujun.android.taggroup.TagGroup android:id="@id/tagHobby" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" app:atg_backgroundColor="@color/color_ugc_divider_dialog" app:atg_borderColor="@color/color_ugc_divider_dialog" app:atg_horizontalPadding="@dimen/dp_14" app:atg_horizontalSpacing="@dimen/dp_10" app:atg_inputTextColor="@color/blue400" app:atg_pressedBackgroundColor="@color/blue400" app:atg_textColor="@color/color_ugc_text_level_1" app:atg_textSize="@dimen/text_small" app:atg_verticalPadding="@dimen/dp_7" app:atg_verticalSpacing="@dimen/dp_10" />
+            <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/dp_15" />
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="@string/hobby_custom_label" />
+            <ImageView android:id="@id/ivAddTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_40" android:src="@mipmap/ugc_publish_add" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="0.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="12.0dip" app:layout_constraintDimensionRatio="h,310:100" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardView.Base">
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

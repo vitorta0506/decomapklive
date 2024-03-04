@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/colorTextWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/assistant_show_time" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    <include android:id="@id/assistant_chat_text_msg_left_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/assistant_chat_left_text_message" />
+    <include android:id="@id/assistant_chat_text_msg_right_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/assistant_chat_right_text_message" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="85.0dip" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_content" android:layout_width="85.0dip" android:layout_height="100.0dip">
+        <RelativeLayout android:id="@id/ontent" android:layout_width="85.0dip" android:layout_height="100.0dip">
+            <ImageView android:textColor="@color/myblue" android:id="@id/halloween_gif" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_launcher" android:text="万圣节活动" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/clear_halloween" android:background="@mipmap/icon_all_close_small" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/halloween_gif" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

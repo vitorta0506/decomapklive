@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/bg_info_card_homeowner" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:minWidth="300.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/people_card_at_btn" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@mipmap/ic_live_room_people_info_at" />
+            <ImageView android:layout_gravity="start|center" android:id="@id/people_card_report" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:scaleType="center" android:minWidth="30.0dip" android:minHeight="30.0dip" app:srcCompat="@drawable/ic_live_room_people_info_report" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:id="@id/user_info_1_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:id="@id/people_card_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@string/font_family_medium" android:layout_marginEnd="5.0dip" style="@style/TextView.UserName" />
+            <include layout="@layout/layout_user_center_sex_level" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bg_user_id" />
+            <TextView android:textSize="@dimen/text_small_eleven" android:textColor="#ff222222" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/people_card_user_id" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="7.0dip" android:layout_marginStart="@dimen/dp_28" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/user_info_3_layout" android:background="@drawable/bg_live_room_people_info_card_fans" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_large" android:id="@id/people_card_user_fans" android:text="0" style="@style/TextView.UserCenterCount" />
+                <TextView android:text="@string/fans" style="@style/TextView.UserCenterCountTip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip">
+                <TextView android:textSize="@dimen/text_large" android:id="@id/people_card_user_fcoin" android:text="0" style="@style/TextView.UserCenterCount" />
+                <TextView android:text="@string/f_currency" style="@style/TextView.UserCenterCountTip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_large" android:id="@id/people_card_user_sent" android:text="0" style="@style/TextView.UserCenterCount" />
+                <TextView android:text="@string/sent" style="@style/TextView.UserCenterCountTip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <FrameLayout android:id="@id/focus" android:background="@drawable/btn_common_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="49.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/people_card_user_focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip" android:singleLine="true" />
+            </FrameLayout>
+            <Space android:id="@id/spaceView" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+            <FrameLayout android:id="@id/people_card_chat" android:background="@drawable/bg_live_room_people_card_follow" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="49.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:layout_gravity="center" android:id="@id/chatTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/layout_people_info_card_cmd_area" />
+    </LinearLayout>
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center|top" android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_65" app:showStyle="showLive" />
+</FrameLayout>

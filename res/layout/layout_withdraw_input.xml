@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/select_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_gravity="start|center" android:text="TRC20" android:layout_marginStart="@dimen/dp_16" style="@style/TextViewLable" />
+        </FrameLayout>
+        <FrameLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="ERC20" style="@style/TextViewLable" />
+        </FrameLayout>
+        <FrameLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="HECO" style="@style/TextViewLable" />
+        </FrameLayout>
+        <FrameLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="OMNI" style="@style/TextViewLable" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginEnd="16.0dip">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_here" android:layout_marginStart="@dimen/dp_16" />
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.1" />
+        <EditText android:textSize="@dimen/text_normal_fifteen" android:textColorHint="@color/color_ugc_text_level_3" android:gravity="end" android:id="@id/et_usdt" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/withdraw_usdt_enter_or_paste" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginEnd="16.0dip">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdraw_usdt_count" android:layout_marginStart="@dimen/dp_16" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:gravity="end" android:id="@id/usdt_tv" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

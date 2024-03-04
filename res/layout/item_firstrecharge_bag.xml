@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.aaspring.views.RatioFrameLayout android:background="@mipmap/bg_firstrecharge_more" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/item_image" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="#ff3b3424" android:layout_gravity="end" android:id="@id/item_number" android:background="@drawable/bg_item_recharge_num" android:paddingTop="1.0dip" android:paddingBottom="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_3" android:paddingEnd="@dimen/dp_3" />
+        </com.guochao.faceshow.aaspring.views.RatioFrameLayout>
+        <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" />
+    </LinearLayout>
+</FrameLayout>

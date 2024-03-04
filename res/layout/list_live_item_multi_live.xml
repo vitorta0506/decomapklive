@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false" app:contentPadding="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.RatioHeightImageView android:id="@id/ivCover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.guochao.faceshow.aaspring.views.HalfHeightFrameLayout android:layout_gravity="bottom" android:background="@drawable/shape_list_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_live_name_bottom" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+            <com.guochao.faceshow.aaspring.views.AvatarGroupView android:layout_gravity="start" android:id="@id/avatar_group_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:avatarSize="20.0dip" app:defaultAvatarBorderWidth="1.0dip" app:femaleAvatarBorderColor="@color/white" app:iconMode="liveList" app:maleAvatarBorderColor="@color/white" app:maxShowCount="4" app:sexIconSize="icon02" app:showMoreIcon="false" />
+            <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="#fffafcff" android:ellipsize="end" android:id="@id/tvInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/icon_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_live_place_page" />
+                    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:ellipsize="end" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="bottom" android:id="@id/img_gif" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="center" android:id="@id/tvOnlineCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.guochao.faceshow.aaspring.views.HalfHeightFrameLayout>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/icon_multi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:src="@mipmap/icon_zb_mark" />
+    <ImageView android:layout_gravity="center" android:id="@id/lock" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/icon_live_lock" android:scaleType="center" />
+</androidx.cardview.widget.CardView>

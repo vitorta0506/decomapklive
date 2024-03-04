@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_new_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_all" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_10">
+        <TextView android:textSize="@dimen/text_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chat_messenger_everyone" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:id="@id/iv_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="@dimen/dp_16" />
+    </LinearLayout>
+    <View android:background="@color/color_ugc_divider" android:layout_width="wrap_content" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_follow" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/text_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chat_messenger_follow_only" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_16" />
+        <ImageView android:id="@id/iv_follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_selected" android:layout_marginEnd="@dimen/dp_16" />
+    </LinearLayout>
+</LinearLayout>

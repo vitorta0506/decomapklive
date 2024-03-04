@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_11">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_select" android:background="@drawable/bg_item_color" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_color" android:background="@drawable/bg_item_color_white" android:layout_width="@dimen/dp_19" android:layout_height="@dimen/dp_19" android:paddingStart="@dimen/dp_5" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_mosaic" android:background="@mipmap/im_graffito_mosaic" android:visibility="gone" android:layout_width="@dimen/dp_19" android:layout_height="@dimen/dp_19" />
+    </FrameLayout>
+</RelativeLayout>

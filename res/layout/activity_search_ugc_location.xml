@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip">
+        <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?BackButtonResId" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" />
+        <include android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="@dimen/dp_16" android:layout_toEndOf="@id/back" layout="@layout/search_view" />
+    </RelativeLayout>
+    <View android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="-5.0dip" />
+    <include layout="@layout/fragment_base_recycler_view" />
+</LinearLayout>

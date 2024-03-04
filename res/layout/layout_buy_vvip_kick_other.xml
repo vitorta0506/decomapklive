@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/bottom_tip" style="@style/LinearLayout_Vip_BottomTip">
+        <TextView android:id="@id/tips1" android:text="@string/vip_mall_kick_tip_1" style="@style/TextView.VipTip1" />
+        <TextView android:id="@id/tips2" android:text="@string/vip_mall_kick_tip_2" style="@style/TextView.VipTip2" />
+    </LinearLayout>
+    <FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tip">
+        <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:background="@mipmap/ic_tobe_vip_vvip_tick_bg" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center" android:background="@drawable/bg_gold_round43" android:layout_width="83.0dip" android:layout_height="83.0dip">
+                <com.guochao.faceshow.aaspring.views.NewCircleImageView android:layout_gravity="center" android:id="@id/img1" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@mipmap/default_head" />
+            </FrameLayout>
+            <com.guochao.faceshow.aaspring.views.VipIndicatorView android:layout_gravity="center" android:id="@id/vip_indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_39" />
+        </FrameLayout>
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:layout_gravity="center" android:id="@id/kickSIV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_52" android:elevation="0.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="16.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dp_32" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:id="@id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textSize="@dimen/text_normal" android:textColor="@color/gray99" android:gravity="center" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_27" android:fontFamily="@string/font_family_medium" android:layout_marginStart="@dimen/dp_18" android:layout_marginEnd="@dimen/dp_18" />
+        <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Button" android:gravity="center" android:id="@id/cancel" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@android:string/cancel" android:layout_weight="1.0" android:textAllCaps="false" />
+            <ImageView android:id="@id/divider" android:background="#fff3f3f3" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Button" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:id="@id/ok" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@android:string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

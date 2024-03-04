@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/time" android:background="@null" style="@style/TextView.ChatTime" />
+    <LinearLayout android:gravity="end|center|top" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/message_padding">
+        <LinearLayout android:gravity="end|center|top" android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/sendStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip">
+                <ProgressBar android:id="@id/sending" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                <ImageView android:id="@id/sendError" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_error" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shape_read_dot_blue" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/message_content" android:background="@drawable/chat_bg_right_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/color_ugc_app_primary_tint" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+            <com.guochao.faceshow.aaspring.views.NewCircleImageView android:id="@id/im_avatar" android:src="@mipmap/default_head" style="@style/ImageView.Avatar.Chat" />
+            <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="end|bottom|center" android:id="@id/flag_" app:border_color="@color/white" app:border_width="1.0dip" style="@style/ImageView.CountryFlag.Chat" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

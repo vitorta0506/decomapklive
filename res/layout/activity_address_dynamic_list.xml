@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title_transparent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_20" android:layout_marginStart="@dimen/dp_17" android:layout_marginEnd="@dimen/dp_17">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@mipmap/icon_ugc_list_place_big" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8">
+            <TextView android:textSize="20.0sp" android:textColor="@color/color_ugc_text_level_1" android:id="@id/addressTV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff9497a2" android:id="@id/countTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/content" android:background="@drawable/bg_dialog" android:paddingTop="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

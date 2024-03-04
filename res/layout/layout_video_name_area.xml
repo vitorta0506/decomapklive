@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:layout_gravity="center" android:id="@id/svga" android:layout_width="@dimen/short_video_head_img_bg" android:layout_height="@dimen/short_video_head_img_bg" app:autoPlay="true" />
+        <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center" android:id="@id/head_img" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitBorderColor="@color/white" app:headPortraitBorderWidth="1.0dip" app:headPortraitSize="@dimen/short_video_head_size" app:showStyle="showUgc" />
+        <com.guochao.faceshow.aaspring.views.AgeAndSexView android:layout_gravity="bottom|center" android:id="@id/age_sex_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutScaleX="0.8" app:layoutScaleY="0.8" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_weight="1.0" android:layout_marginEnd="4.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip">
+            <TextView android:textSize="@dimen/text_short_video_title" android:textStyle="bold" android:textColor="@color/white" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_follow" android:scaleType="center" android:layout_marginStart="@dimen/dp_8" />
+                <com.opensource.svgaplayer.SVGAImageView android:id="@id/focusSVGA" android:visibility="gone" android:layout_width="@dimen/dp_34" android:layout_height="@dimen/dp_18" android:src="@mipmap/icon_video_follow" android:scaleType="center" android:layout_marginStart="@dimen/dp_8" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/address_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_location" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

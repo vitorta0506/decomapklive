@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/recycler_view_area" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_please_score" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cz_web_icon02" app:tint="#ff5c5c5c" />
+        </FrameLayout>
+        <com.guochao.faceshow.aaspring.views.RatingBar android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:starCount="5" app:starEmpty="@mipmap/icon_bar_evaluation_star_normat" app:starFill="@mipmap/icon_bar_evaluation_star_selected" app:starImageSize="27.0dip" app:starPadding="5.0dip" app:starStep="0.0" app:stepSize="Full" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:id="@id/rating_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="30.0dip" android:text="@string/feedback_rating_5" />
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_feedback_input" />
+        </LinearLayout>
+        <TextView android:id="@id/submit" android:layout_margin="28.0dip" android:text="@string/submit" style="@style/Button.Common.FullWidth" />
+    </LinearLayout>
+</FrameLayout>

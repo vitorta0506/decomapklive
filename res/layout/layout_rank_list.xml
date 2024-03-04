@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hour_rank" android:background="@drawable/shape_hour_rank_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:minHeight="22.0dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="@dimen/dp_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_hour_rank" />
+    <FrameLayout android:id="@id/rank_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" />
+</LinearLayout>

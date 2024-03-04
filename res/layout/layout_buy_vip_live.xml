@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/bottom_tip" style="@style/LinearLayout_Vip_BottomTip">
+        <TextView android:id="@id/tips1" android:text="@string/vip_mall_live_tip" style="@style/TextView.VipTip1" />
+        <TextView android:id="@id/tips2" android:text="@string/vip_mall_live_tip2" style="@style/TextView.VipTip2" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tip">
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="start" android:orientation="horizontal" android:background="@drawable/vvip_rank_bj" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/head_img" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitSize="@dimen/dp_31" app:showStyle="showVIP" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/nickname_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_80" />
+                    <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

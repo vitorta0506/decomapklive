@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:id="@id/stbp_view" android:background="@color/lightStatusBarColor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include layout="@layout/base_im_title_bar" />
+                <FrameLayout android:id="@id/chat_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:animateLayoutChanges="false" />
+                    <androidx.cardview.widget.CardView android:id="@id/chat_prompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false" app:contentPaddingBottom="12.0dip" app:contentPaddingTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_im_close_guanzhu" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                                <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/concerned_about_each_other" />
+                                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/Focus_on_each_other_and_talk_freely" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_follow" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_marginEnd="16.0dip" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/floating" android:background="@color/record_progress_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/chat_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Space android:id="@id/keyboard_space" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/anim_view_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:background="@color/dark_blak" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/big_video_view_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/big_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/small_video_view_lay" android:layout_width="@dimen/dp_100" android:layout_height="178.0dip" android:layout_marginTop="@dimen/dp_35" android:layout_marginStart="@dimen/dp_16">
+        <ImageView android:id="@id/small_video_view_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/small_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <View android:layout_gravity="start|center|top" android:id="@id/small_video_view_preview" android:background="@drawable/bg_small_video" android:layout_width="@dimen/dp_100" android:layout_height="178.0dip" android:layout_marginTop="@dimen/dp_35" android:layout_marginStart="@dimen/dp_16" />
+    <FrameLayout android:id="@id/fragment_calling" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/fragment_receive" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

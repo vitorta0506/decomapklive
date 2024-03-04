@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <com.guochao.faceshow.views.ObservableScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.AtTopicUgcEditText android:textSize="@dimen/text_small" android:textColor="@color/color_text_level_1" android:textColorHint="#ffd4d5db" android:gravity="top" android:id="@id/et_ugc_publish" android:background="@color/white" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="115.0dip" android:hint="@string/ugc_publish_edit_hint" />
+            <include layout="@layout/layout_publish_image" />
+            <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_topic_lay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_topic" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_11" />
+                    <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ugc_publish_add_topic" android:layout_marginEnd="@dimen/dp_20" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:src="@drawable/icon_chat_detail_arrow" />
+                </LinearLayout>
+                <View android:id="@id/topic_line" android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/add_topic_lay" android:layout_marginStart="@dimen/dp_16" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_location_lay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topic_line">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_location" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_11" />
+                    <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ugc_publish_add_location" android:layout_marginEnd="@dimen/dp_20" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/hostSearchTitle" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_with_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ugc_no_location" android:singleLine="true" android:drawableEnd="@drawable/icon_chat_detail_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@id/middle_line" android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/add_location_lay" android:layout_marginStart="@dimen/dp_16" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/limit_look_at" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/middle_line">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_look" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_11" />
+                    <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:id="@id/tv_visible_key" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/who_can_look" android:layout_marginEnd="@dimen/dp_20" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/hostSearchTitle" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_view_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_video" android:singleLine="true" android:drawableEnd="@drawable/icon_chat_detail_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/first_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-15.0dip" android:layout_above="@id/limit_look_at" android:layout_marginStart="@dimen/dp_40" android:layout_marginEnd="@dimen/dp_16">
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:background="@drawable/icon_ugc_publish_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ugc_publish_change_permission" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" android:backgroundTint="@color/color_ugc_app_primary_tint" />
+                    </FrameLayout>
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="4.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="53.0dip" android:paddingEnd="@dimen/dp_16">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_neary_see" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_11" />
+                <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ugc_publish_view_range" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/view_range_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:src="@drawable/push_ugc_toggle" />
+            </LinearLayout>
+            <View android:background="@color/color_ugc_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="53.0dip" android:paddingEnd="@dimen/dp_16">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_dyanmic_comment" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_11" />
+                <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ugc_publish_forbid_comment" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/forbid_comment_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:src="@drawable/push_ugc_toggle" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.guochao.faceshow.views.ObservableScrollView>
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

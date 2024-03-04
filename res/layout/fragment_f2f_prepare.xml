@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@id/beauty_tips" android:background="@drawable/f2f_gender_and_beauty" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:text="@string/beauty_is_here" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@id/gender_tips" android:background="@drawable/f2f_gender_and_beauty" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:text="@string/sex_filter_guide" android:layout_marginStart="13.5dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/beauty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_f2f_beauty_matched" />
+            <FrameLayout android:id="@id/filter_dialog" android:background="@drawable/bg_shape_f2f_sex_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_gender_no_limit" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Gender" android:fontFamily="@string/font_family_medium" android:layout_marginStart="8.0dip" />
+                </LinearLayout>
+            </FrameLayout>
+            <ImageView android:id="@id/history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_f2f_match_record_prepare" />
+            <ImageView android:id="@id/mini" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_f2f_exit_matched" android:layout_marginStart="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/slid_up_tips" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/svga_hand" android:layout_width="202.0dip" android:layout_height="202.0dip" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/slid_up_tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/scroll_up_tips" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+    </LinearLayout>
+</FrameLayout>

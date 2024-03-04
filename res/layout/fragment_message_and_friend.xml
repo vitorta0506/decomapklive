@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_ugc_divider" android:paddingBottom="@dimen/tab_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:id="@id/toolbar_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:minHeight="48.0dip" android:layout_below="@id/toolbar_view">
+        <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" android:layout_width="0.0dip" android:layout_weight="1.0" app:showBadge="true" style="@style/tabs_main_page" />
+        <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/menus" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/menu_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_im_search" android:layout_marginEnd="@dimen/dp_18" />
+            <ImageView android:id="@id/menu_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_friend_group" android:layout_marginEnd="@dimen/dp_14" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@id/group_tips" android:background="@drawable/friend_group_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_manager_friend" android:layout_below="@id/toolbar" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" android:backgroundTint="@color/color_app_primary" />
+</RelativeLayout>

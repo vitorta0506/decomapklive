@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/center_toast_bg" android:paddingTop="26.5dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="33.0dip" android:paddingEnd="33.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.5dip" android:src="@mipmap/signin_gold" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@android:id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:text="(1/3)，2倍领取，+120 Exp！sdfsdfssdfsdfsdf明日有惊喜！" />
+</LinearLayout>

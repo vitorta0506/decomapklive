@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/float_title_back" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" style="@style/FaceCastToolbar.FitSystemWindows">
+        <TextView android:id="@android:id/title" style="@style/TextView.ActivityTitle" />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView android:ellipsize="end" android:layout_gravity="bottom|center" android:id="@id/float_title" android:visibility="gone" android:layout_marginBottom="@dimen/dp_18" android:singleLine="true" style="@style/TextView.ActivityTitle" />
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.LiveBroadCastScrollDownView android:orientation="vertical" android:id="@id/main_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="bottom" android:background="@drawable/zibojianpaibu_dibu_bg" android:layout_width="fill_parent" android:layout_height="110.0dip" />
+    <FrameLayout android:id="@id/float_recycler_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.guochao.faceshow.aaspring.views.MultiLivePlayView android:id="@id/video_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.guochao.faceshow.aaspring.views.MultiLivePlayView android:id="@id/mask_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/acc_view" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    </FrameLayout>
+    <com.guochao.faceshow.aaspring.views.LiveScrollToClearScreenView android:id="@id/scroll_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_live_room_common" />
+    </com.guochao.faceshow.aaspring.views.LiveScrollToClearScreenView>
+    <include layout="@layout/layout_launch_live" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|center|top" android:orientation="horizontal" android:id="@id/closeLL" android:background="@drawable/shape_voice_room_count_bg_circle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <ImageView android:id="@id/share_room" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_share" />
+        <View android:id="@id/dividerView" android:background="#4dffffff" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="@dimen/dp_14" android:layout_marginTop="8.5dip" android:layout_marginBottom="8.5dip" android:layout_marginStart="8.5dip" android:layout_marginEnd="8.5dip" />
+        <ImageView android:id="@id/close_live" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_close" />
+    </LinearLayout>
+    <TextView android:id="@id/facecast_id" style="@style/TextView.FaceCastId" />
+    <FrameLayout android:layout_gravity="end" android:id="@id/blind_date_pusher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/little_pusher_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75.0dip" android:layout_marginEnd="10.0dip" />
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/little_pusher_info_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75.0dip" android:layout_marginEnd="10.0dip" />
+    <FrameLayout android:layout_gravity="start|bottom|center" android:id="@id/chat_fragment" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="260.0dip" />
+    <include layout="@layout/layout_live_danmu_container" />
+    <FrameLayout android:id="@id/pk_info_area" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/layout_live_danmu_container" />
+    <include layout="@layout/layout_big_gift" />
+    <FrameLayout android:id="@id/gift_anim_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/gift_area" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.guochao.faceshow.aaspring.views.AddZanHeartView android:layout_gravity="end|bottom|center" android:id="@id/live_zan_ly" android:layout_width="70.0dip" android:layout_height="400.0dip" android:layout_marginBottom="36.0dip" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/dish_wheel_layout" android:visibility="gone" android:layout="@layout/layout_dish_wheel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/live_game_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/live_join_middle_tips_ly" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/web_live_game_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.guochao.faceshow.component.live.view.InterceptTouchFrameLayout android:layout_gravity="bottom" android:id="@id/live_float_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/big_gift_box_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/count_down_tips" android:text="3" style="@style/TextView.LargeCountDown" />
+    <include android:visibility="gone" layout="@layout/fragment_live_input_dialog" />
+    <FrameLayout android:id="@id/live_info_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/live_end_info_area" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/user_guide_swipe_to_dismiss_stub" android:visibility="gone" android:layout="@layout/layout_user_guide_slide_to_see_liveroom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.guochao.faceshow.aaspring.views.LiveBroadCastScrollDownView>

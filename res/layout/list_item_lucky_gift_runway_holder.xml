@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/svga" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="start|center" android:id="@id/avatar" android:layout_width="41.0dip" android:layout_height="41.0dip" android:src="@mipmap/default_head" app:border_color="@color/white" app:border_width="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="#ffffed6a" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/user_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" />
+                <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip" />
+                <com.guochao.faceshow.aaspring.views.LevelView android:id="@id/level_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:level="11" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.guochao.faceshow.aaspring.views.AutoHorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_smaller" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                </com.guochao.faceshow.aaspring.views.AutoHorizontalScrollView>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_lucky_gift_runway_content_indicator" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/gift_icon" android:layout_width="41.0dip" android:layout_height="41.0dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/dark_blak" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_cancel" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_no" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center" android:id="@id/complete" android:background="@drawable/bg_text_doodle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="28.0dip" android:text="@string/complete" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_mode" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/im_graffito_word" android:layout_marginStart="@dimen/dp_6" />
+        <ImageView android:background="@color/white_70" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_15" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager" />
+    </LinearLayout>
+    <EditText android:textSize="24.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/et_text" android:background="@null" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint=" " android:maxLength="100" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

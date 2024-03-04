@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/video_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transitionName="img" app:cardCornerRadius="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/im_play" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/progress_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/progress_video_download" />
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_gravity="end|bottom|center" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

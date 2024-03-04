@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/time" android:background="@null" android:visibility="gone" style="@style/TextView.ChatTime" />
+    <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/paddingLL" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/message_padding">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.guochao.faceshow.aaspring.views.NewCircleImageView android:id="@id/im_avatar" android:src="@mipmap/default_head" style="@style/ImageView.Avatar.Chat" />
+            <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="end|bottom|center" android:id="@id/flag_" app:border_color="@color/white" app:border_width="1.0dip" style="@style/ImageView.CountryFlag.Chat" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="start" android:id="@id/message_content" android:background="@drawable/chat_start_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/sendStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/sending" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+            <ImageView android:id="@id/sendError" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/ic_error" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

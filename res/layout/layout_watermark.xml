@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/water_logo" />
+    <TextView android:textSize="@dimen/text_smallest" android:textColor="#d9ffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BuzzCast r\nID:123123123" android:shadowColor="#a6000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="16.0dip" />
+</LinearLayout>

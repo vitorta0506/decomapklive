@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_first_recharge_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_50" android:layout_marginEnd="@dimen/dp_50">
+        <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:src="@mipmap/icon_close_recharge_result" android:layout_marginEnd="@dimen/dp_12" />
+        <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:text="@string/first_recharge_close_tip_title" android:layout_marginStart="46.0dip" android:layout_marginEnd="46.0dip" />
+        <TextView android:gravity="center" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_27" android:layout_marginBottom="@dimen/dp_27" android:layout_marginStart="@dimen/dp_27" android:layout_marginEnd="@dimen/dp_27" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/btn_common_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="@dimen/dp_20" android:text="@string/ok" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/cancel_send" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_voice_delete" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/voice" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="#ff333333" android:id="@id/record_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_text_level_1" android:layout_gravity="center" android:id="@id/release_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Release_Hands_Cancel_Sending" />
+    </FrameLayout>
+    <com.guochao.faceshow.aaspring.views.VoiceWaveView android:id="@id/voice" android:layout_width="116.0dip" android:layout_height="116.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_text_level_1" android:gravity="center" android:layout_gravity="center" android:id="@id/record_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/voice" android:layout_centerHorizontal="true" />
+</RelativeLayout>

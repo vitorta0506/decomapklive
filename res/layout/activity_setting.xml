@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/base_title" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/account_safe_lay" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvAccountSafe" android:background="@null" android:text="@string/setting_account_safe" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+                <ImageView android:id="@id/tvAccountSafeEmail" android:layout_width="@dimen/dp_30" android:layout_height="30.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_35" android:layout_alignParentEnd="true" app:srcCompat="@mipmap/icon_user_setting_safe" />
+            </RelativeLayout>
+            <TextView android:id="@id/push_seting" android:layout_marginTop="@dimen/dp_8" android:text="@string/push_notification_setting" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <FrameLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            </FrameLayout>
+            <TextView android:id="@id/pipTV" android:text="@string/setting_pip_setting" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <FrameLayout android:id="@id/pipFL" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            </FrameLayout>
+            <TextView android:id="@id/tvPrivacySet" android:text="@string/setting_privacy_setting" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <LinearLayout android:orientation="vertical" android:id="@id/facecast_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvMultiLanguage" android:layout_marginTop="@dimen/dp_8" android:text="@string/setting_multi_language" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+                <FrameLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+                </FrameLayout>
+                <TextView android:id="@id/tvRegion" android:visibility="visible" android:text="@string/setting_region" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            </LinearLayout>
+            <TextView android:id="@id/tvTermsOfUse" android:layout_marginTop="@dimen/dp_8" android:text="@string/terms_of_use" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <FrameLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            </FrameLayout>
+            <TextView android:id="@id/tvPrivacyPolicy" android:text="@string/privacy_policy" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <FrameLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            </FrameLayout>
+            <TextView android:id="@id/tvCopyrightStatement" android:text="@string/setting_copyright_statement" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <TextView android:id="@id/tvNetworkAnalysis" android:layout_marginTop="8.0dip" android:text="@string/setting_network_analysis" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            <FrameLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/cache_all" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                <TextView android:id="@id/tvClearCache" android:background="@null" android:layout_width="wrap_content" android:text="@string/setting_clear_the_cache" android:layout_centerVertical="true" style="@style/TextView.UserSetting" />
+                <TextView android:textColor="@color/color_ugc_text_level_2" android:id="@id/tvCacheSize" android:background="@null" android:layout_width="wrap_content" android:text="0KB" android:layout_centerVertical="true" android:drawableEnd="@drawable/icon_chat_detail_arrow" android:layout_alignParentEnd="true" style="@style/TextView.UserSetting" />
+            </RelativeLayout>
+            <FrameLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip">
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="@dimen/dp_16" />
+            </FrameLayout>
+            <LinearLayout android:id="@id/cache_im" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+                <TextView android:id="@id/tvClearCache_chat" android:background="@null" android:text="@string/Clean_chat_files" android:layout_weight="1.0" style="@style/TextView.UserSetting" />
+                <TextView android:textColor="@color/color_ugc_text_level_2" android:id="@id/tvCacheSize_chat" android:background="@null" android:layout_width="wrap_content" android:text="0KB" android:drawableEnd="@drawable/icon_chat_detail_arrow" style="@style/TextView.UserSetting" />
+            </LinearLayout>
+            <TextView android:id="@id/debug_window" android:visibility="gone" android:text="开启debug窗口" android:layout_centerVertical="true" style="@style/TextView.UserSetting" />
+            <TextView android:id="@id/enter_debug" android:visibility="gone" android:text="进入Debug Center(此设置仅在测试版本出现)" android:layout_centerVertical="true" style="@style/TextView.UserSetting" />
+            <TextView android:id="@id/test_google_sign" android:visibility="gone" android:text="测试谷歌凭证(此设置仅在测试版本出现)" android:layout_centerVertical="true" style="@style/TextView.UserSetting" />
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/color_ugc_app_primary" android:gravity="center" android:id="@id/btnExit" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="8.0dip" android:text="@string/LoginOut" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:id="@id/curr_version_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

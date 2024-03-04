@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/bg_dress_up_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_50" android:layout_marginEnd="@dimen/dp_50">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="#ffff416c" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/primary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:lineSpacingExtra="@dimen/dp_5" android:layout_marginStart="@dimen/dp_32" android:layout_marginEnd="@dimen/dp_32" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/bg_dress_up_success" android:scaleType="fitCenter" />
+                <ImageView android:layout_gravity="center" android:id="@id/dress_image" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/primary_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:maxWidth="@dimen/dp_210" android:lineSpacingExtra="@dimen/dp_6" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:gravity="center" android:id="@id/i_know" android:background="@drawable/bg_buy_success_tip" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_25" android:text="@string/lottery_i_know" android:layout_marginStart="@dimen/dp_34" android:layout_marginEnd="@dimen/dp_34" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/close_view" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/dress_up_close" />
+    </FrameLayout>
+</FrameLayout>

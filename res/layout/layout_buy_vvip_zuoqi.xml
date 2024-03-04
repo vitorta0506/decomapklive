@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottom_tip" style="@style/LinearLayout_Vip_BottomTip">
+        <TextView android:id="@id/tips1" android:text="@string/vip_mall_zuojia_tip" style="@style/TextView.VipTip1" />
+        <TextView android:id="@id/tips2" android:text="@string/vip_mall_zuojia_tip2" style="@style/TextView.VipTip2" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tip">
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/zuoqi_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:background="@mipmap/live_vvip_rc_bj_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="30.0dip" />
+            <ImageView android:layout_gravity="start|center" android:id="@id/car" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/vvip_rc_car" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/nickname_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="40.0dip" android:layout_toEndOf="@id/car">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/live_vip_join" android:ellipsize="end" android:id="@id/nickname_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+                </LinearLayout>
+                <TextView android:textColor="@color/live_vip_join" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/vip_mall_coming" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

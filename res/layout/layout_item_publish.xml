@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.SquareFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_2" android:paddingEnd="@dimen/dp_2">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_8" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/image_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/video_icon" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ugc_publish_add" android:scaleType="fitXY" android:paddingStart="@dimen/dp_2" android:paddingEnd="@dimen/dp_2" />
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/delete_image" android:visibility="gone" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_8" android:src="@mipmap/icon_ugc_remove" android:layout_marginEnd="@dimen/dp_8" />
+</com.guochao.faceshow.aaspring.views.SquareFrameLayout>

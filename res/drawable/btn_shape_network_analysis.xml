@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="22.5dip" />
+                    <solid android:color="@color/live_invite_disable" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="22.5dip" />
+                    <solid android:color="@color/color_ugc_app_primary" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

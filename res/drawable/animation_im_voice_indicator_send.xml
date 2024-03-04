@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/voice_anim" android:drawable="@mipmap/icon_im_yuyin_send_first" />
+    <item android:duration="@integer/voice_anim" android:drawable="@mipmap/icon_im_yuyin_send_second" />
+    <item android:duration="@integer/voice_anim" android:drawable="@mipmap/icon_im_yuyin_send" />
+</animation-list>

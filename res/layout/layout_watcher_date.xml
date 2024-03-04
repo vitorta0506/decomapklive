@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/fl_watcher_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_watcher_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_7" />
+        <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_watcher_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:id="@id/tv_waiting_for" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+</LinearLayout>

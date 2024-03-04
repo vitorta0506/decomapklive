@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="248.0dip" android:layout_height="wrap_content" app:cardCornerRadius="10.0dip" app:contentPadding="0.0dip" style="@style/CardView.Base"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitXY" app:layout_constraintDimensionRatio="h,248:80" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/real_black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/mvp_im_chat_title" android:fontFamily="@string/font_family_medium" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="#ff757575" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="12.0dip" android:text="@string/mvp_im_chat_title2" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

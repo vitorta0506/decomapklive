@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:background="@drawable/bg_hello_star_gift" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@mipmap/bg_hello_start_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_large" android:textColor="@color/color_app_tips" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:text="@string/hello_star_gift_tip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_hello_star_gift_bg" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_hello_start_gift" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/black_dark" android:gravity="center" android:id="@id/tv_day_unlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/hello_star_unlock_tip" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/text_hello_color_tip" android:gravity="center" android:id="@id/tv_help_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/hello_star_unlock_tip_1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_i_know" android:background="@drawable/bg_hello_start_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_24" android:minHeight="@dimen/dp_48" android:text="@string/lottery_i_know" android:layout_marginStart="@dimen/dp_96" android:layout_marginEnd="@dimen/dp_96" />
+    </LinearLayout>
+</FrameLayout>

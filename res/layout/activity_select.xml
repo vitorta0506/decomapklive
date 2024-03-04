@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ll_area" layout="@layout/gc_base_title_bar" />
+    <RelativeLayout android:id="@id/search_lay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_view" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/in_date" layout="@layout/fragment_base_recycler_view" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/kong" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

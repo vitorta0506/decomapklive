@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="49.0dip" app:showStyle="showUgc" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="2.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="16.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="isdf斯蒂芬" android:layout_weight="1.0" style="@style/TextView.UserName.Bold" />
+                    <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_8" app:iconScale="0.8" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:id="@id/signare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:singleLine="true" android:layout_marginEnd="60.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@id/focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ugc_dynamic_focuson" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

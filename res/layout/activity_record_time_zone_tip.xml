@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/colorTextBlack" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/record_time_zone_tip_title" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="@string/record_time_zone_tip1" android:lineSpacingExtra="12.0dip" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/record_time_zone_tip2" android:lineSpacingExtra="12.0dip" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/record_time_zone_tip3" android:lineSpacingExtra="@dimen/dp_12" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/record_time_zone_tip_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/record_time_zone_tip4" />
+            <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/black" android:id="@id/time_zone_four1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:lineSpacingExtra="12.0dip" />
+            <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/black" android:id="@id/time_zone_four2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_40" android:lineSpacingExtra="10.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>

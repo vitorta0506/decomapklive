@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/base_title_no_fit" />
+    <include layout="@layout/search_view" />
+    <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="-5.0dip" />
+    <include layout="@layout/fragment_base_recycler_view" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_title" />
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/bg_dress_send_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:enabled="false" android:background="@drawable/btn_buy_dressup_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="@dimen/dp_23" android:layout_marginStart="@dimen/dp_38" android:layout_marginEnd="@dimen/dp_38">
+            <ImageView android:layout_gravity="center" android:id="@id/send_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_loading_apply" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_confirm" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_normal_fifteen" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/f_dress_send" android:includeFontPadding="false" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:includeFontPadding="false" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

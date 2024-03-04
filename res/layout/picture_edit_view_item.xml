@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.RatioFrameLayout android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/foreground" android:padding="0.0dip" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:layout_marginStart="@dimen/dp_7" android:layout_marginEnd="@dimen/dp_10" android:elevation="0.0dip" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip" app:cardMaxElevation="0.0dip" app:cardUseCompatPadding="false" app:contentPadding="0.0dip">
+        <ImageView android:id="@id/edit_view_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/colorTextWhite" android:gravity="center_vertical" android:layout_gravity="start|bottom|center" android:id="@id/edit_view_item_solid_cover_text" android:background="@drawable/shape_head_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="16.0dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_alignStart="@id/edit_view_item_image" />
+        <FrameLayout android:id="@id/illegal" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/porfile_pho_icon_wro" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="end" android:id="@id/deleteIV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:src="@mipmap/ic_set_info_header_x" android:layout_marginEnd="0.0dip" />
+</com.guochao.faceshow.aaspring.views.RatioFrameLayout>

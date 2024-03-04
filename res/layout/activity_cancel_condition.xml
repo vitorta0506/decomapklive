@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.views.ObservableScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_title" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:text="@string/cancel_account_condition_info" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/first_warn_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_account_condition_primary1" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_secondary1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/second_warn_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_account_condition_primary2" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_secondary2" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_app_primary" android:id="@id/condition_detail2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_detail" android:drawablePadding="@dimen/dp_6" app:drawableEndCompat="@mipmap/icon_othre_type" app:drawableTint="@color/color_app_primary" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/third_warn_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_16" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_account_condition_primary3" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_secondary3" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_app_primary" android:id="@id/condition_detail3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_detail" android:drawablePadding="@dimen/dp_6" app:drawableEndCompat="@mipmap/icon_othre_type" app:drawableTint="@color/color_app_primary" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/forth_warn_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_cancel_condition_warn" android:layout_marginEnd="@dimen/dp_16" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_account_condition_primary4" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_secondary4" />
+                <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_app_primary" android:id="@id/condition_detail4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/cancel_account_condition_detail" android:drawablePadding="@dimen/dp_6" app:drawableEndCompat="@mipmap/icon_othre_type" app:drawableTint="@color/color_app_primary" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_3" android:id="@id/cancel_account_condition_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <ImageView android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check_box_live_invite" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_3" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_account_condition_i_know" android:layout_marginStart="@dimen/dp_5" />
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/next_step" android:layout_width="fill_parent" android:layout_marginTop="8.5dip" android:layout_marginBottom="@dimen/dp_15" android:text="@string/cancel_account_condition_ensure_continue" android:layout_marginStart="@dimen/dp_32" android:layout_marginEnd="@dimen/dp_32" style="@style/Button.NextStep" />
+    </LinearLayout>
+</com.guochao.faceshow.views.ObservableScrollView>

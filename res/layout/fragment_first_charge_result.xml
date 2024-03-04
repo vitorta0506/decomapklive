@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="300.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/first_charge_result_title" android:adjustViewBounds="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bitmap_first_charge_result_left" android:adjustViewBounds="true" />
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/first_charge_result_center_center" android:adjustViewBounds="true" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="#fffe670d" android:gravity="center" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxWidth="180.0dip" android:text="@string/i_want_to_charge_result_tip1" android:maxLines="2" />
+                    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bitmap_first_charge_center_right" android:adjustViewBounds="true" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/first_charge_bottom" android:adjustViewBounds="true" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_small_eleven" android:textColor="#ff94501e" android:ellipsize="marquee" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip" android:text="@string/i_want_to_charge_result_tip2" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                <FrameLayout android:layout_gravity="center" android:id="@id/go_to_recharge" android:background="@drawable/btn_first_charge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/lottery_i_know" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@mipmap/first_charge_close" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_58">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_signin_white_shape" android:paddingBottom="@dimen/dp_9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="1.0dip" android:src="@mipmap/icon_signin_title" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:layout_marginBottom="@dimen/dp_24" android:maxWidth="270.0dip" android:text="@string/signin_perday_primary_title" />
+                <include android:id="@id/signin_content_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" layout="@layout/layout_signin_content" />
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="#ffff8a00" android:layout_gravity="center_horizontal" android:id="@id/tv_signed_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_18" />
+                <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:id="@id/start_signin" android:background="@drawable/bg_signin_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_50" android:text="@string/vip_sign_on" android:layout_marginStart="@dimen/dp_42" android:layout_marginEnd="@dimen/dp_42" />
+                <TextView android:textSize="@dimen/text_small" android:textColor="#ffa8afba" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ignore_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/no_longer_notify" android:drawablePadding="@dimen/dp_4" app:drawableStartCompat="@drawable/icon_sign_ignore_selector" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:src="@mipmap/icon_close_signin_dialog" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_signin_title" />
+            <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="@dimen/dp_48" android:maxWidth="270.0dip" android:text="@string/signin_perday_signin_title" android:maxLines="1" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

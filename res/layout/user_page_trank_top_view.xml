@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorTextWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/show_type_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/user_trank_top_icon" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_feb112" android:layout_gravity="center_vertical" android:id="@id/show_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Top_Fans" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/show_type_icon" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/more_arrow_btn_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/trank_top_head_ly" android:visibility="visible" android:layout_width="70.0dip" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/more_arrow_image" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_arrow_end" android:paddingEnd="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

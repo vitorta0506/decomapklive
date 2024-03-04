@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_3" android:paddingEnd="@dimen/dp_3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/image_wheel" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginTop="@dimen/dp_25" android:src="@mipmap/default_head" app:border_color="#fffdc43a" app:border_width="@dimen/dp_1" />
+</LinearLayout>

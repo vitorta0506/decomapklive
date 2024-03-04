@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="vertical" android:paddingTop="@dimen/dp_44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/dp_54"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/iv_sanjiao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_sanjiaoxing" android:layout_marginEnd="@dimen/dp_12" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_im_pop_tip" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_close_im_tip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:id="@id/primary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/concerned_about_each_other" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:id="@id/primary_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxWidth="220.0dip" android:text="@string/Focus_on_each_other_and_talk_freely" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AContributionListAppTheme" parent="@style/BaseAppTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="ActivityTitleColor">@color/white</item>
+        <item name="BackButtonResId">@drawable/icon_back_white</item>
+        <item name="TitleBarBackground">#ff6365ff</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="buttonBarButtonStyle">@style/DialogButton</item>
+        <item name="colorAccent">#ff1b8df1</item>
+        <item name="colorControlActivated">#ff1b8df1</item>
+        <item name="colorDivider">@color/color_divider</item>
+        <item name="colorPrimary">#ff1b8df1</item>
+        <item name="colorPrimaryDark">#ff1b8df1</item>
+        <item name="colorSpecial1">@color/color_text_special_1</item>
+        <item name="colorSpecial2">@color/color_text_special_2</item>
+        <item name="colorSwitchThumbNormal">#ff1b8df1</item>
+        <item name="colorTextLevel1">@color/color_text_level_1</item>
+        <item name="colorTextLevel2">@color/color_text_level_3</item>
+        <item name="colorTextLevel3">@color/color_text_level_4</item>
+        <item name="countColor">@color/white</item>
+        <item name="disableColor">@drawable/btn_common_bg</item>
+        <item name="dividerColor">#ff3a3a3a</item>
+        <item name="editTextStyle">@style/EditText</item>
+        <item name="giftBackground">@drawable/shape_gift_dark_background_with_corner</item>
+        <item name="giftListBackground">@drawable/shape_gift_recycler_view_bg</item>
+        <item name="giftNameColor">@color/white</item>
+        <item name="giftPriceColor">#80fcbd0b</item>
+        <item name="indicatorSelectedColor">#ff1b8df1</item>
+        <item name="indicatorUnSelectedColor">@color/half_white</item>
+        <item name="sanjiaoDrawable">@drawable/icon_sanjiao_white</item>
+        <item name="tabIndicatorColor">#ff1b8df1</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabUnSelectedTextColor">@color/half_white</item>
+        <item name="viewInflaterClass">com.guochao.faceshow.aaspring.utils.FaceCastViewInflater</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="ActivityTitleColor">@color/white</item>
+        <item name="BackButtonResId">@drawable/icon_back_white</item>
+        <item name="TitleBarBackground">@color/color_ugc_app_primary</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="buttonBarButtonStyle">@style/DialogButton</item>
+        <item name="colorAccent">@color/myblue</item>
+        <item name="colorControlActivated">@color/color_app_primary</item>
+        <item name="colorDivider">@color/color_divider</item>
+        <item name="colorPrimary">@color/myblue</item>
+        <item name="colorPrimaryDark">@color/myblue</item>
+        <item name="colorSpecial1">@color/color_text_special_1</item>
+        <item name="colorSpecial2">@color/color_text_special_2</item>
+        <item name="colorSwitchThumbNormal">@color/color_app_primary</item>
+        <item name="colorTextLevel1">@color/color_text_level_1</item>
+        <item name="colorTextLevel2">@color/color_text_level_3</item>
+        <item name="colorTextLevel3">@color/color_text_level_4</item>
+        <item name="countColor">@color/white</item>
+        <item name="disableColor">@drawable/btn_common_bg</item>
+        <item name="dividerColor">#ff3a3a3a</item>
+        <item name="editTextStyle">@style/EditText</item>
+        <item name="giftBackground">@drawable/shape_gift_dark_background_with_corner</item>
+        <item name="giftListBackground">@drawable/shape_gift_recycler_view_bg</item>
+        <item name="giftNameColor">@color/white</item>
+        <item name="giftPriceColor">#80fcbd0b</item>
+        <item name="indicatorSelectedColor">@color/color_app_primary</item>
+        <item name="indicatorUnSelectedColor">@color/half_white</item>
+        <item name="sanjiaoDrawable">@drawable/icon_sanjiao_white</item>
+        <item name="tabIndicatorColor">@color/color_app_primary</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabUnSelectedTextColor">@color/half_white</item>
+        <item name="viewInflaterClass">com.guochao.faceshow.aaspring.utils.FaceCastViewInflater</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Light.FullScreen" parent="@style/AppTheme.Light">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="AppTheme.Light.RealSplash" parent="@style/AppTheme.Light">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V28.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V28.Theme.AppCompat.Light" />
+    <style name="Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:backgroundDimAmount">0.32</item>
+        <item name="android:checkedTextViewStyle">@style/Widget.MaterialComponents.CheckedTextView</item>
+        <item name="android:dialogCornerRadius">@null</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.MaterialComponents</item>
+        <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.MaterialComponents.Body.Text</item>
+        <item name="materialAlertDialogButtonSpacerVisibility">@integer/mtrl_view_invisible</item>
+    </style>
+    <style name="BottomDialog.FullScreen" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/color_dialog_window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/dialog_frag_anim</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BottomDialog.FullScreenTransparent" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/dialog_frag_anim</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget.Material3.AppBarLayout" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="liftOnScroll">true</item>
+    </style>
+    <style name="Widget.Material3.Toolbar.Surface" parent="@style/Widget.Material3.Toolbar.OnSurface">
+        <item name="android:background">?colorSurface</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+</resources>

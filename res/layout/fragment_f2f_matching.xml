@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.views.SvgaImageViewV2 android:id="@id/loading_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/matching_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip">
+        <ImageView android:id="@id/radar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_matching_radar" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/find_friend" />
+        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="#bfffffff" android:gravity="center" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/matched_info_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.guochao.faceshow.component.f2fmatch.view.F2fAvatarView android:id="@id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/country_flag" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="4.0dip" android:layout_marginEnd="4.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/white" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/extra_info_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:drawableStartCompat="@mipmap/icon_f2f_addr" />
+        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="#bfffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62.0dip" android:text="@string/one_on_one_waiting" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/f2f_bottom_margin" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <ImageView android:layout_gravity="start" android:id="@id/beauty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_f2f_beauty_matching" />
+        <ImageView android:layout_gravity="end" android:id="@id/mini" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_f2f_minisize_prepare" />
+    </FrameLayout>
+</FrameLayout>

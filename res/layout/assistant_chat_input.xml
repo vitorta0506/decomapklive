@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorTextWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/assistant_icon_model_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/assistant_faq_circle_icon" android:layout_marginStart="5.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/assistant_type_input_ly" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@id/assistant_icon_model_change">
+        <EditText android:textSize="14.0sp" android:textColor="@color/color_ugc_text_level_3" android:textColorHint="@color/text_color1" android:id="@id/assistant_input_edit_text" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/live_entry_text" android:layout_weight="1.0" android:imeOptions="actionSend" />
+        <RelativeLayout android:id="@id/assistant_change_btn_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip">
+            <ImageView android:id="@id/assistant_photo_im" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/assistant_photo_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/assistant_btn_send" android:background="@color/app_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/assistant_type_faq_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@id/assistant_icon_model_change">
+        <ImageView android:id="@id/assistant_type_faq_icon" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/assistant_faq_icon" android:scaleType="fitStart" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray99" android:ellipsize="end" android:id="@id/assistant_type_faq_show_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FAQ" android:lines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="-60.0dip" android:layout_toEndOf="@id/assistant_type_faq_icon" />
+    </RelativeLayout>
+    <ImageView android:background="@color/main_line_gray_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/assistant_icon_model_change" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/live_loading_bj" android:scaleType="centerCrop" />
+    <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <com.opensource.svgaplayer.SVGAImageView android:layout_gravity="center" android:id="@id/sVGAImageView" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+</FrameLayout>

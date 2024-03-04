@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/video_content" android:padding="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/little_video_width" android:layout_height="@dimen/little_video_height" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_8">
+        <FrameLayout android:layout_gravity="end" android:id="@id/txCloudVideoView" android:background="@color/dark_blak" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="50.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/count_down_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.LargeCountDown" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

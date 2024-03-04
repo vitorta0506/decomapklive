@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_item_signin_task" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="#ff171737" android:id="@id/task_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                <LinearLayout android:orientation="horizontal" android:id="@id/first_gift" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/icon_signin_first" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_3" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/second_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_25">
+                    <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/icon_signin_fifth" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_3" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/third_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_25">
+                    <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/icon_signinresult_box" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_3" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_small" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_do_task" android:background="@drawable/bg_do_task_btn" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_34" android:maxLines="1" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14" />
+    </LinearLayout>
+</FrameLayout>

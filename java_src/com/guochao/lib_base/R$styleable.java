@@ -1,0 +1,84 @@
+package com.guochao.lib_base;
+
+import com.guochao.faceshow.R;
+/* loaded from: classes4.dex */
+public final class R$styleable {
+    public static final int FaceCastTheme_ActivityTitleColor = 0;
+    public static final int FaceCastTheme_BackButtonResId = 1;
+    public static final int FaceCastTheme_TitleBarBackground = 2;
+    public static final int FaceCastTheme_colorDivider = 3;
+    public static final int FaceCastTheme_colorSpecial1 = 4;
+    public static final int FaceCastTheme_colorSpecial2 = 5;
+    public static final int FaceCastTheme_colorTextLevel1 = 6;
+    public static final int FaceCastTheme_colorTextLevel2 = 7;
+    public static final int FaceCastTheme_colorTextLevel3 = 8;
+    public static final int GiftFragmentStyle_countColor = 0;
+    public static final int GiftFragmentStyle_disableColor = 1;
+    public static final int GiftFragmentStyle_dividerColor = 2;
+    public static final int GiftFragmentStyle_giftBackground = 3;
+    public static final int GiftFragmentStyle_giftListBackground = 4;
+    public static final int GiftFragmentStyle_giftNameColor = 5;
+    public static final int GiftFragmentStyle_giftPriceColor = 6;
+    public static final int GiftFragmentStyle_indicatorSelectedColor = 7;
+    public static final int GiftFragmentStyle_indicatorUnSelectedColor = 8;
+    public static final int GiftFragmentStyle_sanjiaoDrawable = 9;
+    public static final int GiftFragmentStyle_tabIndicatorColor = 10;
+    public static final int GiftFragmentStyle_tabSelectedTextColor = 11;
+    public static final int GiftFragmentStyle_tabUnSelectedTextColor = 12;
+    public static final int TabLayout_indicatorBottomGap = 0;
+    public static final int TabLayout_indicatorColor = 1;
+    public static final int TabLayout_indicatorDrawable = 2;
+    public static final int TabLayout_indicatorHeight = 3;
+    public static final int TabLayout_indicatorWidth = 4;
+    public static final int TabLayout_mode = 5;
+    public static final int TabLayout_selectedTextColor = 6;
+    public static final int TabLayout_selectedTextSize = 7;
+    public static final int TabLayout_showBadge = 8;
+    public static final int TabLayout_showMargin = 9;
+    public static final int TabLayout_tabBackground = 10;
+    public static final int TabLayout_tabContentStart = 11;
+    public static final int TabLayout_tabGravity = 12;
+    public static final int TabLayout_tabIconTint = 13;
+    public static final int TabLayout_tabIconTintMode = 14;
+    public static final int TabLayout_tabIndicator = 15;
+    public static final int TabLayout_tabIndicatorAnimationDuration = 16;
+    public static final int TabLayout_tabIndicatorAnimationMode = 17;
+    public static final int TabLayout_tabIndicatorColor = 18;
+    public static final int TabLayout_tabIndicatorFullWidth = 19;
+    public static final int TabLayout_tabIndicatorGravity = 20;
+    public static final int TabLayout_tabIndicatorHeight = 21;
+    public static final int TabLayout_tabInlineLabel = 22;
+    public static final int TabLayout_tabMargin = 23;
+    public static final int TabLayout_tabMaxWidth = 24;
+    public static final int TabLayout_tabMinWidth = 25;
+    public static final int TabLayout_tabMode = 26;
+    public static final int TabLayout_tabPadding = 27;
+    public static final int TabLayout_tabPaddingBottom = 28;
+    public static final int TabLayout_tabPaddingBottomGravity = 29;
+    public static final int TabLayout_tabPaddingEnd = 30;
+    public static final int TabLayout_tabPaddingEndGravity = 31;
+    public static final int TabLayout_tabPaddingGravity = 32;
+    public static final int TabLayout_tabPaddingStart = 33;
+    public static final int TabLayout_tabPaddingStartGravity = 34;
+    public static final int TabLayout_tabPaddingTop = 35;
+    public static final int TabLayout_tabPaddingTopGravity = 36;
+    public static final int TabLayout_tabRippleColor = 37;
+    public static final int TabLayout_tabSelectDrawable = 38;
+    public static final int TabLayout_tabSelectedTextColor = 39;
+    public static final int TabLayout_tabTextAppearance = 40;
+    public static final int TabLayout_tabTextColor = 41;
+    public static final int TabLayout_tabUnboundedRipple = 42;
+    public static final int TabLayout_tabunSelectDrawable = 43;
+    public static final int TabLayout_textColor = 44;
+    public static final int TabLayout_textSize = 45;
+    public static final int TabLayout_textStyle = 46;
+    public static final int TabLayout_textUnSelectStyle = 47;
+    public static final int TabLayout_unselectIIndicatorSvgaPosition = 48;
+    public static final int TabLayout_unselectIndicatorSvga = 49;
+    public static final int[] FaceCastTheme = {R.attr.ActivityTitleColor, R.attr.BackButtonResId, R.attr.TitleBarBackground, R.attr.colorDivider, R.attr.colorSpecial1, R.attr.colorSpecial2, R.attr.colorTextLevel1, R.attr.colorTextLevel2, R.attr.colorTextLevel3};
+    public static final int[] GiftFragmentStyle = {R.attr.countColor, R.attr.disableColor, R.attr.dividerColor, R.attr.giftBackground, R.attr.giftListBackground, R.attr.giftNameColor, R.attr.giftPriceColor, R.attr.indicatorSelectedColor, R.attr.indicatorUnSelectedColor, R.attr.sanjiaoDrawable, R.attr.tabIndicatorColor, R.attr.tabSelectedTextColor, R.attr.tabUnSelectedTextColor};
+    public static final int[] TabLayout = {R.attr.indicatorBottomGap, R.attr.indicatorColor, R.attr.indicatorDrawable, R.attr.indicatorHeight, R.attr.indicatorWidth, R.attr.mode, R.attr.selectedTextColor, R.attr.selectedTextSize, R.attr.showBadge, R.attr.showMargin, R.attr.tabBackground, R.attr.tabContentStart, R.attr.tabGravity, R.attr.tabIconTint, R.attr.tabIconTintMode, R.attr.tabIndicator, R.attr.tabIndicatorAnimationDuration, R.attr.tabIndicatorAnimationMode, R.attr.tabIndicatorColor, R.attr.tabIndicatorFullWidth, R.attr.tabIndicatorGravity, R.attr.tabIndicatorHeight, R.attr.tabInlineLabel, R.attr.tabMargin, R.attr.tabMaxWidth, R.attr.tabMinWidth, R.attr.tabMode, R.attr.tabPadding, R.attr.tabPaddingBottom, R.attr.tabPaddingBottomGravity, R.attr.tabPaddingEnd, R.attr.tabPaddingEndGravity, R.attr.tabPaddingGravity, R.attr.tabPaddingStart, R.attr.tabPaddingStartGravity, R.attr.tabPaddingTop, R.attr.tabPaddingTopGravity, R.attr.tabRippleColor, R.attr.tabSelectDrawable, R.attr.tabSelectedTextColor, R.attr.tabTextAppearance, R.attr.tabTextColor, R.attr.tabUnboundedRipple, R.attr.tabunSelectDrawable, R.attr.textColor, R.attr.textSize, R.attr.textStyle, R.attr.textUnSelectStyle, R.attr.unselectIIndicatorSvgaPosition, R.attr.unselectIndicatorSvga};
+
+    private R$styleable() {
+    }
+}

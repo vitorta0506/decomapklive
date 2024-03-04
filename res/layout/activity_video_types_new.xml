@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_title" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" app:elevation="0.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.guochao.faceshow.aaspring.views.NewCircleImageView android:id="@id/avatar" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="36.0dip" android:src="@mipmap/default_head" />
+                        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:id="@id/creater" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:id="@id/user_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="32.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                            <com.guochao.faceshow.aaspring.views.ExpandableImageTextView android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:expand_max_line="2" app:expand_res="@mipmap/video_more" />
+                            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/showmore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_more" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|snap">
+                    <com.guochao.faceshow.aaspring.views.TabLayout android:id="@id/tabs" app:indicatorBottomGap="0.0dip" style="@style/TabLayout.Topic" />
+                </FrameLayout>
+                <View android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="0.75dip" />
+                <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <TextView android:enabled="true" android:layout_gravity="bottom|center" android:id="@id/join" android:background="@drawable/bg_buy_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minHeight="45.0dip" android:text="@string/join_in_also" style="@style/Button.NextStep" />
+</merge>

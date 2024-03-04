@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottom_tip" style="@style/LinearLayout_Vip_BottomTip">
+        <TextView android:id="@id/tips1" android:text="@string/vip_mall_danmu_tip" style="@style/TextView.VipTip1" />
+        <TextView android:id="@id/tips2" android:text="@string/vip_mall_danmu_tip2" style="@style/TextView.VipTip2" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_tip">
+        <ImageView android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/vvip_barrage_" />
+    </FrameLayout>
+</RelativeLayout>

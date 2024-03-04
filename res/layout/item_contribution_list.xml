@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_ugc_text_level_1" android:gravity="center" android:id="@id/tvNo" android:background="@mipmap/icon_fan_ranking1" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_26" android:text="1" />
+    <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/civHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="49.0dip" app:showStyle="showUgc" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" android:layout_marginEnd="@dimen/dp_10">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/tvNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" android:singleLine="true" android:textAlignment="viewStart" android:layout_marginStart="10.0dip" />
+        <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" app:iconScale="0.8" />
+    </LinearLayout>
+    <ImageView android:gravity="center_vertical" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@mipmap/zuanshi" />
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/black_222222" android:gravity="center_vertical" android:id="@id/tvPriceCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" />
+</LinearLayout>

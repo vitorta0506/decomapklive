@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/playerview" android:background="@color/real_black" android:layout_width="fill_parent" android:layout_height="fill_parent" app:use_controller="false" />
+    <View android:background="@drawable/shape_video_fullscreen_top_mask" android:layout_width="fill_parent" android:layout_height="95.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.aaspring.views.StatusBarPlaceHolderView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/base_title_no_fit" />
+    </LinearLayout>
+    <include layout="@layout/hello_play_video_bottom_info" />
+    <ImageView android:layout_gravity="center" android:id="@id/play_bt" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/play_bt" />
+</merge>

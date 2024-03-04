@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/colorTextWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/user_info_scroll_pager_ly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/default_head" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/wu" android:scaleType="centerCrop" />
+        <com.youth.banner.Banner android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.rd.PageIndicatorView android:layout_gravity="end|bottom|center" android:id="@id/pageIndicatorView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_16" app:piv_animationType="worm" app:piv_dynamicCount="true" app:piv_interactiveAnimation="true" app:piv_padding="4.0dip" app:piv_radius="3.0dip" app:piv_selectedColor="@color/white" app:piv_unselectedColor="@color/half_white" />
+        <View android:background="@color/black_50" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.1" />
+        <include android:layout_gravity="start|bottom|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_16" layout="@layout/layout_voice_room_living_status" />
+        <include android:layout_gravity="start|bottom|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_16" layout="@layout/layout_living_status" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/user_info_head_ly" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_120" android:layout_marginTop="-60.0dip">
+        <FrameLayout android:id="@id/user_info_head_img_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <com.guochao.faceshow.aaspring.views.HeadPortraitView android:layout_gravity="center" android:id="@id/user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headCountryFlagBorderColor="@color/white" app:headCountryFlagBorderWidth="@dimen/dp_1" app:headPortraitSize="@dimen/dp_80" app:showStyle="showUgc" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/user_info_name_ly" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/text_larger" android:textColor="@color/real_black" android:ellipsize="end" android:id="@id/user_info_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <ImageView android:id="@id/mvpIV" android:visibility="gone" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_18" android:scaleType="fitCenter" android:layout_marginStart="@dimen/dp_8" />
+        <com.guochao.faceshow.aaspring.views.VipIndicatorView android:id="@id/vip_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_6" />
+        <com.guochao.faceshow.aaspring.views.LevelView android:id="@id/level_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/online_info_area" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/homepage_location" />
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/online_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/online_info_extra" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:layout_marginStart="3.0dip" />
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/text_color5" android:ellipsize="end" android:gravity="start" android:id="@id/user_info_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <LinearLayout android:gravity="center" android:id="@id/number_info_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/user_info_signature">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_info_follow_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/main_content" android:textStyle="bold" android:textColor="@color/black66" android:ellipsize="end" android:id="@id/user_info_follow_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/text_color5" android:ellipsize="end" android:id="@id/user_info_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/focus" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:background="@color/colorGray2" android:layout_width="1.0px" android:layout_height="@dimen/qav_bottombar_margin_for_ivr" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_info_fans_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black66" android:ellipsize="end" android:id="@id/user_info_fans_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/text_color5" android:ellipsize="end" android:id="@id/user_info_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/fans" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:background="@color/colorGray2" android:layout_width="1.0px" android:layout_height="@dimen/qav_bottombar_margin_for_ivr" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_info_gift_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black66" android:ellipsize="end" android:id="@id/user_info_gift_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/text_color5" android:ellipsize="end" android:id="@id/user_info_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/f_currency" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:background="@color/colorGray2" android:layout_width="1.0px" android:layout_height="@dimen/qav_bottombar_margin_for_ivr" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_info_send_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black66" android:ellipsize="end" android:id="@id/user_info_send_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/text_color5" android:ellipsize="end" android:id="@id/user_info_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/sent" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

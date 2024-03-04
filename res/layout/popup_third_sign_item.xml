@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/icon_signin_popup" android:paddingTop="@dimen/dp_9" android:paddingBottom="@dimen/dp_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_13" android:paddingEnd="@dimen/dp_13">
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_popup_title" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/content_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+    </LinearLayout>
+</FrameLayout>

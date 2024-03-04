@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/item_layout" android:background="@color/real_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/txCloudVideoView" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_cover" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <ImageView android:background="@mipmap/video_bj_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/video_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" android:progressDrawable="@drawable/short_video_progress_background" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <ImageButton android:id="@id/play_bt" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/play_bt" android:layout_centerInParent="true" />
+    <include android:background="@drawable/shape_video_duration_mask" layout="@layout/hello_play_video_bottom_info" />
+</RelativeLayout>

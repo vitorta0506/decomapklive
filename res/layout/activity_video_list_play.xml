@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:theme="@style/AppTheme" android:background="@color/light_bg_gray2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transitionName="video"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/back_button" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dip" android:src="@drawable/icon_back_white" />
+</merge>

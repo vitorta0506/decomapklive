@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_item_country_tag" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_margin="@dimen/dp_4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/country_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_country_select" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5">
+        <ImageView android:gravity="center_vertical" android:id="@id/hot_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_country_hot" android:layout_marginEnd="@dimen/dp_6" />
+        <TextView android:textSize="@dimen/text_small_thirteen" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

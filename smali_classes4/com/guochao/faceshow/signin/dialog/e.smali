@@ -1,0 +1,42 @@
+.class public final synthetic Lcom/guochao/faceshow/signin/dialog/e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# static fields
+.field public static final synthetic a:Lcom/guochao/faceshow/signin/dialog/e;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/guochao/faceshow/signin/dialog/e;
+
+    invoke-direct {v0}, Lcom/guochao/faceshow/signin/dialog/e;-><init>()V
+
+    sput-object v0, Lcom/guochao/faceshow/signin/dialog/e;->a:Lcom/guochao/faceshow/signin/dialog/e;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p1}, Lcom/guochao/faceshow/signin/dialog/LiveSignCenterDialog;->S1(Landroid/view/View;)V
+
+    return-void
+.end method

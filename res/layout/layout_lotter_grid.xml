@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="65.0dip" android:layout_marginBottom="37.5dip" android:layout_marginStart="37.5dip" android:layout_marginEnd="37.5dip">
+        <FrameLayout android:id="@id/center" android:background="@mipmap/gift_bj" android:padding="23.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/grid_view_group" android:background="@drawable/bg_lottery_center_center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout style="@style/LinearLayout_Lottery">
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-7.0dip" android:layout_marginEnd="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/LinearLayout_Lottery">
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-7.0dip" android:layout_marginEnd="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/LinearLayout_Lottery">
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-7.0dip" android:layout_marginEnd="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-7.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/gift_icon" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_box" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gift_top" android:layout_above="@id/center" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-24.0dip" android:src="@mipmap/gift_surprise" android:layout_above="@id/center" android:layout_centerHorizontal="true" android:translationZ="1.0dip" />
+        <FrameLayout android:background="@mipmap/gift_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/center" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_small_thirteen" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_choose_gift" android:singleLine="true" android:shadowColor="#aeae5714" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="3.0" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

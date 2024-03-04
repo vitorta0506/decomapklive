@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/rlItemLayout" android:background="@color/white" android:paddingTop="@dimen/dp_14" android:paddingBottom="@dimen/dp_14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/ivImg" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginEnd="10.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff020102" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+    <CheckBox android:id="@id/checkbox" android:background="@drawable/im_user_check" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:button="@null" />
+</LinearLayout>

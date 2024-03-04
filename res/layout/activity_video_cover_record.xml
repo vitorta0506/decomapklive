@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start" android:id="@id/cancel" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/appointment_shot_close" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_app_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/trtc_create_cover" />
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/trtc_create_cover_tips" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip">
+        <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/txCloudVideoView" android:layout_width="@dimen/video_cover_preview_size" android:layout_height="@dimen/video_cover_preview_size" />
+        <ImageView android:id="@id/touch_view" android:layout_width="@dimen/video_cover_preview_size" android:layout_height="@dimen/video_cover_preview_size" />
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_2" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:maxWidth="@dimen/video_cover_preview_size" android:text="@string/trtc_photograph_your_own_face" />
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip">
+        <com.guochao.faceshow.aaspring.views.VideoCoverCircleProgressView android:layout_gravity="center" android:id="@id/record" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="start|center" android:orientation="vertical" android:id="@id/effect" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="62.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/appointment_shot_tx" />
+            <TextView android:textColor="@color/color_ugc_text_level_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/effects" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:cardBackgroundColor="@color/color_voice_bg_card" app:cardCornerRadius="10.0dip" app:contentPadding="@dimen/dp_3" app:layout_constraintDimensionRatio="107:162" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardView.Base">
+        <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_voice_room_bg_expand" />
+        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/info" android:background="@drawable/shape_voice_info_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

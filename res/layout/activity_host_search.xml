@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:navigationIcon="?BackButtonResId">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textSize="@dimen/text_large" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cdl_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.Light" android:id="@id/appbar_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/hostSearchTitle" android:gravity="center_vertical" android:id="@id/tv_tips" android:background="@color/hostSearchTitleBg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:text="@string/ugc_real_time_topic" android:layout_marginStart="@dimen/dp_17" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <include layout="@layout/fragment_base_recycler_view" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

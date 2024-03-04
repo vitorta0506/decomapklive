@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.views.RatioFrameLayout android:layout_gravity="bottom" android:background="@drawable/bg_lucky_number_record" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ratio="0.88"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/kong" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/live_game_record_empty" android:alpha="0.45" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+            <ImageView android:id="@id/left_back" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:src="@drawable/icon_back" app:tint="@color/white" />
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_game_record" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_tabs" android:background="@drawable/bg_tab_name" android:layout_width="fill_parent" android:layout_height="@dimen/dp_32" android:layoutDirection="ltr">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_game_create_time" android:maxLines="1" android:alpha="0.45" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/join_fee" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_game_join_fee" android:singleLine="true" android:alpha="0.45" android:paddingStart="0.0dip" android:paddingEnd="@dimen/dp_5" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/reward" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/minigame_win_reward" android:singleLine="true" android:layout_weight="2.0" android:alpha="0.45" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/fragment_base_recycler_view" />
+    </LinearLayout>
+</com.guochao.faceshow.aaspring.views.RatioFrameLayout>

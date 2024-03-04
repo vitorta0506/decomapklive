@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_play_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.rtmp.ui.TXCloudVideoView android:id="@id/video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/record_preview" android:background="@drawable/icon_record_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:onClick="onClick" />
+    <RelativeLayout android:id="@id/publishLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/record_delete" android:background="@drawable/icon_record_delete" android:layout_width="@dimen/live_btn_size" android:layout_height="@dimen/live_btn_size" android:layout_centerVertical="true" android:onClick="onClick" android:layout_marginStart="50.0dip" />
+        <ImageView android:id="@id/record_download" android:background="@drawable/icon_record_download" android:visibility="invisible" android:layout_width="@dimen/live_btn_size" android:layout_height="@dimen/live_btn_size" android:layout_centerInParent="true" android:onClick="onClick" />
+        <ImageView android:id="@id/record_publish" android:background="@drawable/icon_share" android:layout_width="@dimen/live_btn_size" android:layout_height="@dimen/live_btn_size" android:onClick="onClick" android:layout_marginEnd="50.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <SeekBar android:layout_gravity="end|center" android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:maxHeight="1.0dip" android:max="110" android:progress="0" android:progressDrawable="@drawable/play_seekbar_progress" android:minHeight="1.0dip" android:thumb="@mipmap/play_seekbar_icon" android:layout_above="@id/publishLayout" android:paddingStart="25.0dip" android:paddingEnd="25.0dip" />
+    <TextView android:textSize="@dimen/h6" android:textColor="@color/c8" android:id="@id/progress_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="00:00/00:00" android:layout_above="@id/seekbar" android:layout_marginEnd="25.0dip" android:layout_alignParentEnd="true" />
+    <View android:background="@drawable/shape_video_topshade" android:layout_width="fill_parent" android:layout_height="287.0dip" android:layout_alignParentTop="true" />
+    <View android:background="@drawable/shape_video_bottomshade" android:layout_width="fill_parent" android:layout_height="287.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/user_page_group_item_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/user_page_group_item_text_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/user_page_group_item_img">
+        <TextView android:textSize="13.0sp" android:textColor="@color/black66" android:ellipsize="end" android:gravity="center" android:id="@id/user_page_group_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_color5" android:ellipsize="end" android:gravity="center" android:id="@id/user_page_group_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/user_page_group_arrow_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_end" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

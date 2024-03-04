@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/fans_devote_lay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/first_lay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="35.0dip" android:layout_height="38.0dip" android:src="@mipmap/icon_user_center_top_one" />
+        <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center_horizontal" android:id="@id/first_item" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="@dimen/dp_7" android:src="@mipmap/default_head" android:translationX="-1.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/second_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4">
+        <ImageView android:layout_width="35.0dip" android:layout_height="38.0dip" android:src="@mipmap/icon_user_center_top_two" />
+        <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center_horizontal" android:id="@id/second_item" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="@dimen/dp_7" android:src="@mipmap/default_head" android:translationX="-1.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/third_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4">
+        <ImageView android:layout_width="35.0dip" android:layout_height="38.0dip" android:src="@mipmap/icon_user_center_top_three" />
+        <com.guochao.faceshow.views.NormalCircleImageView android:layout_gravity="center_horizontal" android:id="@id/third_item" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="@dimen/dp_7" android:src="@mipmap/default_head" android:translationX="-1.0dip" />
+    </FrameLayout>
+</LinearLayout>

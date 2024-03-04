@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.guochao.faceshow.aaspring.views.NewCircleImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56" android:src="@mipmap/default_head_space" android:layout_marginStart="@dimen/dp_16" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_5">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_16">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_app_primary" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:singleLine="true" android:layout_marginEnd="@dimen/dp_10" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_gravity="end" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="456" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_16">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:id="@id/tv_user_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dkjasdkljas" android:singleLine="true" android:layout_marginEnd="@dimen/dp_10" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:layout_gravity="end" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.1km" />
+        </LinearLayout>
+        <com.google.android.material.chip.ChipGroup android:id="@id/cg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_38" />
+        <View android:layout_gravity="bottom" android:background="@color/color_ugc_divider" android:layout_width="wrap_content" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_5" android:layout_marginStart="@dimen/dp_5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_play_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/paster_fl_player" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/editer_fl_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.guochao.faceshow.views.TCLayerViewGroup android:id="@id/paster_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageButton android:layout_gravity="center" android:id="@id/editer_ib_play" android:background="@drawable/ic_play_bg" android:visibility="gone" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@mipmap/ic_pause" />
+    <TextView android:textSize="@dimen/text_normal" android:id="@id/question_title" android:background="@drawable/zz_shape_rect_small_radius_normal" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_160" android:text="" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/title_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_left_back" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back_white" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/app_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preview" android:maxLines="1" android:paddingStart="@dimen/dp_44" android:paddingEnd="@dimen/dp_66" app:layout_constraintBottom_toBottomOf="@id/tv_left_back" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/tv_left_back" />
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/edit_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14.0dip" android:layout_alignParentEnd="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_left_back">
+            <ImageView android:id="@id/btn_confirm" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/record_confirm_enable" android:onClick="onClick" />
+            <ImageView android:id="@id/btn_music_pannel" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_65" android:src="@mipmap/ugc_record_music_hover" android:onClick="onClick" />
+            <ImageView android:id="@id/btn_switch_camera" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:src="@mipmap/ic_cut_music" android:onClick="onClick" />
+            <ImageView android:id="@id/voice_set" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:src="@mipmap/luping_shezhi" android:onClick="onClick" />
+            <ImageView android:id="@id/btn_torch" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:src="@mipmap/luping_biaoqing" android:onClick="onClick" />
+            <ImageView android:id="@id/btn_beauty" android:background="@mipmap/luping_shijian" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:onClick="onClick" />
+            <ImageView android:id="@id/btn_delete_last_part" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_24" android:src="@mipmap/luping_lvjing" android:onClick="onClick" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/time_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_15" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/google_white" android:gravity="center" android:layout_gravity="start" android:id="@id/cut_sure" android:background="@drawable/btn_common_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5" android:layout_marginStart="@dimen/dp_10" android:tooltipText="剪切" />
+            <androidx.legacy.widget.Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/google_white" android:gravity="center" android:layout_gravity="end" android:id="@id/yes_sure" android:background="@drawable/btn_common_bg" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="28.0dip" android:text="@string/ok" android:layout_marginEnd="@dimen/dp_10" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="@dimen/dp_3" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+            <HorizontalScrollView android:id="@id/recyclerView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+                <LinearLayout android:orientation="horizontal" android:id="@id/sc_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </HorizontalScrollView>
+            <com.guochao.faceshow.views.ZZRangeSlider android:id="@id/bgm_range_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr" app:leftThumbDrawable="@drawable/ic_progress_left" app:leftThumbIndex="0" app:lineColor="@color/white" app:lineHeight="2.0dip" app:rightThumbDrawable="@drawable/ic_progress_right" app:thumbWidth="22.0dip" app:tickCount="100" />
+        </RelativeLayout>
+        <com.guochao.faceshow.views.VideoProgressView android:id="@id/editer_video_progress_view" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" android:layoutDirection="ltr" />
+        <FrameLayout android:id="@id/editer_fl_container" android:layout_width="fill_parent" android:layout_height="@dimen/dp_90" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tcp_line" android:background="@color/dark_blak_transet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_normal" android:layout_gravity="end" android:id="@id/tcp_ok" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_55" android:layout_marginTop="@dimen/dp_2">
+            <com.guochao.faceshow.views.VideoProgressView android:id="@id/video_progress_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_centerVertical="true" android:layoutDirection="ltr" />
+            <View android:background="@color/white" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/btn_play" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@mipmap/video_stop" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/horizontalListView" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" />
+    </LinearLayout>
+    <View android:background="@drawable/shape_video_topshade" android:layout_width="fill_parent" android:layout_height="287.0dip" android:layout_alignParentTop="true" />
+    <View android:background="@drawable/shape_video_bottomshade" android:layout_width="fill_parent" android:layout_height="287.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

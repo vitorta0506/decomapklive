@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="16.0dip" app:contentPadding="32.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分辨率:" />
+                <RadioGroup android:id="@id/rg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="960*540" />
+                    <RadioButton android:id="@id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1280*720" />
+                    <RadioButton android:id="@id/rb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1920*1080" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="码率：" />
+                <EditText android:id="@id/bit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:maxLength="5" android:inputType="number" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kbps" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FPS：" />
+                <EditText android:id="@id/fps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:text="18" android:maxLength="2" android:inputType="number" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐10-30，默认18" />
+            </LinearLayout>
+            <Button android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guochao.faceshow.aaspring.modulars.live.broadcaster.view.AlwaysCenterLayout android:layout_gravity="center_horizontal" android:id="@id/bottom_switch_lay" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_start_lay" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@id/live_bottom_start" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:text="@string/live_launch_normal" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/indicator_bottom_start" android:background="@drawable/bg_launch_live_indicator" android:visibility="invisible" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_15" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_middle_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/live_bottom_middle" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:text="@string/Friend_Party" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/indicator_bottom_middle" android:background="@drawable/bg_launch_live_indicator" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_15" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_end_lay" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/white" android:gravity="center" android:layout_gravity="start" android:id="@id/live_bottom_end" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:text="@string/voice_room_label" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/indicator_bottom_end" android:background="@drawable/bg_launch_live_indicator" android:visibility="invisible" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_15" />
+    </LinearLayout>
+</com.guochao.faceshow.aaspring.modulars.live.broadcaster.view.AlwaysCenterLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/dark_101120" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_mvp_my_mvp_reproduction_top" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.guochao.component.mvp.view.TitleView android:id="@id/titleView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+                <com.guochao.component.mvp.view.MVPInfoView android:id="@id/mvpInfoView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_21" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_mvp_my_mvp_reproduction_bottom" android:layout_below="@id/top" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:layout_width="242.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_36">
+                            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/yellow_fae2b7" android:gravity="center" android:id="@id/getMVPTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mvp_this_month_is_mvp_no" android:drawableLeft="@mipmap/ic_mvp_inof_title_left" android:drawableRight="@mipmap/ic_mvp_inof_title_right" android:drawablePadding="@dimen/dp_8" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" />
+                        </LinearLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22">
+                            <ImageView android:id="@id/mvpBgIV" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@mipmap/ic_mvp_bg_def" android:scaleType="fitXY" app:layout_constraintDimensionRatio="h,355:80" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_2" app:layout_constraintDimensionRatio="h,355:80" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                                <com.guochao.faceshow.aaspring.views.HeadPortraitView android:id="@id/avatar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:headPortraitBorderColor="@color/white" app:headPortraitBorderWidth="@dimen/dp_1" app:headPortraitSize="48.0dip" app:showStyle="showLiveWatcher" />
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                                    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/text_FF181C1B" android:ellipsize="end" android:id="@id/nickNameTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginEnd="@dimen/dp_6" />
+                                    <ImageView android:id="@id/mvpLevelIV" android:visibility="gone" android:layout_width="@dimen/dp_37" android:layout_height="@dimen/dp_14" android:layout_marginTop="8.0dip" android:scaleType="centerInside" />
+                                </LinearLayout>
+                                <ImageView android:id="@id/badgeIV" android:layout_width="71.0dip" android:layout_height="71.0dip" android:src="@mipmap/ic_mvp_badge_def" android:scaleType="fitCenter" android:layout_marginStart="@dimen/dp_7" android:layout_marginEnd="@dimen/dp_7" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <com.guochao.faceshow.aaspring.views.TabLayout android:gravity="bottom" android:layout_gravity="center" android:id="@id/tablayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_6" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:indicatorBottomGap="4.0dip" app:indicatorColor="@color/yellow_fae2b7" app:indicatorDrawable="@drawable/mvp_indicator" app:indicatorHeight="2.0dip" app:indicatorWidth="6.0dip" app:mode="auto" app:selectedTextColor="@color/yellow_fae2b7" app:selectedTextSize="@dimen/text_normal" app:textColor="@color/white" app:textSize="@dimen/text_small" app:textStyle="bold" app:textUnSelectStyle="bold" />
+                <com.guochao.component.mvp.view.WrapViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/text_normal" android:textStyle="bold" android:textColor="@color/black_FF1C1818" android:gravity="center" android:id="@id/getAllTV" android:background="@drawable/selector_button_bg_get_all" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" android:minHeight="@dimen/dp_48" android:text="@string/mvp_gift_get_all" android:lines="1" android:layout_marginStart="@dimen/dp_50" android:layout_marginEnd="@dimen/dp_50" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ic_mvp_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp_17" android:paddingBottom="@dimen/dp_17" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                        <ImageView android:layout_gravity="center" android:id="@id/giftIV" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_mvp_kefu" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12">
+                            <TextView android:textSize="@dimen/text_small" android:textColor="@color/yellow_FFF6DA" android:id="@id/titleTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mvp_customer_service" />
+                            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:text="@string/mvp_customer_service_id" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/white" android:id="@id/contactTV" android:background="@drawable/selector_button_bg_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mvp_customer_service_contact" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_small" android:textColor="@color/yellow_FFD2A983" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_44" android:text="@string/mvp_valid_date" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

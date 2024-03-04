@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_item_recharge_selector" android:layout_width="fill_parent" android:layout_height="74.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/dress_up_diamond" />
+            <TextView android:textSize="@dimen/text_large_seventeen" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:id="@id/diamond_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_2" />
+            <TextView android:textSize="@dimen/text_smallest" android:textColor="#ffff7600" android:layout_gravity="end|center" android:id="@id/extra_diamond_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_2" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center_horizontal" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_smallest" android:textColor="@color/white" android:layout_gravity="end|center|top" android:id="@id/tv_sale_diamond" android:background="@drawable/bg_sale_diamond" android:paddingTop="@dimen/dp_1" android:paddingBottom="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5" android:layout_marginStart="@dimen/dp_2" />
+</FrameLayout>

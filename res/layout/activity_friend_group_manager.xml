@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/color_ugc_divider" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_layout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/gc_base_title_bar" />
+    <View android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="-0.5dip" app:layout_constraintTop_toBottomOf="@id/title_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_img" android:background="@drawable/list_item_background" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:minHeight="@dimen/dp_52" android:paddingStart="14.0dip" android:paddingEnd="6.0dip" app:layout_constraintTop_toBottomOf="@id/title_layout">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_group_button_tj" />
+        <TextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/color_ugc_app_primary_tint" android:gravity="center_vertical" android:id="@id/add_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friend_add_group" android:layout_marginStart="@dimen/dp_9" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider" android:background="#fff4f6f9" android:layout_width="fill_parent" android:layout_height="8.0dip" app:layout_constraintTop_toBottomOf="@id/add_img" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/bottom_divider" app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

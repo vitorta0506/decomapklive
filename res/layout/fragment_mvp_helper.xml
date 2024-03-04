@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/bg_mvp_helper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_36" android:layout_marginEnd="@dimen/dp_36">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_ugc_text_level_1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MVP" />
+            <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_10" app:srcCompat="@drawable/ic_voice_room_member_fee_close" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips1" />
+                    <ImageView android:id="@id/iv_tips1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips1" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips2" />
+                    <ImageView android:id="@id/iv_tips2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips2" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips3" />
+                    <ImageView android:id="@id/iv_tips3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips3" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips4" />
+                    <ImageView android:id="@id/iv_tips4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips4" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips8" />
+                    <ImageView android:id="@id/iv_tips8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips8" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips9" />
+                    <ImageView android:id="@id/iv_tips9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:src="@mipmap/iv_mvp_helper_tips9" android:scaleType="fitXY" />
+                    <ImageView android:id="@id/iv_tips9_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips9_1" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips5" />
+                    <ImageView android:id="@id/iv_tips5_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12" android:src="@mipmap/iv_mvp_helper_tips5_0" android:scaleType="fitXY" />
+                    <ImageView android:id="@id/iv_tips5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips5" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips6" />
+                    <ImageView android:id="@id/iv_tips6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips7" android:scaleType="fitXY" />
+                    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_ugc_text_level_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_9" android:text="@string/mvp_helper_tips7" />
+                    <ImageView android:id="@id/iv_tips7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/iv_mvp_helper_tips6" android:scaleType="fitXY" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_normal_fifteen" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_i_know" android:background="@drawable/bg_mvp_iknow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:minHeight="@dimen/dp_44" android:text="@string/lottery_i_know" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+    </LinearLayout>
+</FrameLayout>

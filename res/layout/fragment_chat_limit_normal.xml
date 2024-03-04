@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_3" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_24" android:minHeight="@dimen/dp_50" android:text="@string/chat_limit_normal_content" android:maxLines="3" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="112.0dip" android:layout_marginBottom="@dimen/dp_16" />
+</LinearLayout>

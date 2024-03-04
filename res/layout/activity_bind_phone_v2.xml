@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_gray_round24" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:minHeight="49.0dip" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_18" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/rv_country" android:background="@null" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_earth" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_text_level_1" android:id="@id/tv_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+00" android:layout_marginStart="5.0dip" />
+            <ImageView android:id="@id/iv_next" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_pull_noun" android:scaleType="fitXY" android:layout_marginStart="2.0dip" />
+            <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_text_level_1" android:textColorHint="@color/text_hint" android:id="@id/et_phone" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/user_enter_bind_phone" android:singleLine="true" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_gray_round24" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minHeight="49.0dip" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_18" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10">
+            <EditText android:textSize="@dimen/text_small" android:textColor="@color/color_text_level_1" android:textColorHint="@color/text_hint" android:ellipsize="end" android:id="@id/et_code" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/setting_enter_verification_code" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" android:textDirection="locale" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/rl_send" android:background="@drawable/btn_common_bg" android:padding="@dimen/dp_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="@dimen/dp_28">
+            <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bind_verification" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/rl_send_hide" android:background="@drawable/shape_coner_tra_stroke_gray" android:padding="@dimen/dp_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="@dimen/dp_28">
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60s" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/color_ugc_text_level_2" android:id="@id/tv_bind_phone_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_20" android:text="@string/bind_phone_tip" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+    <TextView android:enabled="false" android:textSize="@dimen/text_normal" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48" android:minHeight="49.0dip" android:text="@string/save" android:layout_marginStart="@dimen/dp_42" android:layout_marginEnd="@dimen/dp_42" style="@style/Button.Common" />
+</LinearLayout>

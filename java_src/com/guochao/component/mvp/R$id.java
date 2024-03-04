@@ -1,0 +1,78 @@
+package com.guochao.component.mvp;
+/* loaded from: classes3.dex */
+public final class R$id {
+    public static final int allLL = 2131361956;
+    public static final int avatarIV = 2131362033;
+    public static final int avatar_view = 2131362045;
+    public static final int backIV = 2131362048;
+    public static final int badgeIV = 2131362057;
+    public static final int bgFL = 2131362087;
+    public static final int big_white_point_lay = 2131362119;
+    public static final int closeIV = 2131362318;
+    public static final int contactTV = 2131362386;
+    public static final int content_layout = 2131362396;
+    public static final int dateWheel = 2131362456;
+    public static final int desTV = 2131362479;
+    public static final int feeET = 2131362763;
+    public static final int fragment_data_container = 2131362883;
+    public static final int getAllTV = 2131362921;
+    public static final int getMVPTitle = 2131362922;
+    public static final int getTV = 2131362923;
+    public static final int giftBgFL = 2131362930;
+    public static final int giftIV = 2131362932;
+    public static final int idET = 2131363083;
+    public static final int imageView = 2131363101;
+    public static final int iv_close = 2131363223;
+    public static final int iv_tips1 = 2131363298;
+    public static final int iv_tips2 = 2131363299;
+    public static final int iv_tips3 = 2131363300;
+    public static final int iv_tips4 = 2131363301;
+    public static final int iv_tips5 = 2131363302;
+    public static final int iv_tips5_0 = 2131363303;
+    public static final int iv_tips6 = 2131363304;
+    public static final int iv_tips7 = 2131363305;
+    public static final int iv_tips8 = 2131363306;
+    public static final int iv_tips9 = 2131363307;
+    public static final int iv_tips9_1 = 2131363308;
+    public static final int ll_content = 2131363526;
+    public static final int moreIV = 2131363738;
+    public static final int mvpBgIV = 2131363786;
+    public static final int mvpInfoView = 2131363788;
+    public static final int mvpLevelIV = 2131363790;
+    public static final int mvpTV = 2131363791;
+    public static final int mvpTV1 = 2131363792;
+    public static final int mvpTV2 = 2131363793;
+    public static final int mvpTV3 = 2131363794;
+    public static final int mvp_progress_lay = 2131363795;
+    public static final int mvp_text_lay = 2131363796;
+    public static final int nameTV = 2131363814;
+    public static final int nextMVPTV = 2131363842;
+    public static final int nextMVPTipsTV = 2131363843;
+    public static final int nickNameTV = 2131363851;
+    public static final int okTV = 2131363892;
+    public static final int rechargeMoneyTV = 2131364165;
+    public static final int rechargeTV = 2131364166;
+    public static final int recyclerView = 2131364185;
+    public static final int scrollView = 2131364358;
+    public static final int select_progress = 2131364433;
+    public static final int smallIV = 2131364512;
+    public static final int status_bar_holder = 2131364574;
+    public static final int tablayout = 2131364645;
+    public static final int timeET = 2131364759;
+    public static final int timeLL = 2131364760;
+    public static final int timePickerLL = 2131364761;
+    public static final int timeTV = 2131364762;
+    public static final int timeWheel = 2131364763;
+    public static final int tips = 2131364780;
+    public static final int tipsTV = 2131364784;
+    public static final int titleTV = 2131364790;
+    public static final int titleView = 2131364791;
+    public static final int top = 2131364808;
+    public static final int tv_i_know = 2131365023;
+    public static final int useTV = 2131365250;
+    public static final int viewLL = 2131365367;
+    public static final int viewpager = 2131365391;
+
+    private R$id() {
+    }
+}

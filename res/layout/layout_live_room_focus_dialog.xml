@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="21.0dip" app:cardElevation="0.0dip" app:cardMaxElevation="0.0dip" app:cardUseCompatPadding="false" app:contentPaddingBottom="12.5dip" app:contentPaddingLeft="16.0dip" app:contentPaddingRight="16.0dip" app:contentPaddingTop="12.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.guochao.faceshow.views.NormalCircleImageView android:id="@id/avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/default_head" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="20.0dip">
+            <TextView android:textSize="@dimen/text_normal_fifteen" android:textStyle="bold" android:textColor="@color/color_ugc_text_level_1" android:ellipsize="end" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_smaller" android:textColor="@color/color_ugc_text_level_2" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/user_guide_focus_tips" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/focus_button" android:background="@drawable/shape_follow_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip" android:paddingStart="18.0dip" android:paddingEnd="18.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/follow_im_jia" />
+            <TextView android:textSize="@dimen/text_normal_fifteen" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/focus" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+package com.gyailib.library;
+/* loaded from: classes4.dex */
+public class FaceDetectorFeature {
+    public int boundsH;
+    public int boundsW;
+    public int boundsX;
+    public int boundsY;
+    public float[] fFeatures;
+    public float[] fFeatures256;
+    public float[] fFeaturesYoutuOriginX;
+    public float[] fFeaturesYoutuOriginY;
+    Face3DResult facekit3DResult;
+    FaceDetectorFeaturePerspective featurePerspective;
+    public boolean hasOutline;
+    public float imageHeight;
+    public float imageWidth;
+    public int leBoundsH;
+    public int leBoundsW;
+    public int leBoundsX;
+    public int leBoundsY;
+    public int mouthBoundsH;
+    public int mouthBoundsW;
+    public int mouthBoundsX;
+    public int mouthBoundsY;
+    public float pitch;
+    public float[] points256Visibility;
+    public float[] pointsVisibility;
+    public int reBoundsH;
+    public int reBoundsW;
+    public int reBoundsX;
+    public int reBoundsY;
+    public float roll;
+    public int traceId;
+    public float yaw;
+    public float[] youtuVisibility;
+
+    public FaceDetectorFeature(int i9, float f10, float f11, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19, int i20, int i21, int i22, int i23, int i24, int i25, boolean z10, float f12, float f13, float f14, float[] fArr, float[] fArr2, float[] fArr3, float[] fArr4, float[] fArr5, float[] fArr6, float[] fArr7, FaceDetectorFeaturePerspective faceDetectorFeaturePerspective, Face3DResult face3DResult) {
+        this.traceId = i9;
+        this.imageWidth = f10;
+        this.imageHeight = f11;
+        this.boundsX = i10;
+        this.boundsY = i11;
+        this.boundsW = i12;
+        this.boundsH = i13;
+        this.leBoundsX = i14;
+        this.leBoundsY = i15;
+        this.leBoundsW = i16;
+        this.leBoundsH = i17;
+        this.reBoundsX = i18;
+        this.reBoundsY = i19;
+        this.reBoundsW = i20;
+        this.reBoundsH = i21;
+        this.mouthBoundsX = i22;
+        this.mouthBoundsY = i23;
+        this.mouthBoundsW = i24;
+        this.mouthBoundsH = i25;
+        this.hasOutline = z10;
+        this.pitch = f12;
+        this.yaw = f13;
+        this.roll = f14;
+        this.fFeaturesYoutuOriginX = fArr;
+        this.fFeaturesYoutuOriginY = fArr2;
+        this.youtuVisibility = fArr3;
+        this.pointsVisibility = fArr4;
+        this.points256Visibility = fArr6;
+        this.fFeatures = fArr5;
+        this.fFeatures256 = fArr7;
+        this.featurePerspective = faceDetectorFeaturePerspective;
+        this.facekit3DResult = face3DResult;
+    }
+}

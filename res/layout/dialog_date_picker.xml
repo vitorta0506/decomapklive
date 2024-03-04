@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/zz_shape_rect_small_radius_pop_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_35" android:layout_marginEnd="@dimen/dp_35">
+        <FrameLayout android:background="@drawable/edit_text_under_line_shape" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_text_level_3" android:gravity="center_horizontal" android:layout_gravity="start|center" android:id="@id/common_dialog_cancel" android:background="@drawable/list_item_background" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="72.0dip" android:text="@string/str_no" />
+        </FrameLayout>
+        <include layout="@layout/include_popwindow_title" />
+        <RelativeLayout android:gravity="center" android:background="@drawable/bg_edit_text_set_info10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <View android:background="@drawable/bg_edit_text_set_info10_e0e6ee" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_6" />
+            <com.guochao.faceshow.aaspring.views.DatePickerView android:orientation="horizontal" android:id="@id/date_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View android:id="@id/common_dialog_horizon_line" android:background="@color/color_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/date_picker" />
+        <TextView android:enabled="false" android:id="@id/common_dialog_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_21" android:layout_marginBottom="@dimen/dp_21" android:text="@string/save" style="@style/Button.Common.Pop" />
+    </LinearLayout>
+</FrameLayout>
